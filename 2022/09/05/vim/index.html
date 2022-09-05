@@ -14,7 +14,7 @@
 <meta property="og:description" content="一些vim的基础用法">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2022-09-05T04:29:40.000Z">
-<meta property="article:modified_time" content="2022-09-05T06:58:28.475Z">
+<meta property="article:modified_time" content="2022-09-05T07:14:39.324Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -98,7 +98,12 @@
         <p>一些vim的基础用法</p>
 <span id="more"></span>
 
-<p><a href="#search-and-replace">Search and repalce</a><br><a href="#reading-input">Reading input</a><br><a href="#multiple-files">Multiple files</a><br><a href="#setting-optionsvimrc">Setting options</a></p>
+<ul>
+<li><a href="#search-and-replace">1. Search and repalce</a>  </li>
+<li><a href="#reading-input">2. Reading input</a>  </li>
+<li><a href="#multiple-files">3. Multiple files</a>  </li>
+<li><a href="#setting-optionsvimrc">4. Setting options</a></li>
+</ul>
 <h2 id="Search-and-replace"><a href="#Search-and-replace" class="headerlink" title="Search and replace"></a>Search and replace</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">:s/foo/bar    </span><br><span class="line"></span><br><span class="line">:s/foo/bar/g    匹配到的单词全部替换</span><br><span class="line"></span><br><span class="line">:s/foo/bar/gi   大小写敏感</span><br><span class="line"></span><br><span class="line">:4,8s/foo/bar/g</span><br><span class="line"></span><br><span class="line">:%s/foo/bar/g   整个文件</span><br><span class="line"></span><br><span class="line">:1,$s/foo/bar/g 整个文件</span><br></pre></td></tr></table></figure>
 
 <h2 id="Reading-input"><a href="#Reading-input" class="headerlink" title="Reading input"></a>Reading input</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:r fname    读入文件</span><br><span class="line"></span><br><span class="line">:r !ls      读入命令的结果</span><br><span class="line"></span><br><span class="line">:r          读入当前文件</span><br></pre></td></tr></table></figure>
@@ -111,7 +116,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/05/vim/" data-id="cl7of1wth0002zr306z8r4wmi" data-title="VIM" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/05/vim/" data-id="cl7ofgqc60002s930b3ijbqlh" data-title="VIM" class="article-share-link">Share</a>
       
       
       
