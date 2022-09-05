@@ -93,16 +93,21 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="VIM"><a href="#VIM" class="headerlink" title="VIM  "></a>VIM
-        
-          <p class="article-more-link">
-            <a href="/2022/09/05/vim/#more">Read More</a>
-          </p>
-        
+        <span id="more"></span>
+
+<h2 id="Search-and-replace"><a href="#Search-and-replace" class="headerlink" title="Search and replace"></a>Search and replace</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">:s/foo/bar    </span><br><span class="line"></span><br><span class="line">:s/foo/bar/g    匹配到的单词全部替换</span><br><span class="line"></span><br><span class="line">:s/foo/bar/gi   大小写敏感</span><br><span class="line"></span><br><span class="line">:4,8s/foo/bar/g</span><br><span class="line"></span><br><span class="line">:%s/foo/bar/g   整个文件</span><br><span class="line"></span><br><span class="line">:1,$s/foo/bar/g 整个文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="Reading-input"><a href="#Reading-input" class="headerlink" title="Reading input"></a>Reading input</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:r fname    读入文件</span><br><span class="line"></span><br><span class="line">:r !ls      读入命令的结果</span><br><span class="line"></span><br><span class="line">:r          读入当前文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="Multiple-files"><a href="#Multiple-files" class="headerlink" title="Multiple files"></a>Multiple files</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">:n      编辑下一个文件</span><br><span class="line"></span><br><span class="line">:rew    回到第一个文件</span><br><span class="line"></span><br><span class="line">:args   列出打开的文件，标记出正在使用的文件</span><br></pre></td></tr></table></figure>
+
+<h2 id="Setting-options-vimrc"><a href="#Setting-options-vimrc" class="headerlink" title="Setting options(.vimrc)"></a>Setting options(.vimrc)</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">set number</span><br><span class="line"></span><br><span class="line">set relativenumber  设置相对的行号（比较nb）</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/05/vim/" data-id="cl7o9lmjr0001y730c4noho66" data-title="vim" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/05/vim/" data-id="cl7o9os0700007430fyoj3osj" data-title="vim" class="article-share-link">Share</a>
       
       
       
@@ -153,7 +158,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2022/09/04/hello-world/" data-id="cl7o9lmjn0000y730796s9tm0" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2022/09/04/hello-world/" data-id="cl7o9os0k00017430d6pu9wm1" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
