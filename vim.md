@@ -47,7 +47,7 @@
     :args   列出打开的文件，标记出正在使用的文件
 ```
 
-## 配置文件[vimrc]()
+## 配置文件[vimrc](./vimrc.md)
 ```
     set number
 
