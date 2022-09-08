@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>vimrc.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h2 id="%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE">基础设置</h2>
+<ul>
+<li>set showcmd</li>
+<li>set showmode</li>
+<li>set autoindent</li>
+<li>set cindent				## c format indent</li>
+<li>set softtabstop=4</li>
+<li>set noexpandtab</li>
+<li>set nocompatible</li>
+<li>set background=dark</li>
+</ul>
+<h2 id="help-vimrc">:help vimrc</h2>
+<h2 id="disable-compatibility-with-vi-which-can-cause-unexpected-issues">Disable compatibility with vi which can cause unexpected issues.</h2>
+<ul>
+<li>set nocompatible</li>
+</ul>
+<h2 id="enable-type-file-detection-vim-will-be-able-to-try-to-detect-the-type-of-file-in-use">Enable type file detection. Vim will be able to try to detect the type of file in use.</h2>
+<ul>
+<li>filetype on</li>
+</ul>
+<h2 id="enable-plugins-and-load-plugin-for-the-detected-file-type">Enable plugins and load plugin for the detected file type.</h2>
+<ul>
+<li>filetype plugin on</li>
+</ul>
+<h2 id="load-an-indent-file-for-the-detected-file-type">Load an indent file for the detected file type.</h2>
+<ul>
+<li>filetype indent on</li>
+</ul>
+<h2 id="turn-syntax-highlighting-on">Turn syntax highlighting on.</h2>
+<ul>
+<li>syntax on</li>
+</ul>
+<h2 id="add-numbers-to-each-line-on-the-left-hand-side">Add numbers to each line on the left-hand side.</h2>
+<ul>
+<li>set number</li>
+</ul>
+<h2 id="set-relativenumber">- set relativenumber</h2>
+<h2 id="highlight-cursor-line-underneath-the-cursor-horizontally">Highlight cursor line underneath the cursor horizontally.</h2>
+<ul>
+<li>set cursorline</li>
+</ul>
+<h2 id="highlight-cursor-line-underneath-the-cursor-vertically">Highlight cursor line underneath the cursor vertically.</h2>
+<h2 id="set-cursorcolumn">- set cursorcolumn</h2>
+<h2 id="set-shift-width-to-4-spaces">- set shift width to 4 spaces.</h2>
+<ul>
+<li>set shiftwidth=4</li>
+</ul>
+<h2 id="set-tab-width-to-4-columns">- set tab width to 4 columns.</h2>
+<ul>
+<li>set tabstop=4</li>
+</ul>
+<h2 id="use-space-characters-instead-of-tabs">Use space characters instead of tabs.</h2>
+<h2 id="set-expandtab">- set expandtab</h2>
+<h2 id="do-not-save-backup-files">Do not save backup files.</h2>
+<ul>
+<li>set nobackup</li>
+</ul>
+<h2 id="do-not-let-cursor-scroll-below-or-above-n-number-of-lines-when-scrolling">Do not let cursor scroll below or above N number of lines when scrolling.</h2>
+<h2 id="set-scrolloff10">- set scrolloff=10</h2>
+<h2 id="do-not-wrap-lines-allow-long-lines-to-extend-as-far-as-the-line-goes">Do not wrap lines. Allow long lines to extend as far as the line goes.</h2>
+<h2 id="set-nowrap">- set nowrap</h2>
+<h2 id="while-searching-though-a-file-incrementally-highlight-matching-characters-as-you-type">While searching though a file incrementally highlight matching characters as you type.</h2>
+<ul>
+<li>set incsearch</li>
+</ul>
+<h2 id="ignore-capital-letters-during-search-%E8%A1%A5%E5%85%A8%E5%92%8C%E6%90%9C%E7%B4%A2%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99">Ignore capital letters during search. 补全和搜索忽略大小写</h2>
+<ul>
+<li>set ignorecase</li>
+</ul>
+<h2 id="override-the-ignorecase-option-if-searching-for-capital-letters">Override the ignorecase option if searching for capital letters.</h2>
+<h2 id="this-will-allow-you-to-search-specifically-for-capital-letters">This will allow you to search specifically for capital letters.</h2>
+<ul>
+<li>set smartcase</li>
+</ul>
+<h2 id="show-partial-command-you-type-in-the-last-line-of-the-screen">Show partial command you type in the last line of the screen.</h2>
+<ul>
+<li>set showcmd</li>
+</ul>
+<h2 id="show-the-mode-you-are-on-the-last-line">Show the mode you are on the last line.</h2>
+<ul>
+<li>set showmode</li>
+</ul>
+<h2 id="show-matching-words-during-a-search">Show matching words during a search.</h2>
+<ul>
+<li>set showmatch</li>
+</ul>
+<h2 id="use-highlighting-when-doing-a-search">Use highlighting when doing a search.</h2>
+<ul>
+<li>set hlsearch</li>
+</ul>
+<h2 id="set-the-commands-to-save-in-history-default-number-is-20">- set the commands to save in history default number is 20.</h2>
+<ul>
+<li>set history=1000</li>
+</ul>
+<h2 id="enable-auto-completion-menu-after-pressing-tab">Enable auto completion menu after pressing TAB.</h2>
+<ul>
+<li>set wildmenu</li>
+</ul>
+<h2 id="make-wildmenu-behave-like-similar-to-bash-completion">Make wildmenu behave like similar to Bash completion.</h2>
+<ul>
+<li>set wildmode=list:longest</li>
+</ul>
+<h2 id="there-are-certain-files-that-we-would-never-want-to-edit-with-vim">There are certain files that we would never want to edit with Vim.</h2>
+<h2 id="wildmenu-will-ignore-files-with-these-extensions">Wildmenu will ignore files with these extensions.</h2>
+<ul>
+<li>set wildignore=<em>.docx,</em>.jpg,<em>.png,</em>.gif,<em>.pdf,</em>.pyc,<em>.exe,</em>.flv,<em>.img,</em>.xlsx</li>
+</ul>
+<h2 id="vimscript">VIMSCRIPT -------------------------------------------------------------- {{{</h2>
+<h2 id="this-will-enable-code-folding">This will enable code folding.</h2>
+<h2 id="use-the-marker-method-of-folding">Use the marker method of folding.</h2>
+<p>augroup filetype_vim
+autocmd!
+autocmd FileType vim - setlocal foldmethod=marker
+augroup END</p>
+<h2 id="more-vimscripts-code-goes-here">More Vimscripts code goes here.</h2>
+<h2 id="">}}}</h2>
+<h2 id="%E8%AE%BE%E7%BD%AE%E4%B8%80%E4%BA%9B%E6%98%A0%E5%B0%84">设置一些映射</h2>
+<p>noremap <M-j> <Down>
+noremap <M-k> <Up>
+noremap <M-h> <Left>
+noremap <M-l> <Right></p>
+<h2 id="%E5%AE%9A%E4%B9%89%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0">定义一些函数</h2>
+<p>map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+exec ##w##
+exec ##!gcc % -o %&lt;##
+exec ##! ./%&lt;##
+endfunc</p>
+
+</body>
+</html>
