@@ -53,23 +53,21 @@
 
     set relativenumber  设置相对的行号（比较nb）
 
-    
 ```
 
 ## Automatic Completion
 ```
-- Ctrl-P           向上找
-- Ctrl-N           向下找
-- Ctrl-X           进入选择模式
-    - Ctrl-D       选择宏定义
-    - Ctrl-F       选择当前目录中的文件
-    - Ctrl-L       复制一行 
-    - Ctrl-I       选择 include 文件里的
+- Ctrl-P	    向上文搜索
+- Ctrl-N			向下文搜索
+- Ctrl-X			选择搜索类型
+  	- Ctrl-D	宏定义包括 include 文件
+  	- Ctrl-I	当前文件和 include 文件
+  	- Ctrl-F	查找文件名字，当前目录中
+  	- Ctrl-L	复制当前文件中的一行
 ```
-
-```
-  :set infercase
-  :set complete
-  :set ignorecase
-  :set dictionary=
+```  
+ :set ignorecase		设置补全忽略大小写
+ :set infercase		推断补全的大小写，不只是匹配
+ :set complete=.,d,i,w,u,b,t		设置补全的范围
+ :set dictionary=file,file,...	    指定搜索目录
 ```
