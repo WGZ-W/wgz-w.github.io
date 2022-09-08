@@ -1,19 +1,12 @@
----
-   title: VIM
-   date: 2022-09-05 12:29:40
-   tags:
----
-
 一些vim的基础用法
-
-<!-- more -->
+#
 
 - [1. 查找并且替换](#搜索并且替换)  
 - [2. 读入其他文件](#读入输入)  
 - [3. 编辑多个文件](#编辑多个文件)  
 - [4. 配置文件](#配置文件vimrc)
 - [5. 自动补全](#自动补全)
-
+- [6. 高级命令](#高级命令
 ## 搜索并且替换
 ```
     :s/foo/bar    
@@ -71,3 +64,51 @@
  :set complete=.,d,i,w,u,b,t		设置补全的范围
  :set dictionary=file,file,...	    指定搜索目录
 ```
+
+
+## 高级命令 for programmers
+### 取消自动缩进
+```
+  Ctrl-D    取消一级缩进
+
+  0Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行光标也从第一列开始
+
+  ^Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行缩进级别不变 
+```
+
+### 插入缩进
+```
+  Ctrl-T    添加缩进，value = shiftwidth
+  <Tab>     value = tabstop
+
+  Ctrl-T 和 Ctrl-D 配合使用
+```
+
+
+### <Tab> 的使用
+```
+  set softtabstop=4     tab 移动4
+  set tabstop=4         <Tab> 为4
+
+  set shiftwidth=4
+  set smarttab          行首<Tab>=4, 其他地方=8（目前不适用）
+
+  set expandtab         使用 tab 变成插入一系列 spaces
+                        不改变之前的 tab
+  Ctrl-V<Tab>           在 expandtab is on 的时候，表示插入 tab
+                        而不是 spaces
+  
+  :retab                 将之前的 tab 转化为 spaces
+```
+
+### Modelines
+```
+  /*vim:tabstop=8:expandtabs:shiftwidth=8*/
+```
+> 必须是这种结构，而且在第一行或者后五行中，vim自动生成这种
+> 配置
+  
+#
+

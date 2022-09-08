@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>vim</title>
+<title>vim.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -366,13 +366,14 @@ code {
     });
   </script>
 <p>一些vim的基础用法</p>
-<!-- more -->
+<h1 id=""></h1>
 <ul>
 <li><a href="#%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">1. 查找并且替换</a></li>
 <li><a href="#%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">2. 读入其他文件</a></li>
 <li><a href="#%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">3. 编辑多个文件</a></li>
 <li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">4. 配置文件</a></li>
 <li><a href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">5. 自动补全</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">6. 高级命令</a></li>
 </ul>
 <h2 id="%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</h2>
 <pre class="hljs"><code><div>    :s/foo/bar    
@@ -421,6 +422,44 @@ code {
  :set complete=.,d,i,w,u,b,t		设置补全的范围
  :set dictionary=file,file,...	    指定搜索目录
 </div></code></pre>
+<h2 id="%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">高级命令 for programmers</h2>
+<h3 id="%E5%8F%96%E6%B6%88%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B">取消自动缩进</h3>
+<pre class="hljs"><code><div>  Ctrl-D    取消一级缩进
+
+  0Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行光标也从第一列开始
+
+  ^Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行缩进级别不变 
+</div></code></pre>
+<h3 id="%E6%8F%92%E5%85%A5%E7%BC%A9%E8%BF%9B">插入缩进</h3>
+<pre class="hljs"><code><div>  Ctrl-T    添加缩进，value = shiftwidth
+  &lt;Tab&gt;     value = tabstop
+
+  Ctrl-T 和 Ctrl-D 配合使用
+</div></code></pre>
+<h3 id="tab-%E7%9A%84%E4%BD%BF%E7%94%A8"><Tab> 的使用</h3>
+<pre class="hljs"><code><div>  set softtabstop=4     tab 移动4
+  set tabstop=4         &lt;Tab&gt; 为4
+
+  set shiftwidth=4
+  set smarttab          行首&lt;Tab&gt;=4, 其他地方=8（目前不适用）
+
+  set expandtab         使用 tab 变成插入一系列 spaces
+                        不改变之前的 tab
+  Ctrl-V&lt;Tab&gt;           在 expandtab is on 的时候，表示插入 tab
+                        而不是 spaces
+  
+  :retab                 将之前的 tab 转化为 spaces
+</div></code></pre>
+<h3 id="modelines">Modelines</h3>
+<pre class="hljs"><code><div>  /*vim:tabstop=8:expandtabs:shiftwidth=8*/
+</div></code></pre>
+<blockquote>
+<p>必须是这种结构，而且在第一行或者后五行中，vim自动生成这种
+配置</p>
+</blockquote>
+<h1 id=""></h1>
 
 </body>
 </html>
