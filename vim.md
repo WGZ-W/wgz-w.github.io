@@ -8,13 +8,13 @@
 
 <!-- more -->
 
-- [1. 查找并且替换](#search-and-replace)  
-- [2. 读入其他文件](#reading-input)  
-- [3. 编辑多个文件](#multiple-files)  
+- [1. 查找并且替换](#搜索并且替换)  
+- [2. 读入其他文件](#读入输入)  
+- [3. 编辑多个文件](#编辑多个文件)  
 - [4. 设置参数](#setting-optionsvimrc)
-- [5. 自动补全](#automatic-completion)
+- [5. 自动补全](#自动补全)
 
-## Search and replace
+## 搜索并且替换
 ```
     :s/foo/bar    
     
@@ -29,7 +29,7 @@
     :1,$s/foo/bar/g 整个文件
 ```
 
-## Reading input
+## 读入输入
 ```
     :r fname    读入文件
 
@@ -38,7 +38,7 @@
     :r          读入当前文件
 ```
 
-## Multiple files
+## 编辑多个文件
 ```
     :n      编辑下一个文件
 
@@ -55,7 +55,7 @@
 
 ```
 
-## Automatic Completion
+## 自动补全
 ```
 - Ctrl-P	    向上文搜索
 - Ctrl-N		向下文搜索
