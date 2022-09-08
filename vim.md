@@ -12,7 +12,7 @@
 - [2. 读入其他文件](#reading-input)  
 - [3. 编辑多个文件](#multiple-files)  
 - [4. 设置参数](#setting-optionsvimrc)
-
+- [5. 自动补全](#automatic-completion)
 
 ## Search and replace
 ```
@@ -56,3 +56,20 @@
     
 ```
 
+## Automatic Completion
+```
+- Ctrl-P           向上找
+- Ctrl-N           向下找
+- Ctrl-X           进入选择模式
+    - Ctrl-D       选择宏定义
+    - Ctrl-F       选择当前目录中的文件
+    - Ctrl-L       复制一行 
+    - Ctrl-I       选择 include 文件里的
+```
+
+```
+  :set infercase
+  :set complete
+  :set ignorecase
+  :set dictionary=
+```
