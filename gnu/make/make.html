@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>make.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,13 +365,38 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installunbuntu"><a href="ubuntu/Install_Ubuntu.html">Install_Unbuntu</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
+<h1 id="make%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">Make的基本用法</h1>
+<ul>
+<li><a href="#make%E7%9A%84%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95">Make的基本用法</a>
+<ul>
+<li><a href="#%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F">自动变量</a></li>
+<li><a href="#%E6%A8%A1%E5%BC%8F%E8%A7%84%E5%88%99">模式规则</a></li>
+<li><a href="#phony">.PHONY</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F">自动变量</h2>
+<pre class="hljs"><code><div>demo.o : demo.c
+    gcc $&lt; -o $@
+
+$&lt; ：第一个条件
+$@ ：目标
+</div></code></pre>
+<h2 id="%E6%A8%A1%E5%BC%8F%E8%A7%84%E5%88%99">模式规则</h2>
+<pre class="hljs"><code><div>% : %.c
+    gcc $&lt; -o $@
+
+使用方法：
+    make test（有 test.c）
+</div></code></pre>
+<h2 id="phony">.PHONY</h2>
+<pre class="hljs"><code><div>.PHONY : clean
+clean :
+    rm -rf *.o
+</div></code></pre>
+<blockquote>
+<p><code>无论是否有 clean 文件，都执行 clean 命令</code></p>
+</blockquote>
 
 </body>
 </html>

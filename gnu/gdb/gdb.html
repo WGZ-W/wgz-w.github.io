@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>gdb.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,13 +365,46 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installunbuntu"><a href="ubuntu/Install_Ubuntu.html">Install_Unbuntu</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
+<h1 id="%E7%AE%80%E5%8D%95%E7%9A%84gdb%E4%BD%BF%E7%94%A8">简单的GDB使用</h1>
+<ul>
+<li><a href="#%E7%AE%80%E5%8D%95%E7%9A%84gdb%E4%BD%BF%E7%94%A8">简单的GDB使用</a>
+<ul>
+<li><a href="#%E5%BC%80%E5%A7%8B%E8%B0%83%E8%AF%95">开始调试</a></li>
+<li><a href="#%E9%80%80%E5%87%BA%E6%AD%A3%E5%9C%A8%E8%B0%83%E8%AF%95%E7%9A%84%E5%87%BD%E6%95%B0">退出正在调试的函数</a></li>
+<li><a href="#%E6%89%93%E5%8D%B0%E5%8F%98%E9%87%8F%E5%80%BC">打印变量值</a></li>
+<li><a href="#%E6%89%A7%E8%A1%8C%E4%B8%8B%E4%B8%80%E5%8F%A5">执行下一句</a></li>
+<li><a href="#%E8%AE%BE%E7%BD%AE%E6%96%AD%E7%82%B9">设置断点</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="%E5%BC%80%E5%A7%8B%E8%B0%83%E8%AF%95">开始调试</h2>
+<pre class="hljs"><code><div>(gdb) start     从头开始调试 
+
+(gdb) r         开始运行到第一个断点
+</div></code></pre>
+<h2 id="%E9%80%80%E5%87%BA%E6%AD%A3%E5%9C%A8%E8%B0%83%E8%AF%95%E7%9A%84%E5%87%BD%E6%95%B0">退出正在调试的函数</h2>
+<pre class="hljs"><code><div>(gdb) finish    函数继续执行完，打印返回值
+
+(gdb) return    不继续执行，直接返回
+(gdb) return exp    修改函数的返回值
+</div></code></pre>
+<h2 id="%E6%89%93%E5%8D%B0%E5%8F%98%E9%87%8F%E5%80%BC">打印变量值</h2>
+<pre class="hljs"><code><div>(gdb) p [value]     打印内置变量的值
+
+(gdb) p 
+</div></code></pre>
+<h2 id="%E6%89%A7%E8%A1%8C%E4%B8%8B%E4%B8%80%E5%8F%A5">执行下一句</h2>
+<pre class="hljs"><code><div>(gdb) n     执行当前语句，函数调用不进入函数
+
+(gdb) s     执行当前语句，若是调用函数则进入函数
+</div></code></pre>
+<h2 id="%E8%AE%BE%E7%BD%AE%E6%96%AD%E7%82%B9">设置断点</h2>
+<pre class="hljs"><code><div>(gdb) b [line]      在 line 行设置断点
+
+(gdb) i b           查看所有断点
+
+(gdb) d [number]    删除编号为 number 的断点
+</div></code></pre>
 
 </body>
 </html>

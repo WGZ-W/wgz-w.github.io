@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>vimrc.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,13 +365,129 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installunbuntu"><a href="ubuntu/Install_Ubuntu.html">Install_Unbuntu</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
+<h2 id="%E5%9F%BA%E7%A1%80%E8%AE%BE%E7%BD%AE">基础设置</h2>
+<ul>
+<li>set showcmd</li>
+<li>set showmode</li>
+<li>set autoindent</li>
+<li>set cindent				## c format indent</li>
+<li>set softtabstop=4</li>
+<li>set noexpandtab</li>
+<li>set nocompatible</li>
+<li>set background=dark</li>
+</ul>
+<h2 id="%E5%B8%AE%E5%8A%A9%E6%96%87%E6%A1%A3">帮助文档</h2>
+<pre class="hljs"><code><div>    :help vimrc
+</div></code></pre>
+<h2 id="%E4%B8%8D%E5%85%BC%E5%AE%B9-vi">不兼容 vi</h2>
+<pre class="hljs"><code><div>    set nocompatible
+</div></code></pre>
+<h2 id="enable-type-file-detection-vim-will-be-able-to-try-to-detect-the-type-of-file-in-use">Enable type file detection. Vim will be able to try to detect the type of file in use.</h2>
+<pre class="hljs"><code><div>- filetype on
+</div></code></pre>
+<h2 id="enable-plugins-and-load-plugin-for-the-detected-file-type">Enable plugins and load plugin for the detected file type.</h2>
+<pre class="hljs"><code><div>- filetype plugin on
+</div></code></pre>
+<h2 id="load-an-indent-file-for-the-detected-file-type">Load an indent file for the detected file type.</h2>
+<pre class="hljs"><code><div>- filetype indent on
+</div></code></pre>
+<h2 id="turn-syntax-highlighting-on">Turn syntax highlighting on.</h2>
+<pre class="hljs"><code><div>- syntax on
+</div></code></pre>
+<h2 id="add-numbers-to-each-line-on-the-left-hand-side">Add numbers to each line on the left-hand side.</h2>
+<pre class="hljs"><code><div>- set number
+
+- set relativenumber
+</div></code></pre>
+<h2 id="highlight-cursor-line-underneath-the-cursor-horizontally">Highlight cursor line underneath the cursor horizontally.</h2>
+<pre class="hljs"><code><div>- set cursorline
+</div></code></pre>
+<h2 id="highlight-cursor-line-underneath-the-cursor-vertically">Highlight cursor line underneath the cursor vertically.</h2>
+<pre class="hljs"><code><div>## - set cursorcolumn
+</div></code></pre>
+<h2 id="set-shift-width-to-4-spaces">- set shift width to 4 spaces.</h2>
+<pre class="hljs"><code><div>- set shiftwidth=4
+</div></code></pre>
+<h2 id="set-tab-width-to-4-columns">- set tab width to 4 columns.</h2>
+<pre class="hljs"><code><div>- set tabstop=4
+</div></code></pre>
+<h2 id="use-space-characters-instead-of-tabs">Use space characters instead of tabs.</h2>
+<pre class="hljs"><code><div>## - set expandtab
+</div></code></pre>
+<h2 id="do-not-save-backup-files">Do not save backup files.</h2>
+<pre class="hljs"><code><div>- set nobackup
+</div></code></pre>
+<h2 id="do-not-let-cursor-scroll-below-or-above-n-number-of-lines-when-scrolling">Do not let cursor scroll below or above N number of lines when scrolling.</h2>
+<h2 id="set-scrolloff10">- set scrolloff=10</h2>
+<h2 id="do-not-wrap-lines-allow-long-lines-to-extend-as-far-as-the-line-goes">Do not wrap lines. Allow long lines to extend as far as the line goes.</h2>
+<h2 id="set-nowrap">- set nowrap</h2>
+<h2 id="while-searching-though-a-file-incrementally-highlight-matching-characters-as-you-type">While searching though a file incrementally highlight matching characters as you type.</h2>
+<ul>
+<li>set incsearch</li>
+</ul>
+<h2 id="ignore-capital-letters-during-search-%E8%A1%A5%E5%85%A8%E5%92%8C%E6%90%9C%E7%B4%A2%E5%BF%BD%E7%95%A5%E5%A4%A7%E5%B0%8F%E5%86%99">Ignore capital letters during search. 补全和搜索忽略大小写</h2>
+<ul>
+<li>set ignorecase</li>
+</ul>
+<h2 id="override-the-ignorecase-option-if-searching-for-capital-letters">Override the ignorecase option if searching for capital letters.</h2>
+<h2 id="this-will-allow-you-to-search-specifically-for-capital-letters">This will allow you to search specifically for capital letters.</h2>
+<ul>
+<li>set smartcase</li>
+</ul>
+<h2 id="show-partial-command-you-type-in-the-last-line-of-the-screen">Show partial command you type in the last line of the screen.</h2>
+<ul>
+<li>set showcmd</li>
+</ul>
+<h2 id="show-the-mode-you-are-on-the-last-line">Show the mode you are on the last line.</h2>
+<ul>
+<li>set showmode</li>
+</ul>
+<h2 id="show-matching-words-during-a-search">Show matching words during a search.</h2>
+<ul>
+<li>set showmatch</li>
+</ul>
+<h2 id="use-highlighting-when-doing-a-search">Use highlighting when doing a search.</h2>
+<ul>
+<li>set hlsearch</li>
+</ul>
+<h2 id="set-the-commands-to-save-in-history-default-number-is-20">- set the commands to save in history default number is 20.</h2>
+<ul>
+<li>set history=1000</li>
+</ul>
+<h2 id="enable-auto-completion-menu-after-pressing-tab">Enable auto completion menu after pressing TAB.</h2>
+<ul>
+<li>set wildmenu</li>
+</ul>
+<h2 id="make-wildmenu-behave-like-similar-to-bash-completion">Make wildmenu behave like similar to Bash completion.</h2>
+<ul>
+<li>set wildmode=list:longest</li>
+</ul>
+<h2 id="there-are-certain-files-that-we-would-never-want-to-edit-with-vim">There are certain files that we would never want to edit with Vim.</h2>
+<h2 id="wildmenu-will-ignore-files-with-these-extensions">Wildmenu will ignore files with these extensions.</h2>
+<ul>
+<li>set wildignore=<em>.docx,</em>.jpg,<em>.png,</em>.gif,<em>.pdf,</em>.pyc,<em>.exe,</em>.flv,<em>.img,</em>.xlsx</li>
+</ul>
+<h2 id="vimscript">VIMSCRIPT -------------------------------------------------------------- {{{</h2>
+<h2 id="this-will-enable-code-folding">This will enable code folding.</h2>
+<h2 id="use-the-marker-method-of-folding">Use the marker method of folding.</h2>
+<p>augroup filetype_vim
+autocmd!
+autocmd FileType vim - setlocal foldmethod=marker
+augroup END</p>
+<h2 id="more-vimscripts-code-goes-here">More Vimscripts code goes here.</h2>
+<h2 id="">}}}</h2>
+<h2 id="%E8%AE%BE%E7%BD%AE%E4%B8%80%E4%BA%9B%E6%98%A0%E5%B0%84">设置一些映射</h2>
+<p>noremap <M-j> <Down>
+noremap <M-k> <Up>
+noremap <M-h> <Left>
+noremap <M-l> <Right></p>
+<h2 id="%E5%AE%9A%E4%B9%89%E4%B8%80%E4%BA%9B%E5%87%BD%E6%95%B0">定义一些函数</h2>
+<p>map <F5> :call CompileRunGcc()<CR>
+func! CompileRunGcc()
+exec ##w##
+exec ##!gcc % -o %&lt;##
+exec ##! ./%&lt;##
+endfunc</p>
 
 </body>
 </html>

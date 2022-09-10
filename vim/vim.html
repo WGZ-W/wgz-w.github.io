@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>vim.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,13 +365,101 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installunbuntu"><a href="ubuntu/Install_Ubuntu.html">Install_Unbuntu</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
+<p>一些vim的基础用法</p>
+<h1 id=""></h1>
+<ul>
+<li><a href="#%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">1. 查找并且替换</a></li>
+<li><a href="#%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">2. 读入其他文件</a></li>
+<li><a href="#%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">3. 编辑多个文件</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">4. 配置文件</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">5. 自动补全</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">6. 高级命令</a></li>
+</ul>
+<h2 id="%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</h2>
+<pre class="hljs"><code><div>    :s/foo/bar    
+    
+    :s/foo/bar/g    匹配到的单词全部替换
+
+    :s/foo/bar/gi   大小写敏感
+    
+    :4,8s/foo/bar/g
+    
+    :%s/foo/bar/g   整个文件
+    
+    :1,$s/foo/bar/g 整个文件
+</div></code></pre>
+<h2 id="%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">读入输入</h2>
+<pre class="hljs"><code><div>    :r fname    读入文件
+
+    :r !ls      读入命令的结果
+
+    :r          读入当前文件
+</div></code></pre>
+<h2 id="%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">编辑多个文件</h2>
+<pre class="hljs"><code><div>    :n      编辑下一个文件
+
+    :rew    回到第一个文件
+
+    :args   列出打开的文件，标记出正在使用的文件
+</div></code></pre>
+<h2 id="%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">配置文件<a href="./vimrc.html">vimrc</a></h2>
+<pre class="hljs"><code><div>    set number
+
+    set relativenumber  设置相对的行号（比较nb）
+
+</div></code></pre>
+<h2 id="%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">自动补全</h2>
+<pre class="hljs"><code><div>- Ctrl-P	    向上文搜索
+- Ctrl-N		向下文搜索
+- Ctrl-X		选择搜索类型
+  	- Ctrl-D	宏定义包括 include 文件
+  	- Ctrl-I	当前文件和 include 文件
+  	- Ctrl-F	查找文件名字，当前目录中
+  	- Ctrl-L	复制当前文件中的一行
+</div></code></pre>
+<pre class="hljs"><code><div> :set ignorecase		设置补全忽略大小写
+ :set infercase		    推断补全的大小写，不只是匹配
+ :set complete=.,d,i,w,u,b,t		设置补全的范围
+ :set dictionary=file,file,...	    指定搜索目录
+</div></code></pre>
+<h2 id="%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">高级命令 for programmers</h2>
+<h3 id="%E5%8F%96%E6%B6%88%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B">取消自动缩进</h3>
+<pre class="hljs"><code><div>  Ctrl-D    取消一级缩进
+
+  0Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行光标也从第一列开始
+
+  ^Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行缩进级别不变 
+</div></code></pre>
+<h3 id="%E6%8F%92%E5%85%A5%E7%BC%A9%E8%BF%9B">插入缩进</h3>
+<pre class="hljs"><code><div>  Ctrl-T    添加缩进，value = shiftwidth
+  &lt;Tab&gt;     value = tabstop
+
+  Ctrl-T 和 Ctrl-D 配合使用
+</div></code></pre>
+<h3 id="tab-%E7%9A%84%E4%BD%BF%E7%94%A8"><Tab> 的使用</h3>
+<pre class="hljs"><code><div>  set softtabstop=4     tab 移动4
+  set tabstop=4         &lt;Tab&gt; 为4
+
+  set shiftwidth=4
+  set smarttab          行首&lt;Tab&gt;=4, 其他地方=8（目前不适用）
+
+  set expandtab         使用 tab 变成插入一系列 spaces
+                        不改变之前的 tab
+  Ctrl-V&lt;Tab&gt;           在 expandtab is on 的时候，表示插入 tab
+                        而不是 spaces
+  
+  :retab                 将之前的 tab 转化为 spaces
+</div></code></pre>
+<h3 id="modelines">Modelines</h3>
+<pre class="hljs"><code><div>  /*vim:tabstop=8:expandtabs:shiftwidth=8*/
+</div></code></pre>
+<blockquote>
+<p>必须是这种结构，而且在第一行或者后五行中，vim自动生成这种
+配置</p>
+</blockquote>
+<h1 id=""></h1>
 
 </body>
 </html>
