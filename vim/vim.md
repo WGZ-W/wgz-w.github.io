@@ -9,8 +9,6 @@
 - [6. 高级命令](#高级命令
 ## 搜索并且替换
 ```
-    :s/foo/bar    
-    
     :s/foo/bar/g    匹配到的单词全部替换
 
     :s/foo/bar/gi   大小写敏感
@@ -18,13 +16,11 @@
     :4,8s/foo/bar/g
     
     :%s/foo/bar/g   整个文件
-    
-    :1,$s/foo/bar/g 整个文件
 ```
 
 ## 读入输入
 ```
-    :r fname    读入文件
+    :r filename    读入文件
 
     :r !ls      读入命令的结果
 
@@ -34,6 +30,7 @@
 ## 编辑多个文件
 ```
     :n      编辑下一个文件
+    :N      编辑上一个文件
 
     :rew    回到第一个文件
 
@@ -67,7 +64,7 @@
 
 
 ## 高级命令 for programmers
-### 取消自动缩进
+### 取消自动缩进( insert 模式)
 ```
   Ctrl-D    取消一级缩进
 
@@ -91,16 +88,7 @@
 ```
   set softtabstop=4     tab 移动4
   set tabstop=4         <Tab> 为4
-
   set shiftwidth=4
-  set smarttab          行首<Tab>=4, 其他地方=8（目前不适用）
-
-  set expandtab         使用 tab 变成插入一系列 spaces
-                        不改变之前的 tab
-  Ctrl-V<Tab>           在 expandtab is on 的时候，表示插入 tab
-                        而不是 spaces
-  
-  :retab                 将之前的 tab 转化为 spaces
 ```
 
 ### Modelines
@@ -110,5 +98,13 @@
 > 必须是这种结构，而且在第一行或者后五行中，vim自动生成这种
 > 配置
   
-#
+## 程序中跳转
+```
+  '%',  在C语言中的花括号中对应的跳转
+
+  'gD',   跳转到该文件中的变量定义位置
+
+  '[I',   查看标识符的定义位置
+  'Ctrl-O'  返回到标识符
+```
 
