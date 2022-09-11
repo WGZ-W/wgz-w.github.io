@@ -374,7 +374,13 @@ code {
 <li><a href="#%E6%89%93%E5%8D%B0">打印</a>
 <ul>
 <li><a href="#%E6%89%93%E5%8D%B0%E6%95%B0%E7%BB%84">打印数组</a></li>
+<li><a href="#%E6%89%93%E5%8D%B0%E5%86%85%E5%AD%98%E7%9A%84%E5%80%BC">打印内存的值</a></li>
+<li><a href="#%E4%BD%BF%E7%94%A8-_-%E5%92%8C-__%E5%8F%98%E9%87%8F">使用 &quot;$_&quot; 和 &quot;$__&quot;变量</a></li>
+<li><a href="#%E6%89%93%E5%8D%B0%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E7%9A%84%E4%BF%A1%E6%81%AF">打印动态分配内存的信息</a></li>
 <li><a href="#%E6%89%93%E5%8D%B0%E6%BA%90%E4%BB%A3%E7%A0%81%E8%A1%8C">打印源代码行</a></li>
+<li><a href="#%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%84%E4%BD%93">打印结构体</a></li>
+<li><a href="#%E6%89%93%E5%8D%B0%E5%8F%98%E9%87%8F%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%89%80%E5%9C%A8%E6%96%87%E4%BB%B6">打印变量的类型和所在文件</a></li>
+<li><a href="#%E6%8C%89%E7%85%A7%E6%B4%BE%E7%94%9F%E7%B1%BB%E6%89%93%E5%8D%B0%E5%AF%B9%E8%B1%A1">按照派生类打印对象</a></li>
 </ul>
 </li>
 <li><a href="#%E6%89%A7%E8%A1%8C%E4%B8%8B%E4%B8%80%E5%8F%A5">执行下一句</a></li>
@@ -409,10 +415,36 @@ code {
 (gdb) p *array@num                 表示从头开始打印连续的 num 个元素
 (gdb) set print array-indexs on    打印索引下标
 </div></code></pre>
+<h3 id="%E6%89%93%E5%8D%B0%E5%86%85%E5%AD%98%E7%9A%84%E5%80%BC">打印内存的值</h3>
+<pre class="hljs"><code><div>(gdb) x/nfu addr    含义是， 以 f 格式打印从 addr 开始的 n 个单元长度为 u 的内存值。
+                    n ： 输出单元的个数
+                    f ： 输出格式，x 是 16 进制输出，o 是 8 进制输出， t 是二进制
+                    u ： 表明单元的长度， b 是一个 byte ，h 是 两个 byte ，w 是 \
+                    四个 byte， g 是八个 byte。
+
+</div></code></pre>
+<h3 id="%E4%BD%BF%E7%94%A8-%22%22-%E5%92%8C-%22%22%E5%8F%98%E9%87%8F">使用 &quot;$_&quot; 和 &quot;$__&quot;变量</h3>
+<blockquote>
+<p><code>&quot;x&quot; 命令会把最后检查的内存地址存在 &quot;$_&quot; 中, 并且把这个地址中的内容放在 &quot;$__&quot; 中。</code></p>
+</blockquote>
+<h3 id="%E6%89%93%E5%8D%B0%E5%8A%A8%E6%80%81%E5%88%86%E9%85%8D%E5%86%85%E5%AD%98%E7%9A%84%E4%BF%A1%E6%81%AF">打印动态分配内存的信息</h3>
 <h3 id="%E6%89%93%E5%8D%B0%E6%BA%90%E4%BB%A3%E7%A0%81%E8%A1%8C">打印源代码行</h3>
 <pre class="hljs"><code><div>(gdb) list -/+                  向上或者向下打印
 (gdb) list main/function        打印指定函数
 (gdb) list [number, number]     打印指定范围或者指定行数
+</div></code></pre>
+<h3 id="%E6%89%93%E5%8D%B0%E7%BB%93%E6%9E%84%E4%BD%93">打印结构体</h3>
+<pre class="hljs"><code><div>(gdb) set print pretty on     打印规范的结构体
+</div></code></pre>
+<h3 id="%E6%89%93%E5%8D%B0%E5%8F%98%E9%87%8F%E7%9A%84%E7%B1%BB%E5%9E%8B%E5%92%8C%E6%89%80%E5%9C%A8%E6%96%87%E4%BB%B6">打印变量的类型和所在文件</h3>
+<pre class="hljs"><code><div>(gdb) whatis variable           查看变量的类型
+(gdb) ptype variable            查看详细的类型信息
+(gdb) info variables name       查看定义变量的文件（不会显示局部变量，即使是 static），\
+                                所有包含匹配该表达式的变量
+(gdb) info variables ^name$     正则表达式
+</div></code></pre>
+<h3 id="%E6%8C%89%E7%85%A7%E6%B4%BE%E7%94%9F%E7%B1%BB%E6%89%93%E5%8D%B0%E5%AF%B9%E8%B1%A1">按照派生类打印对象</h3>
+<pre class="hljs"><code><div>(gdb) set print object on
 </div></code></pre>
 <h2 id="%E6%89%A7%E8%A1%8C%E4%B8%8B%E4%B8%80%E5%8F%A5">执行下一句</h2>
 <pre class="hljs"><code><div>(gdb) n     执行当前语句，函数调用不进入函数
