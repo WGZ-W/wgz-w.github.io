@@ -365,15 +365,28 @@ code {
           : 'default'
     });
   </script>
+<h1 id="%E6%88%91%E7%9A%84-vim-%E4%BD%BF%E7%94%A8">我的 vim 使用</h1>
 <p>一些vim的基础用法</p>
 <h1 id=""></h1>
 <ul>
-<li><a href="#%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">1. 查找并且替换</a></li>
-<li><a href="#%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">2. 读入其他文件</a></li>
-<li><a href="#%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">3. 编辑多个文件</a></li>
-<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">4. 配置文件</a></li>
-<li><a href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">5. 自动补全</a></li>
-<li>[6. 高级命令](#高级命令</li>
+<li><a href="#%E6%88%91%E7%9A%84-vim-%E4%BD%BF%E7%94%A8">我的 vim 使用</a>
+<ul>
+<li><a href="#%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</a></li>
+<li><a href="#%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">读入输入</a></li>
+<li><a href="#%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">编辑多个文件</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">配置文件vimrc</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">自动补全</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">高级命令 for programmers</a>
+<ul>
+<li><a href="#%E5%8F%96%E6%B6%88%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B-insert-%E6%A8%A1%E5%BC%8F">取消自动缩进( insert 模式)</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E7%BC%A9%E8%BF%9B">插入缩进</a></li>
+<li><a href="#tab-%E7%9A%84%E4%BD%BF%E7%94%A8"><Tab> 的使用</a></li>
+<li><a href="#modelines">Modelines</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A8%8B%E5%BA%8F%E4%B8%AD%E8%B7%B3%E8%BD%AC">程序中跳转</a></li>
+</ul>
+</li>
 </ul>
 <h2 id="%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</h2>
 <pre class="hljs"><code><div>    :s/foo/bar/g    匹配到的单词全部替换
