@@ -2,7 +2,7 @@
 
 ## [vim](vim/vim.html)
 ## [Apue](apue.html)
-## [Install_Unbuntu](linux/Install_Ubuntu.html)
+## [Install_Linux](linux/Arch/index.html)
 ## [README](README.html)
 ## [Make](gnu/make/make.html)
 ## [GDB](gnu/gdb/gdb.html)

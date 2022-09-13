@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>demo1.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,14 +365,103 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installlinux"><a href="linux/Arch/index.html">Install_Linux</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
-<h2 id="%E7%94%9F%E6%B4%BB%E5%B0%8Ftips"><a href="%E7%94%9F%E6%B4%BB%E5%B0%8Ftips.html">生活小tips</a></h2>
+<ol>
+<li>修改字体</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
+</div></code></pre>
+<ol start="2">
+<li>修改键位</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; vim keys.conf
+
+keys.conf
+
+keycode 1 = Caps_Lock
+keycode 58 = Escape
+</div></code></pre>
+<pre class="hljs"><code><div>$&gt;  loadkeys keys.conf
+</div></code></pre>
+<ol start="3">
+<li>连接网络</li>
+</ol>
+<pre class="hljs"><code><div>$&gt;  ip link
+
+$&gt; ip link set wlan0 up     打开WiFi设置
+
+$&gt; iwlist wlan0 scan       扫描WiFi结果
+
+$&gt; iwlist wlan0 scan | grep ESSID   WiFi名字
+
+$&gt; wpa_passphrase 网络名 密码 &gt; 文件名
+
+example：
+    $&gt; wpa_passphrase WJ ..... &gt; internet.conf
+
+$&gt; wpa_supplicant -c internet.conf -i wlan0 &amp;
+    连接互联网，需要分配动态 IP 地址
+
+$&gt; dhcpcd &amp;         动态分配 IP 地址
+
+$&gt; ping baidu.com
+</div></code></pre>
+<ol start="4">
+<li>确认时间</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; timedatectl set-ntp true
+</div></code></pre>
+<ol start="5">
+<li>分区</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; fdisk -l
+</div></code></pre>
+<pre class="hljs"><code><div>$&gt; mkfs.fat -F32 /dev/    引导分区格式
+
+$&gt; mkswap /dev/            制作 swap 分区
+$&gt; swapon /dev/             打开 swap
+</div></code></pre>
+<ol start="6">
+<li>修改镜像源配置文件</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; vim /etc/pacman.conf
+
+1. 把 color 打开
+2. Include  [community]，找到中国服务器，粘贴到文件的最顶端
+</div></code></pre>
+<ol start="7">
+<li>挂载</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; mount 主分区 /mnt
+$&gt; mkdir /mnt/efi
+$&gt; mount 引导分区   /mnt/efi
+
+必须先根目录，后启动分区，顺序不能乱
+
+$&gt; pacstrap /mnt base linux linux-firmware
+
+$&gt; genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
+</div></code></pre>
+<ol start="9">
+<li>进入系统执行命令</li>
+</ol>
+<pre class="hljs"><code><div>$&gt; arch-chroot /mnt
+
+$&gt; ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
+$&gt; hwclock --systohc    同步时间
+
+$&gt; exit
+</div></code></pre>
+<pre class="hljs"><code><div>$&gt; vim /mnt/etc/locale.gen
+/en_US      取消注释
+
+$&gt; arch-chroot /mnt
+$&gt; locale-gen
+$&gt; exit
+$&gt; vim /mnt/etc/locale.conf
+
+LANG=en_US.UTF-8
+</div></code></pre>
 
 </body>
 </html>

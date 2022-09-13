@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>Document.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,14 +365,41 @@ code {
           : 'default'
     });
   </script>
-<h1 id="wj">WJ</h1>
-<h2 id="vim"><a href="vim/vim.html">vim</a></h2>
-<h2 id="apue"><a href="apue.html">Apue</a></h2>
-<h2 id="installlinux"><a href="linux/Arch/index.html">Install_Linux</a></h2>
-<h2 id="readme"><a href="README.html">README</a></h2>
-<h2 id="make"><a href="gnu/make/make.html">Make</a></h2>
-<h2 id="gdb"><a href="gnu/gdb/gdb.html">GDB</a></h2>
-<h2 id="%E7%94%9F%E6%B4%BB%E5%B0%8Ftips"><a href="%E7%94%9F%E6%B4%BB%E5%B0%8Ftips.html">生活小tips</a></h2>
+<h1 id="%E5%AE%89%E8%A3%85-arch">安装 Arch</h1>
+<h2 id="%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C">连接网络</h2>
+<pre class="hljs"><code><div>查看网络设备
+$ ip link
+
+打开网络设备
+# ip link set interface up
+# ip link set wlan0 up
+# ip link set wlp2s0 up
+
+连接网络
+# wpa_passphrase MYSSID passphrase &gt; /etc/wpa_supplicant/internet.conf
+# wpa_supplicant -B -i interface -c /etc/wpa_supplicant/internet.conf
+# dhcpcd interface
+</div></code></pre>
+<h2 id="%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA">磁盘分区</h2>
+<h2 id="%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%88%86%E5%8C%BA">格式化分区</h2>
+<h2 id="%E6%8C%82%E8%BD%BD%E5%88%86%E5%8C%BA">挂载分区</h2>
+<h2 id="%E9%80%89%E6%8B%A9%E9%95%9C%E5%83%8F">选择镜像</h2>
+<h2 id="%E5%AE%89%E8%A3%85%E5%BF%85%E9%A1%BB%E7%9A%84%E8%BD%AF%E4%BB%B6%E5%8C%85">安装必须的软件包</h2>
+<h2 id="%E9%85%8D%E7%BD%AE%E7%B3%BB%E7%BB%9F">配置系统</h2>
+<h2 id="%E5%AE%89%E8%A3%85%E5%BC%95%E5%AF%BC%E7%A8%8B%E5%BA%8F">安装引导程序</h2>
+<pre class="hljs"><code><div># grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=Arch
+
+选择一个启动引导器标识，在本例被称为 Arch。这将在 esp/EFI/ 中创建一个与标识同名的目录来储存 EFI 二进制文件，而且这个名字还会用于在 UEFI 启动菜单中区分 GRUB 启动项；
+执行下面的命令来将 GRUB EFI 应用 grubx64.efi 安装到 esp/EFI/Arch/，并将其模块安装到 /boot/grub/x86_64-efi/。
+
+# grub-mkconfig -o /boot/grub/grub.cfg
+
+使用 grub-mkconfig 工具来生成 /boot/grub/grub.cfg：
+
+
+
+
+</div></code></pre>
 
 </body>
 </html>

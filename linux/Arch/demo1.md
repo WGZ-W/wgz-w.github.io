@@ -1,25 +1,25 @@
 
 
-1. 启动页面
-
-
-2. 修改字体
+1. 修改字体
 ```
-setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
+$> setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
 ```
 
-3. 修改键位
+2. 修改键位
 ```
+$> vim keys.conf
+
 keys.conf
 
 keycode 1 = Caps_Lock
 keycode 58 = Escape
 ```
+
 ```
 $>  loadkeys keys.conf
 ```
 
-4. 连接网络
+3. 连接网络
 ```
 $>  ip link
 
@@ -29,20 +29,25 @@ $> iwlist wlan0 scan       扫描WiFi结果
 
 $> iwlist wlan0 scan | grep ESSID   WiFi名字
 
-$> wpa_passphrase 网络 密码 > 文件名
-$> wpa_passphrase WJDHH ..... > internet.conf
-$> wpa_supplicant -c internet.conf -i wlan0 & \
+$> wpa_passphrase 网络名 密码 > 文件名
+
+example：
+    $> wpa_passphrase WJ ..... > internet.conf
+
+$> wpa_supplicant -c internet.conf -i wlan0 &
     连接互联网，需要分配动态 IP 地址
+
 $> dhcpcd &         动态分配 IP 地址
+
 $> ping baidu.com
 ```
 
-5. 确认时间
+4. 确认时间
 ```
 $> timedatectl set-ntp true
 ```
 
-6. 分区
+5. 分区
 ```
 $> fdisk -l
 ```
@@ -53,7 +58,7 @@ $> mkswap /dev/            制作 swap 分区
 $> swapon /dev/             打开 swap
 ```
 
-7. 修改镜像源配置文件
+6. 修改镜像源配置文件
 ```
 $> vim /etc/pacman.conf
 
@@ -61,11 +66,13 @@ $> vim /etc/pacman.conf
 2. Include  [community]，找到中国服务器，粘贴到文件的最顶端
 ```
 
-8. 挂载
+7. 挂载
 ```
 $> mount 主分区 /mnt
-$> mkdir /mnt/boot
-$> mount 引导分区   /mnt/boot
+$> mkdir /mnt/efi
+$> mount 引导分区   /mnt/efi
+
+必须先根目录，后启动分区，顺序不能乱
 
 $> pacstrap /mnt base linux linux-firmware
 
