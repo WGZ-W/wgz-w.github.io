@@ -426,13 +426,13 @@ $&gt; swapon /dev/             打开 swap
 <pre class="hljs"><code><div>$&gt; vim /etc/pacman.conf
 
 1. 把 color 打开
-2. Include  [community]，找到中国服务器，粘贴到文件的最顶端
+2. Include  [community]，找到中国服务器，粘贴到文件的最顶端，gf进入路径下的文件
 </div></code></pre>
 <ol start="7">
 <li>挂载</li>
 </ol>
 <pre class="hljs"><code><div>$&gt; mount 主分区 /mnt
-$&gt; mkdir /mnt/efi
+$&gt; mkdir /mnt/efi [boot]
 $&gt; mount 引导分区   /mnt/efi
 
 必须先根目录，后启动分区，顺序不能乱
@@ -461,6 +461,28 @@ $&gt; exit
 $&gt; vim /mnt/etc/locale.conf
 
 LANG=en_US.UTF-8
+</div></code></pre>
+<pre class="hljs"><code><div># vim /mnt/etc/hostname
+# vim /mnt/etc/hosts
+
+# passwd
+
+# pacman -S grub efibootmgr inter-ucode os-prober
+# mkdir /boot/grub
+# grub-mkconfig &gt; /boot/grub/grub.cfg
+# uname -m
+# grub-install --target=x86_64-efi --efi-directory=/boot
+
+# pacman -S vim zsh wpa_supplicant dhcpcd
+
+# killall wpa_supplicant dhcpcd
+
+
+
+
+
+
+
 </div></code></pre>
 
 </body>

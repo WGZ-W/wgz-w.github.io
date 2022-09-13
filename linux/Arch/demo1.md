@@ -51,6 +51,7 @@ $> timedatectl set-ntp true
 ```
 $> fdisk -l
 ```
+
 ```
 $> mkfs.fat -F32 /dev/    引导分区格式
 
@@ -63,13 +64,13 @@ $> swapon /dev/             打开 swap
 $> vim /etc/pacman.conf
 
 1. 把 color 打开
-2. Include  [community]，找到中国服务器，粘贴到文件的最顶端
+2. Include  [community]，找到中国服务器，粘贴到文件的最顶端，gf进入路径下的文件
 ```
 
 7. 挂载
 ```
 $> mount 主分区 /mnt
-$> mkdir /mnt/efi
+$> mkdir /mnt/efi [boot]
 $> mount 引导分区   /mnt/efi
 
 必须先根目录，后启动分区，顺序不能乱
@@ -101,6 +102,24 @@ $> vim /mnt/etc/locale.conf
 
 LANG=en_US.UTF-8
 ```
+
+```
+# vim /mnt/etc/hostname
+# vim /mnt/etc/hosts
+
+# passwd
+
+# pacman -S grub efibootmgr inter-ucode os-prober
+# mkdir /boot/grub
+# grub-mkconfig > /boot/grub/grub.cfg
+# uname -m
+# grub-install --target=x86_64-efi --efi-directory=/boot
+
+# pacman -S vim zsh wpa_supplicant dhcpcd
+
+# killall wpa_supplicant dhcpcd
+
+
 
 
 
