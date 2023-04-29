@@ -2,6 +2,7 @@
 
 - [安装 Arch](#安装-arch)
   - [连接网络](#连接网络)
+  - [连接网络2](#连接网络2)
   - [磁盘分区](#磁盘分区)
   - [格式化分区](#格式化分区)
   - [挂载分区](#挂载分区)
@@ -25,6 +26,11 @@ $ ip link
 # wpa_passphrase MYSSID passphrase > /etc/wpa_supplicant/internet.conf
 # wpa_supplicant -B -i interface -c /etc/wpa_supplicant/internet.conf
 # dhcpcd interface
+```
+
+## 连接网络2
+```
+iwctl --passphrase `passphrase` station `device` connect SSID(网络名称) 
 ```
 ## 磁盘分区
 ```
