@@ -370,19 +370,7 @@ code {
 </ol>
 <pre class="hljs"><code><div>$&gt; setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
 </div></code></pre>
-<ol start="2">
-<li>修改键位</li>
-</ol>
-<pre class="hljs"><code><div>$&gt; vim keys.conf
-
-keys.conf
-
-keycode 1 = Caps_Lock
-keycode 58 = Escape
-</div></code></pre>
-<pre class="hljs"><code><div>$&gt;  loadkeys keys.conf
-</div></code></pre>
-<ol start="3">
+<ol>
 <li>连接网络</li>
 </ol>
 <pre class="hljs"><code><div>$&gt;  ip link
@@ -410,17 +398,7 @@ $&gt; ping baidu.com
 </ol>
 <pre class="hljs"><code><div>$&gt; timedatectl set-ntp true
 </div></code></pre>
-<ol start="5">
-<li>分区</li>
-</ol>
-<pre class="hljs"><code><div>$&gt; fdisk -l
-</div></code></pre>
-<pre class="hljs"><code><div>$&gt; mkfs.fat -F32 /dev/    引导分区格式
-
-$&gt; mkswap /dev/            制作 swap 分区
-$&gt; swapon /dev/             打开 swap
-</div></code></pre>
-<ol start="6">
+<ol>
 <li>修改镜像源配置文件</li>
 </ol>
 <pre class="hljs"><code><div>$&gt; vim /etc/pacman.conf
@@ -428,7 +406,7 @@ $&gt; swapon /dev/             打开 swap
 1. 把 color 打开
 2. Include  [community]，找到中国服务器，粘贴到文件的最顶端，gf进入路径下的文件
 </div></code></pre>
-<ol start="7">
+<ol>
 <li>挂载</li>
 </ol>
 <pre class="hljs"><code><div>$&gt; mount 主分区 /mnt
@@ -467,10 +445,9 @@ LANG=en_US.UTF-8
 
 # passwd
 
-# pacman -S grub efibootmgr inter-ucode os-prober
+# pacman -S grub efibootmgr intel-ucode os-prober
 # mkdir /boot/grub
 # grub-mkconfig &gt; /boot/grub/grub.cfg
-# uname -m
 # grub-install --target=x86_64-efi --efi-directory=/boot
 
 # pacman -S vim zsh wpa_supplicant dhcpcd

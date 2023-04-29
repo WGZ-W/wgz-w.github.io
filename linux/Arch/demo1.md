@@ -5,21 +5,8 @@
 $> setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
 ```
 
-2. 修改键位
-```
-$> vim keys.conf
 
-keys.conf
-
-keycode 1 = Caps_Lock
-keycode 58 = Escape
-```
-
-```
-$>  loadkeys keys.conf
-```
-
-3. 连接网络
+1. 连接网络
 ```
 $>  ip link
 
@@ -47,19 +34,9 @@ $> ping baidu.com
 $> timedatectl set-ntp true
 ```
 
-5. 分区
-```
-$> fdisk -l
-```
 
-```
-$> mkfs.fat -F32 /dev/    引导分区格式
 
-$> mkswap /dev/            制作 swap 分区
-$> swapon /dev/             打开 swap
-```
-
-6. 修改镜像源配置文件
+1. 修改镜像源配置文件
 ```
 $> vim /etc/pacman.conf
 
@@ -67,7 +44,7 @@ $> vim /etc/pacman.conf
 2. Include  [community]，找到中国服务器，粘贴到文件的最顶端，gf进入路径下的文件
 ```
 
-7. 挂载
+1. 挂载
 ```
 $> mount 主分区 /mnt
 $> mkdir /mnt/efi [boot]
@@ -109,10 +86,9 @@ LANG=en_US.UTF-8
 
 # passwd
 
-# pacman -S grub efibootmgr inter-ucode os-prober
+# pacman -S grub efibootmgr intel-ucode os-prober
 # mkdir /boot/grub
 # grub-mkconfig > /boot/grub/grub.cfg
-# uname -m
 # grub-install --target=x86_64-efi --efi-directory=/boot
 
 # pacman -S vim zsh wpa_supplicant dhcpcd
