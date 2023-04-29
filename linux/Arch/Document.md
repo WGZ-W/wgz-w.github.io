@@ -17,6 +17,11 @@
 ## 1 修改字体
 ```
 $> setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
+
+在安装完成之后，永久修改字体
+vim /etc/vconsole.conf
+FONT=LatGrkCyr-12x22
+重启即可
 ```
 
 ## 2 连接网络

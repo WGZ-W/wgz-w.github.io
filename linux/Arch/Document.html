@@ -386,6 +386,11 @@ code {
 </ul>
 <h2 id="1-%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93">1 修改字体</h2>
 <pre class="hljs"><code><div>$&gt; setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
+
+在安装完成之后，永久修改字体
+vim /etc/vconsole.conf
+FONT=LatGrkCyr-12x22
+重启即可
 </div></code></pre>
 <h2 id="2-%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C">2 连接网络</h2>
 <pre class="hljs"><code><div>查看网络设备
