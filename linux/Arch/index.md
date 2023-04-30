@@ -1,5 +1,5 @@
 
 #
 
-# [细节](Document.html)
+# [细节](Installation.html)
 # [补充](demo1.html)

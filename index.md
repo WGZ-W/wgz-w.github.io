@@ -4,7 +4,7 @@
 
 ## 1. [安装Linux](linux/index.html)
 ## 2. [vim](vim/vim.html)
-## 3. [Apue](apue.html)
+## 3. [Apue](APUE/apue.html)
 ## 4. [README](README.html)
 ## 5. [Make](gnu/make/make.html)
 ## 6. [GDB](gnu/gdb/gdb.html)
