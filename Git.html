@@ -366,13 +366,23 @@ code {
     });
   </script>
 <h1 id="%E7%AE%80%E5%8D%95%E7%9A%84-git-%E4%BD%BF%E7%94%A8">简单的 Git 使用</h1>
+<h2 id="%E5%88%86%E6%94%AF%E6%93%8D%E4%BD%9C">分支操作</h2>
+<pre class="hljs"><code><div>创建新的分支
+$   git branch name
+
+跳转到新的分支
+$   git checkout branch-name
+</div></code></pre>
 <h2 id="%E8%BF%9E%E6%8E%A5%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93">连接远程仓库</h2>
 <pre class="hljs"><code><div>连接远程仓库
 $   git remote add origin URL
 
 第一次提交并且设置远程仓库为分支上游
 $   git push -u origin main
-
+</div></code></pre>
+<h2 id="%E8%AE%BE%E7%BD%AE-ssh-%E5%AF%86%E9%92%A5%E8%BF%9E%E6%8E%A5">设置 ssh 密钥连接</h2>
+<pre class="hljs"><code><div>产生公钥
+$   ssh-keygen -t rsa -C &quot;your-email&quot;
 </div></code></pre>
 
 </body>
