@@ -5,7 +5,7 @@
 
 
 
-## [安装Linux](linux/Linux_index.html)
+## [安装 Arch Linux](linux/Arch/arch_index.html)
 
 
 
