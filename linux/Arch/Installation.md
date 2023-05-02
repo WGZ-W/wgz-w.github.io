@@ -32,7 +32,7 @@
 ```
 Console fonts are located in `/usr/share/kbd/consolefonts/` and can likewise be set with setfont.  
 ```
-# ls //usr/share/kbd/consolefonts/
+# ls /usr/share/kbd/consolefonts/
 ```
 
 
