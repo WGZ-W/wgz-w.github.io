@@ -5,7 +5,13 @@
 
 
 
-## [安装 Arch Linux](linux/Arch/arch_index.html)
+## [Install Arch Linux](./Linux/Installation.html)
+## [App](./Linux/App.html)
+## [Grub](./Linux/Grub.html)
+## [Git](./Linux/Git.html)
+## [Mirrorlist](./Linux/Mirrorlist.html)
+## [Network](./Linux/Network.html)
+## [Window-manager](./Linux/Window-manager.html)
 
 
 

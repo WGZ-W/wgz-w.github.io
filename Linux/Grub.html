@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>arch_index.md</title>
+<title>Grub.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,17 +365,51 @@ code {
           : 'default'
     });
   </script>
-<h1 id="%E5%AE%89%E8%A3%85-arch-linux">安装 Arch Linux</h1>
+<h2 id="arch--windows-%E5%8F%8C%E5%90%AF%E5%8A%A8">Arch + Windows 双启动</h2>
 <ul>
-<li><a href="#%E5%AE%89%E8%A3%85-arch-linux">安装 Arch Linux</a>
+<li><a href="https://zhuanlan.zhihu.com/p/471374126">Arch Linux+Windows双启动配置教程</a></li>
+</ul>
+<blockquote>
+<p>注意是在安装完 <code>Arch</code> 并且重启之后</p>
+</blockquote>
+<p>先安装 <code>os-prober</code></p>
+<pre class="hljs"><code><div># pacman -S os-prober
+</div></code></pre>
+<p>查找 <code>Windows</code> 分区</p>
+<pre class="hljs"><code><div># fdisk -l
+</div></code></pre>
+<p>将 Windows 的 EFI 分区挂载到 /mnt</p>
+<pre class="hljs"><code><div># mount /dev/efi_partition /mnt
+</div></code></pre>
+<p>启用 <code>os-prober</code> ，将注释去除</p>
+<pre class="hljs"><code><div># vim /etc/default/grub
+GRUB_DISABLE_OS_PROBER=false
+</div></code></pre>
+<p>使用 <code>os-prober</code> 检测</p>
+<pre class="hljs"><code><div># os-prober
+</div></code></pre>
+<p>备份，防止错误操作</p>
+<pre class="hljs"><code><div># cp /boot/grub/grub.cfg /boot/grub/grub.cfg.bak
+</div></code></pre>
+<p>重新生成配置文件</p>
+<pre class="hljs"><code><div># grub-mkconfig -o /boot/grub/grub.cfg
+</div></code></pre>
+<h2 id="%E7%BE%8E%E5%8C%96-grub-%E5%90%AF%E5%8A%A8%E5%99%A8">美化 Grub 启动器</h2>
 <ul>
-<li><a href="#%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85">系统安装</a></li>
-<li><a href="#%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8">窗口管理器</a></li>
+<li><a href="https://zhuanlan.zhihu.com/p/558980080">更改 GRUB 主题</a></li>
+<li><a href="https://ostechnix.com/configure-grub-2-boot-loader-settings-ubuntu-16-04/">How To Configure GRUB2 Boot Loader Settings</a></li>
+<li><a href="https://github.com/jacksaur/Gorgeous-GRUB">GRUB themes</a></li>
 </ul>
-</li>
-</ul>
-<h2 id="%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85"><a href="Installation.html">系统安装</a></h2>
-<h2 id="%E7%AA%97%E5%8F%A3%E7%AE%A1%E7%90%86%E5%99%A8"><a href="window-manager.html">窗口管理器</a></h2>
+<p>将主题文件夹移入 /boot/grub/themes/</p>
+<pre class="hljs"><code><div># sudo cp -r demos/ /boot/grub/themes/
+</div></code></pre>
+<p>并给 <code>themes</code> 目录分配适当的权限：</p>
+<pre class="hljs"><code><div>$ sudo chown $USER /boot/grub/themes/
+</div></code></pre>
+<p>修改 <code>/etc/default/grub</code></p>
+<pre class="hljs"><code><div># vim /etc/default/grub
+GRUB_THEME=/path/theme.txt
+</div></code></pre>
 
 </body>
 </html>

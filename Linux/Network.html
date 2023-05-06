@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>window-manager.md</title>
+<title>Network.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,22 +365,18 @@ code {
           : 'default'
     });
   </script>
-<h1 id="choice-1">choice 1:</h1>
-<ol>
-<li>xorg</li>
-<li>lightdm</li>
-<li>lightdm-gtk-greeter</li>
-<li>feh</li>
-<li>xfce4-terminal</li>
-<li>picom</li>
-</ol>
-<h1 id="choice-2">choice 2:</h1>
-<ol>
-<li>xorg</li>
-<li>dwm</li>
-<li>dmenu</li>
-<li>st</li>
-</ol>
+<h1 id="plan-a">Plan A:</h1>
+<ul>
+<li>sudo pacman -S networkmanager</li>
+<li>sudo systemctl enable NetworkManager.service</li>
+<li>sudo systemctl start NetworkManager.service</li>
+</ul>
+<h1 id="plan-b">Plan B:</h1>
+<ul>
+<li>sudo pacman -S wpa_supplicant</li>
+<li>wpa_passphrase networkname passphrase &gt; example.conf</li>
+<li>wpa_supplicant -B -i interface -c example.conf</li>
+</ul>
 
 </body>
 </html>
