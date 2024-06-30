@@ -1,371 +1,145 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Installation.md</title>
-<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
-
-<style>
-/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+        <html>
+        <head>
+            <meta charset="UTF-8">
+            <title>&#x5b89;&#x88c5; Arch &#xff08;&#x8bf7;&#x540c;&#x65f6;&#x53c2;&#x8003;Wiki&#xff09;</title>
+            <style>
+/* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
  *  Copyright (c) Microsoft Corporation. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 
-body {
-	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
-	font-size: var(--vscode-markdown-font-size, 14px);
-	padding: 0 26px;
-	line-height: var(--vscode-markdown-line-height, 22px);
-	word-wrap: break-word;
-}
-
-#code-csp-warning {
-	position: fixed;
-	top: 0;
-	right: 0;
-	color: white;
-	margin: 16px;
-	text-align: center;
-	font-size: 12px;
-	font-family: sans-serif;
-	background-color:#444444;
-	cursor: pointer;
-	padding: 6px;
-	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
-}
-
-#code-csp-warning:hover {
-	text-decoration: none;
-	background-color:#007acc;
-	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
-}
-
-body.scrollBeyondLastLine {
-	margin-bottom: calc(100vh - 22px);
-}
-
-body.showEditorSelection .code-line {
-	position: relative;
-}
-
-body.showEditorSelection .code-active-line:before,
-body.showEditorSelection .code-line:hover:before {
-	content: "";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -12px;
-	height: 100%;
-}
-
-body.showEditorSelection li.code-active-line:before,
-body.showEditorSelection li.code-line:hover:before {
-	left: -30px;
-}
-
-.vscode-light.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.15);
-}
-
-.vscode-light.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(0, 0, 0, 0.40);
-}
-
-.vscode-light.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-dark.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.4);
-}
-
-.vscode-dark.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 255, 255, 0.60);
-}
-
-.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-.vscode-high-contrast.showEditorSelection .code-active-line:before {
-	border-left: 3px solid rgba(255, 160, 0, 0.7);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line:hover:before {
-	border-left: 3px solid rgba(255, 160, 0, 1);
-}
-
-.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
-	border-left: none;
-}
-
-img {
-	max-width: 100%;
-	max-height: 100%;
-}
-
-a {
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-a:focus,
-input:focus,
-select:focus,
-textarea:focus {
-	outline: 1px solid -webkit-focus-ring-color;
-	outline-offset: -1px;
-}
-
-hr {
-	border: 0;
-	height: 2px;
-	border-bottom: 2px solid;
-}
-
-h1 {
-	padding-bottom: 0.3em;
-	line-height: 1.2;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-}
-
-h1, h2, h3 {
-	font-weight: normal;
-}
-
-table {
-	border-collapse: collapse;
-}
-
-table > thead > tr > th {
-	text-align: left;
-	border-bottom: 1px solid;
-}
-
-table > thead > tr > th,
-table > thead > tr > td,
-table > tbody > tr > th,
-table > tbody > tr > td {
-	padding: 5px 10px;
-}
-
-table > tbody > tr + tr > td {
-	border-top: 1px solid;
-}
-
-blockquote {
-	margin: 0 7px 0 5px;
-	padding: 0 16px 0 10px;
-	border-left-width: 5px;
-	border-left-style: solid;
-}
-
-code {
-	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
-	font-size: 1em;
-	line-height: 1.357em;
-}
-
-body.wordWrap pre {
-	white-space: pre-wrap;
-}
-
-pre:not(.hljs),
-pre.hljs code > div {
-	padding: 16px;
-	border-radius: 3px;
-	overflow: auto;
-}
-
-pre code {
-	color: var(--vscode-editor-foreground);
-	tab-size: 4;
-}
-
-/** Theming */
-
-.vscode-light pre {
-	background-color: rgba(220, 220, 220, 0.4);
-}
-
-.vscode-dark pre {
-	background-color: rgba(10, 10, 10, 0.4);
-}
-
-.vscode-high-contrast pre {
-	background-color: rgb(0, 0, 0);
-}
-
-.vscode-high-contrast h1 {
-	border-color: rgb(0, 0, 0);
-}
-
-.vscode-light table > thead > tr > th {
-	border-color: rgba(0, 0, 0, 0.69);
-}
-
-.vscode-dark table > thead > tr > th {
-	border-color: rgba(255, 255, 255, 0.69);
-}
-
-.vscode-light h1,
-.vscode-light hr,
-.vscode-light table > tbody > tr + tr > td {
-	border-color: rgba(0, 0, 0, 0.18);
-}
-
-.vscode-dark h1,
-.vscode-dark hr,
-.vscode-dark table > tbody > tr + tr > td {
-	border-color: rgba(255, 255, 255, 0.18);
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only],
+.vscode-high-contrast:not(.vscode-high-contrast-light) img[src$=\#gh-light-mode-only],
+.vscode-high-contrast-light img[src$=\#gh-dark-mode-only] {
+	display: none;
 }
 
 </style>
-
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
-/* Tomorrow Theme */
-/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
-/* Original theme - https://github.com/chriskempson/tomorrow-theme */
-
-/* Tomorrow Comment */
-.hljs-comment,
-.hljs-quote {
-	color: #8e908c;
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item {
+    list-style-type: none;
 }
 
-/* Tomorrow Red */
-.hljs-variable,
-.hljs-template-variable,
-.hljs-tag,
-.hljs-name,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-regexp,
-.hljs-deletion {
-	color: #c82829;
-}
-
-/* Tomorrow Orange */
-.hljs-number,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-literal,
-.hljs-type,
-.hljs-params,
-.hljs-meta,
-.hljs-link {
-	color: #f5871f;
-}
-
-/* Tomorrow Yellow */
-.hljs-attribute {
-	color: #eab700;
-}
-
-/* Tomorrow Green */
-.hljs-string,
-.hljs-symbol,
-.hljs-bullet,
-.hljs-addition {
-	color: #718c00;
-}
-
-/* Tomorrow Blue */
-.hljs-title,
-.hljs-section {
-	color: #4271ae;
-}
-
-/* Tomorrow Purple */
-.hljs-keyword,
-.hljs-selector-tag {
-	color: #8959a8;
-}
-
-.hljs {
-	display: block;
-	overflow-x: auto;
-	color: #4d4d4c;
-	padding: 0.5em;
-}
-
-.hljs-emphasis {
-	font-style: italic;
-}
-
-.hljs-strong {
-	font-weight: bold;
+.task-list-item-checkbox {
+    margin-left: -20px;
+    vertical-align: middle;
+    pointer-events: none;
 }
 </style>
-
 <style>
-/*
- * Markdown PDF CSS
- */
-
- body {
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
-	padding: 0 12px;
-}
-
-pre {
-	background-color: #f8f8f8;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	overflow-x: auto;
-	white-space: pre-wrap;
-	overflow-wrap: break-word;
-}
-
-pre:not(.hljs) {
-	padding: 23px;
-	line-height: 19px;
-}
-
-blockquote {
-	background: rgba(127, 127, 127, 0.1);
-	border-color: rgba(0, 122, 204, 0.5);
-}
-
-.emoji {
-	height: 1.4em;
-}
-
-code {
-	font-size: 14px;
-	line-height: 19px;
-}
-
-/* for inline code */
-:not(pre):not(.hljs) > code {
-	color: #C9AE75; /* Change the old color so it seems less like an error */
-	font-size: inherit;
-}
-
-/* Page Break : use <div class="page"/> to insert page break
--------------------------------------------------------- */
-.page {
-	page-break-after: always;
+:root {
+  --color-note: #0969da;
+  --color-tip: #1a7f37;
+  --color-warning: #9a6700;
+  --color-severe: #bc4c00;
+  --color-caution: #d1242f;
+  --color-important: #8250df;
 }
 
 </style>
+<style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-note: #2f81f7;
+    --color-tip: #3fb950;
+    --color-warning: #d29922;
+    --color-severe: #db6d28;
+    --color-caution: #f85149;
+    --color-important: #a371f7;
+  }
+}
 
-<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
-</head>
-<body>
-  <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
-          ? 'dark'
-          : 'default'
-    });
-  </script>
-<h1 id="%E5%AE%89%E8%A3%85-arch-%E8%AF%B7%E5%90%8C%E6%97%B6%E5%8F%82%E8%80%83wiki">安装 Arch （请同时参考Wiki）</h1>
+</style>
+<style>
+.markdown-alert {
+  padding: 0.5rem 1rem;
+  margin-bottom: 16px;
+  color: inherit;
+  border-left: .25em solid #888;
+}
+
+.markdown-alert>:first-child {
+  margin-top: 0
+}
+
+.markdown-alert>:last-child {
+  margin-bottom: 0
+}
+
+.markdown-alert .markdown-alert-title {
+  display: flex;
+  font-weight: 500;
+  align-items: center;
+  line-height: 1
+}
+
+.markdown-alert .markdown-alert-title .octicon {
+  margin-right: 0.5rem;
+  display: inline-block;
+  overflow: visible !important;
+  vertical-align: text-bottom;
+  fill: currentColor;
+}
+
+.markdown-alert.markdown-alert-note {
+  border-left-color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-note .markdown-alert-title {
+  color: var(--color-note);
+}
+
+.markdown-alert.markdown-alert-important {
+  border-left-color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-important .markdown-alert-title {
+  color: var(--color-important);
+}
+
+.markdown-alert.markdown-alert-warning {
+  border-left-color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-warning .markdown-alert-title {
+  color: var(--color-warning);
+}
+
+.markdown-alert.markdown-alert-tip {
+  border-left-color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-tip .markdown-alert-title {
+  color: var(--color-tip);
+}
+
+.markdown-alert.markdown-alert-caution {
+  border-left-color: var(--color-caution);
+}
+
+.markdown-alert.markdown-alert-caution .markdown-alert-title {
+  color: var(--color-caution);
+}
+
+</style>
+        
+        </head>
+        <body class="vscode-body vscode-light">
+            <h1 id="安装-arch-请同时参考wiki">安装 Arch （请同时参考Wiki）</h1>
 <ul>
 <li><a href="#%E5%AE%89%E8%A3%85-arch-%E8%AF%B7%E5%90%8C%E6%97%B6%E5%8F%82%E8%80%83wiki">安装 Arch （请同时参考Wiki）</a>
 <ul>
@@ -412,51 +186,51 @@ code {
 </ul>
 <h2 id="1-pre-installation">1 Pre-installation</h2>
 <h3 id="11-set-the-console-keyboard-layout">1.1 Set the console keyboard layout</h3>
-<pre class="hljs"><code><div># setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz</span>
+</code></pre>
 <p>Console fonts are located in <code>/usr/share/kbd/consolefonts/</code> and can likewise be set with setfont.</p>
-<pre class="hljs"><code><div># ls /usr/share/kbd/consolefonts/
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash"><span class="hljs-built_in">ls</span> /usr/share/kbd/consolefonts/</span>
+</code></pre>
 <h3 id="12-connect-to-the-internet">1.2 Connect to the internet</h3>
 <p>Ensure your network interface is listed and enabled, for example with ip-link:</p>
-<pre class="hljs"><code><div># ip link
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">ip <span class="hljs-built_in">link</span></span>
+</code></pre>
 <p>打开网络设备</p>
-<pre class="hljs"><code><div># ip link set &quot;interface&quot; up
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">ip <span class="hljs-built_in">link</span> <span class="hljs-built_in">set</span> <span class="hljs-string">&quot;interface&quot;</span> up</span>
+</code></pre>
 <p>Wi-Fi—authenticate to the wireless network using iwctl.（详情见Wiki）</p>
-<pre class="hljs"><code><div># iwctl --passphrase &quot;passwd&quot; station &quot;device&quot; connect SSID
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">iwctl --passphrase <span class="hljs-string">&quot;passwd&quot;</span> station <span class="hljs-string">&quot;device&quot;</span> connect SSID</span>
+</code></pre>
 <p>or Using wpa_supplicant</p>
-<pre class="hljs"><code><div>#  ip link
-
-# ip link set wlan0 up     打开WiFi设置
-
-# iwlist wlan0 scan       扫描WiFi结果
-
-# iwlist wlan0 scan | grep ESSID   WiFi名字
-
-# wpa_passphrase 网络名 密码 &gt; 文件名
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash"> ip <span class="hljs-built_in">link</span></span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">ip <span class="hljs-built_in">link</span> <span class="hljs-built_in">set</span> wlan0 up     打开WiFi设置</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">iwlist wlan0 scan       扫描WiFi结果</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">iwlist wlan0 scan | grep ESSID   WiFi名字</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">wpa_passphrase 网络名 密码 &gt; 文件名</span>
 
 example：
-# wpa_passphrase WJ ..... &gt; internet.conf
-
-# wpa_supplicant -c internet.conf -i wlan0 &amp;
+<span class="hljs-meta prompt_"># </span><span class="language-bash">wpa_passphrase WJ ..... &gt; internet.conf</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">wpa_supplicant -c internet.conf -i wlan0 &amp;</span>
 连接互联网，需要分配动态 IP 地址
-
-# dhcpcd &amp;         动态分配 IP 地址
-</div></code></pre>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">dhcpcd &amp;         动态分配 IP 地址</span>
+</code></pre>
 <p>The connection may be verified with ping</p>
-<pre class="hljs"><code><div># ping archlinux.org
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">ping archlinux.org</span>
+</code></pre>
 <h3 id="13-update-the-system-clock">1.3 Update the system clock</h3>
 <p>Use timedatectl(1) to ensure the system clock is accurate:</p>
-<pre class="hljs"><code><div># timedatectl
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">timedatectl</span>
+</code></pre>
 <h3 id="14-partition-the-disks">1.4 Partition the disks</h3>
 <p>When recognized by the live system, disks are assigned to a <code>block device</code> such as <code>/dev/sda</code>, <code>/dev/nvme0n1</code> or <code>/dev/mmcblk0</code>. To identify these devices, use <code>lsblk or fdisk</code>.</p>
-<pre class="hljs"><code><div># fdisk -l
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">fdisk -l</span>
+</code></pre>
 <p>Results ending in rom, loop or airoot may be ignored.<br>
 The following partitions are required for a chosen device:</p>
 <ul>
@@ -464,8 +238,8 @@ The following partitions are required for a chosen device:</p>
 <li>For booting in UEFI mode: <code>an EFI system partition</code>.</li>
 </ul>
 <p>Use <code>gdisk</code> or <code>parted</code> to modify partition tables. For example:</p>
-<pre class="hljs"><code><div># gdisk /dev/the_disk_to_be_partitioned
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">gdisk /dev/the_disk_to_be_partitioned</span>
+</code></pre>
 <blockquote>
 <p>Note:</p>
 <ul>
@@ -511,11 +285,11 @@ The following partitions are required for a chosen device:</p>
 <h3 id="15-format-the-partitions">1.5 Format the partitions</h3>
 <p>Once the partitions have been created, each newly created partition must be formatted with an appropriate <code>file system</code>. See <code>File systems#Create a file system</code> for details.<br>
 For example, to create an XFS file system on /dev/root_partition, run:</p>
-<pre class="hljs"><code><div># mkfs.xfs -f /dev/root_partition
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">mkfs.xfs -f /dev/root_partition</span>
+</code></pre>
 <p>If you created a partition for swap, initialize it with mkswap(8):</p>
-<pre class="hljs"><code><div># mkswap /dev/swap_partition
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">mkswap /dev/swap_partition</span>
+</code></pre>
 <blockquote>
 <p>Note: For stacked block devices replace <code>/dev/*_partition</code> with the appropriate block device path.</p>
 </blockquote>
@@ -523,34 +297,34 @@ For example, to create an XFS file system on /dev/root_partition, run:</p>
 <blockquote>
 <p>Warning: Only format the EFI system partition if you created it during the partitioning step. If there already was an EFI system partition on disk beforehand, reformatting it can destroy the boot loaders of other installed operating systems.</p>
 </blockquote>
-<pre class="hljs"><code><div># mkfs.fat -F 32 /dev/efi_system_partition
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">mkfs.fat -F 32 /dev/efi_system_partition</span>
+</code></pre>
 <h3 id="16-mount-the-file-systems">1.6 Mount the file systems</h3>
 <p>Mount the root volume to /mnt. For example, if the root volume is /dev/root_partition:</p>
-<pre class="hljs"><code><div># mount /dev/root_partition /mnt
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">mount /dev/root_partition /mnt</span>
+</code></pre>
 <p>Create any remaining mount points (such as /mnt/boot) and mount the volumes in their corresponding hierarchical order.</p>
 <blockquote>
 <p>Tip: Run mount(8) with the --mkdir option to create the specified mount point. Alternatively, create it using mkdir(1) beforehand.</p>
 </blockquote>
 <p>For UEFI systems, mount the EFI system partition:</p>
-<pre class="hljs"><code><div># mount --mkdir /dev/efi_system_partition /mnt/boot
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">mount --<span class="hljs-built_in">mkdir</span> /dev/efi_system_partition /mnt/boot</span>
+</code></pre>
 <p>If you created a swap volume, enable it with swapon(8):</p>
-<pre class="hljs"><code><div># swapon /dev/swap_partition
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">swapon /dev/swap_partition</span>
+</code></pre>
 <blockquote>
 <p>注意： 挂载分区一定要遵循顺序，先挂载根（root）分区（到 /mnt），再挂载引导（boot）分区（到 /mnt/boot 或 /mnt/efi，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。</p>
 </blockquote>
-<h3 id="17%E5%8F%AF%E9%80%89%E6%96%87%E4%BB%B6%E9%AA%8C%E8%AF%81-invalid-or-corrupted-package">1.7（可选）文件验证 (invalid or corrupted package)</h3>
+<h3 id="17可选文件验证-invalid-or-corrupted-package">1.7（可选）文件验证 (invalid or corrupted package)</h3>
 <p>需要下载，可解决问题</p>
-<pre class="hljs"><code><div># pacman -S archlinux-keyring
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">pacman -S archlinux-keyring</span>
+</code></pre>
 <h2 id="2-installation">2 Installation</h2>
 <h3 id="21-select-the-mirrors">2.1 Select the mirrors</h3>
 <p>文件 <code>/etc/pacman.d/mirrorlist</code> 定义了软件包会从哪个镜像下载。</p>
-<pre class="hljs"><code><div>## Arch Linux repository mirrorlist
-## China
+<pre><code class="language-shell"><span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-comment"># Arch Linux repository mirrorlist</span></span>
+<span class="hljs-meta prompt_">#</span><span class="language-bash"><span class="hljs-comment"># China</span></span>
 
 Server = https://mirrors.bfsu.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.cqu.edu.cn/archlinux/$repo/os/$arch
@@ -563,7 +337,7 @@ Server = https://mirrors.tuna.tsinghua.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.ustc.edu.cn/archlinux/$repo/os/$arch
 Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
 
-</div></code></pre>
+</code></pre>
 <p>在列表中越前的镜像在下载软件包时有越高的优先权。<br>
 这个文件接下来还会被 pacstrap 拷贝到新系统里，所以请确保设置正确。</p>
 <h3 id="22-install-essential-packages">2.2 Install essential packages</h3>
@@ -571,74 +345,74 @@ Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
 <p>Note: No software or configuration (except for <code>/etc/pacman.d/mirrorlist</code>) get carried over from the live environment to the installed system.</p>
 </blockquote>
 <p>Use the pacstrap(8) script to install the base package, Linux kernel and firmware for common hardware:</p>
-<pre class="hljs"><code><div># pacstrap /mnt base linux linux-firmware vim networkmanager
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">pacstrap /mnt base linux linux-firmware vim networkmanager</span>
+</code></pre>
 <h2 id="3-configure-the-system">3 Configure the system</h2>
 <h3 id="31-fstab">3.1 Fstab</h3>
 <p>Generate an fstab file (use -U or -L to define by UUID or labels, respectively):</p>
-<pre class="hljs"><code><div># genfstab -U /mnt &gt;&gt; /mnt/etc/fstab
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">genfstab -U /mnt &gt;&gt; /mnt/etc/fstab</span>
+</code></pre>
 <p>Check the resulting /mnt/etc/fstab file, and edit it in case of errors.</p>
 <h3 id="32-chroot">3.2 Chroot</h3>
 <p>Change root into the new system:</p>
-<pre class="hljs"><code><div># arch-chroot /mnt
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">arch-chroot /mnt</span>
+</code></pre>
 <h3 id="33-time-zone">3.3 Time zone</h3>
 <p>Set the time zone:</p>
-<pre class="hljs"><code><div># ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash"><span class="hljs-built_in">ln</span> -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime</span>
+</code></pre>
 <p>Run hwclock(8) to generate /etc/adjtime:</p>
-<pre class="hljs"><code><div># hwclock --systohc   同步时间
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">hwclock --systohc   同步时间</span>
+</code></pre>
 <p>This command assumes the hardware clock is set to UTC. See System time#Time standard for details.</p>
 <h3 id="34-localization">3.4 Localization</h3>
 <p>Edit /etc/locale.gen and uncomment en_US.UTF-8 UTF-8 and other needed locales. Generate the locales by running:</p>
-<pre class="hljs"><code><div># locale-gen
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">locale-gen</span>
+</code></pre>
 <p>Create the locale.conf(5) file, and set the LANG variable accordingly:</p>
-<pre class="hljs"><code><div># vim /etc/locale.conf
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">vim /etc/locale.conf</span>
 LANG=en_US.UTF-8
-</div></code></pre>
+</code></pre>
 <p>If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):<br>
 在安装完成之后，永久修改字体 <code>/etc/vconsole.conf</code>，需要创建该文件</p>
-<pre class="hljs"><code><div># vim /etc/vconsole.conf
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">vim /etc/vconsole.conf</span>
 FONT=LatGrkCyr-12x22
-</div></code></pre>
+</code></pre>
 <h3 id="35-network-configuration">3.5 Network configuration</h3>
 <p>Create the hostname file:</p>
-<pre class="hljs"><code><div># vim /etc/hostname
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">vim /etc/hostname</span>
 myhostname
-</div></code></pre>
+</code></pre>
 <p>Complete the network configuration for the newly installed environment. That may include installing suitable <code>network management</code> software.<br>
 edit the /etc/hosts file for every device in your LAN, see hosts(5)<br>
 Examples</p>
-<pre class="hljs"><code><div># The following lines are desirable for IPv4 capable hosts
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">The following lines are desirable <span class="hljs-keyword">for</span> IPv4 capable hosts</span>
 127.0.0.1       localhost
-# 127.0.1.1 is often used for the FQDN of the machine
+<span class="hljs-meta prompt_"># </span><span class="language-bash">127.0.1.1 is often used <span class="hljs-keyword">for</span> the FQDN of the machine</span>
 127.0.1.1       thishost.example.org   thishost
 192.168.1.10    foo.example.org        foo
 192.168.1.13    bar.example.org        bar
 146.82.138.7    master.debian.org      master
 209.237.226.90  www.opensource.org
-# The following lines are desirable for IPv6 capable hosts
+<span class="hljs-meta prompt_"># </span><span class="language-bash">The following lines are desirable <span class="hljs-keyword">for</span> IPv6 capable hosts</span>
 ::1             localhost ip6-localhost ip6-loopback
 ff02::1         ip6-allnodes
 ff02::2         ip6-allrouters
-</div></code></pre>
+</code></pre>
 <h3 id="36-root-password">3.6 Root password</h3>
 <p>Set the root password:</p>
-<pre class="hljs"><code><div># passwd
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">passwd</span>
+</code></pre>
 <h3 id="37-boot-loader">3.7 Boot loader</h3>
 <p>Choose and install a Linux-capable boot loader. If you have an Intel or AMD CPU, enable microcode updates in addition.</p>
-<pre class="hljs"><code><div># pacman -S man-db man-pages texinfo
-
-# pacman -S grub efibootmgr intel-ucode os-prober
-
-# systemctl enable NetworkManager.service
-# systemctl start NetworkManager.service
-</div></code></pre>
-<h4 id="371-%E5%AE%89%E8%A3%85%E5%BC%95%E5%AF%BC%E7%A8%8B%E5%BA%8F">3.7.1 安装引导程序</h4>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">pacman -S man-db man-pages texinfo</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">pacman -S grub efibootmgr intel-ucode os-prober</span>
+<span class="hljs-meta prompt_">
+# </span><span class="language-bash">systemctl <span class="hljs-built_in">enable</span> NetworkManager.service</span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">systemctl start NetworkManager.service</span>
+</code></pre>
+<h4 id="371-安装引导程序">3.7.1 安装引导程序</h4>
 <p>选择一个启动引导器标识，在本例被称为 <code>Arch</code>。这将在 <code>esp/EFI/</code> 中创建一个与标识同名的目录来储存 <code>EFI</code> 二进制文件，而且这个名字还会用于在 <code>UEFI</code> 启动菜单中区分 <code>GRUB</code> 启动项；
 执行下面的命令来将 <code>GRUB EFI</code> 应用 <code>grubx64.efi</code> 安装到 <code>esp/EFI/Arch/</code>，并将其模块安装到 <code>/boot/grub/x86_64-efi/</code>。<br>
 Then follow the below steps to install GRUB to your disk:</p>
@@ -659,37 +433,39 @@ Then follow the below steps to install GRUB to your disk:</p>
 </ol>
 </li>
 </ul>
-<pre class="hljs"><code><div># grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=Arch
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=Arch</span>
+</code></pre>
 <p>使用 <code>grub-mkconfig</code> 工具来生成 <code>/boot/grub/grub.cfg</code>：</p>
-<pre class="hljs"><code><div># grub-mkconfig -o /boot/grub/grub.cfg
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">grub-mkconfig -o /boot/grub/grub.cfg</span>
+</code></pre>
 <blockquote>
 <p>警告： 这是安装的最后一步也是至关重要的一步，请按上述指引正确安装好引导加载程序后再重新启动。否则重启后将无法正常进入系统。</p>
 </blockquote>
 <h2 id="4-reboot">4 Reboot</h2>
-<pre class="hljs"><code><div>输入 exit 或按 Ctrl+d 退出 chroot 环境。
+<pre><code>输入 exit 或按 Ctrl+d 退出 chroot 环境。
 
 可选用 umount -R /mnt 手动卸载被挂载的分区：这有助于发现任何「繁忙」的分区，并通过 fuser(1) 查找原因。
 
 最后，通过执行 reboot 重启系统，systemd 将自动卸载仍然挂载的任何分区。不要忘记移除安装介质，然后使用 root 帐户登录到新系统。
-</div></code></pre>
+</code></pre>
 <h2 id="5-post-installation">5 Post-installation</h2>
 <p>连接网络</p>
-<pre class="hljs"><code><div># nmtui
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">nmtui</span>
+</code></pre>
 <p>获取 sudo 命令</p>
-<pre class="hljs"><code><div># pacman -S sudo
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">pacman -S sudo</span>
+</code></pre>
 <p>创建用户</p>
-<pre class="hljs"><code><div># sudo useradd -m &quot;name&quot;
-# sudo passwd &quot;name&quot;
-# sudo vim /etc/sudoers
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">sudo useradd -m <span class="hljs-string">&quot;name&quot;</span></span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">sudo passwd <span class="hljs-string">&quot;name&quot;</span></span>
+<span class="hljs-meta prompt_"># </span><span class="language-bash">sudo vim /etc/sudoers</span>
+</code></pre>
 <p>在 user privilege，将创建的用户和 root 这一行的权限一样</p>
 <p>修改镜像源同上</p>
-<pre class="hljs"><code><div># vim /etc/pacman.d/mirrorlist
-</div></code></pre>
+<pre><code class="language-shell"><span class="hljs-meta prompt_"># </span><span class="language-bash">vim /etc/pacman.d/mirrorlist</span>
+</code></pre>
 
-</body>
-</html>
+            <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
+            
+        </body>
+        </html>

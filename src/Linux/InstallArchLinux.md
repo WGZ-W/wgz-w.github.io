@@ -27,11 +27,11 @@
 
 ## 1 Pre-installation
 ### 1.1 Set the console keyboard layout
-```
+```shell
 # setfont /usr/share/kbd/consolefonts/LatGrkCyr-12x22.psfu.gz
 ```
 Console fonts are located in `/usr/share/kbd/consolefonts/` and can likewise be set with setfont.  
-```
+```shell
 # ls /usr/share/kbd/consolefonts/
 ```
 
@@ -39,21 +39,21 @@ Console fonts are located in `/usr/share/kbd/consolefonts/` and can likewise be 
 
 ### 1.2 Connect to the internet
 Ensure your network interface is listed and enabled, for example with ip-link:
-```
+```shell
 # ip link
 ```
 打开网络设备
-```
+```shell
 # ip link set "interface" up
 ```
 
 Wi-Fi—authenticate to the wireless network using iwctl.（详情见Wiki）
 
-```
+```shell
 # iwctl --passphrase "passwd" station "device" connect SSID
 ```
 or Using wpa_supplicant
-```
+```shell
 #  ip link
 
 # ip link set wlan0 up     打开WiFi设置
@@ -73,19 +73,19 @@ example：
 # dhcpcd &         动态分配 IP 地址
 ```
 The connection may be verified with ping
-```
+```shell
 # ping archlinux.org
 ```
 
 ### 1.3 Update the system clock
 Use timedatectl(1) to ensure the system clock is accurate:
-```
+```shell
 # timedatectl
 ```
 
 ### 1.4 Partition the disks
 When recognized by the live system, disks are assigned to a `block device` such as `/dev/sda`, `/dev/nvme0n1` or `/dev/mmcblk0`. To identify these devices, use `lsblk or fdisk`.
-```
+```shell
 # fdisk -l
 ```
 Results ending in rom, loop or airoot may be ignored.  
@@ -94,7 +94,7 @@ The following partitions are required for a chosen device:
 - For booting in UEFI mode: `an EFI system partition`.  
 
 Use `gdisk` or `parted` to modify partition tables. For example:
-```
+```shell
 # gdisk /dev/the_disk_to_be_partitioned
 ```
 > Note:
@@ -112,11 +112,11 @@ Use `gdisk` or `parted` to modify partition tables. For example:
 ### 1.5 Format the partitions
 Once the partitions have been created, each newly created partition must be formatted with an appropriate `file system`. See `File systems#Create a file system` for details.  
 For example, to create an XFS file system on /dev/root_partition, run:
-```
+```shell
 # mkfs.xfs -f /dev/root_partition
 ```
 If you created a partition for swap, initialize it with mkswap(8):
-```
+```shell
 # mkswap /dev/swap_partition
 ```
 > Note: For stacked block devices replace `/dev/*_partition` with the appropriate block device path.  
@@ -124,24 +124,24 @@ If you created a partition for swap, initialize it with mkswap(8):
 If you created an EFI system partition, format it to FAT32 using mkfs.fat(8).
 > Warning: Only format the EFI system partition if you created it during the partitioning step. If there already was an EFI system partition on disk beforehand, reformatting it can destroy the boot loaders of other installed operating systems.
 
-```
+```shell
 # mkfs.fat -F 32 /dev/efi_system_partition
 ```
 
 ### 1.6 Mount the file systems
 Mount the root volume to /mnt. For example, if the root volume is /dev/root_partition:
-```
+```shell
 # mount /dev/root_partition /mnt
 ```
 Create any remaining mount points (such as /mnt/boot) and mount the volumes in their corresponding hierarchical order.
 > Tip: Run mount(8) with the --mkdir option to create the specified mount point. Alternatively, create it using mkdir(1) beforehand.
 
 For UEFI systems, mount the EFI system partition:
-```
+```shell
 # mount --mkdir /dev/efi_system_partition /mnt/boot
 ```
 If you created a swap volume, enable it with swapon(8):
-```
+```shell
 # swapon /dev/swap_partition
 ```
 > 注意： 挂载分区一定要遵循顺序，先挂载根（root）分区（到 /mnt），再挂载引导（boot）分区（到 /mnt/boot 或 /mnt/efi，如果单独分出来了的话），最后再挂载其他分区。否则您可能遇到安装完成后无法启动系统的问题。
@@ -149,7 +149,7 @@ If you created a swap volume, enable it with swapon(8):
 
 ### 1.7（可选）文件验证 (invalid or corrupted package)
 需要下载，可解决问题
-```
+```shell
 # pacman -S archlinux-keyring
 ```
 
@@ -157,7 +157,7 @@ If you created a swap volume, enable it with swapon(8):
 ### 2.1 Select the mirrors
 文件 `/etc/pacman.d/mirrorlist` 定义了软件包会从哪个镜像下载。
 
-```
+```shell
 ## Arch Linux repository mirrorlist
 ## China
 
@@ -179,7 +179,7 @@ Server = https://mirrors.xjtu.edu.cn/archlinux/$repo/os/$arch
 > Note: No software or configuration (except for `/etc/pacman.d/mirrorlist`) get carried over from the live environment to the installed system.
 
 Use the pacstrap(8) script to install the base package, Linux kernel and firmware for common hardware:
-```
+```shell
 # pacstrap /mnt base linux linux-firmware vim networkmanager
 ```
 
@@ -188,55 +188,55 @@ Use the pacstrap(8) script to install the base package, Linux kernel and firmwar
 
 ### 3.1 Fstab
 Generate an fstab file (use -U or -L to define by UUID or labels, respectively):
-```
+```shell
 # genfstab -U /mnt >> /mnt/etc/fstab
 ```
 Check the resulting /mnt/etc/fstab file, and edit it in case of errors.
 
 ### 3.2 Chroot
 Change root into the new system:
-```
+```shell
 # arch-chroot /mnt
 ```
 
 ### 3.3 Time zone
 Set the time zone:
-```
+```shell
 # ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 ```
 Run hwclock(8) to generate /etc/adjtime:
-```
+```shell
 # hwclock --systohc   同步时间
 ```
 This command assumes the hardware clock is set to UTC. See System time#Time standard for details.
 
 ### 3.4 Localization
 Edit /etc/locale.gen and uncomment en_US.UTF-8 UTF-8 and other needed locales. Generate the locales by running:
-```
+```shell
 # locale-gen
 ```
 Create the locale.conf(5) file, and set the LANG variable accordingly:
-```
+```shell
 # vim /etc/locale.conf
 LANG=en_US.UTF-8
 ```
 If you set the console keyboard layout, make the changes persistent in vconsole.conf(5):  
 在安装完成之后，永久修改字体 `/etc/vconsole.conf`，需要创建该文件
-```
+```shell
 # vim /etc/vconsole.conf
 FONT=LatGrkCyr-12x22
 ```
 
 ### 3.5 Network configuration
 Create the hostname file:
-```
+```shell
 # vim /etc/hostname
 myhostname
 ```
 Complete the network configuration for the newly installed environment. That may include installing suitable `network management` software.  
 edit the /etc/hosts file for every device in your LAN, see hosts(5)  
 Examples
-```
+```shell
 # The following lines are desirable for IPv4 capable hosts
 127.0.0.1       localhost
 # 127.0.1.1 is often used for the FQDN of the machine
@@ -253,13 +253,13 @@ ff02::2         ip6-allrouters
 
 ### 3.6 Root password
 Set the root password:
-```
+```shell
 # passwd
 ```
 
 ### 3.7 Boot loader
 Choose and install a Linux-capable boot loader. If you have an Intel or AMD CPU, enable microcode updates in addition.
-```
+```shell
 # pacman -S man-db man-pages texinfo
 
 # pacman -S grub efibootmgr intel-ucode os-prober
@@ -274,12 +274,12 @@ Then follow the below steps to install GRUB to your disk:
 - 1. Mount the EFI system partition and in the remainder of this section, substitute `esp` with its mount point.
 - 2. Choose a boot loader identifier, here named `GRUB`. A directory of that name will be created in esp/EFI/ to store the EFI binary and this is the name that will appear in the UEFI boot menu to identify the GRUB boot entry.
 - 3. Execute the following command to install the GRUB EFI application grubx64.efi to esp/EFI/GRUB/ and install its modules to /boot/grub/x86_64-efi/.
-```
+```shell
 # grub-install --target=x86_64-efi --efi-directory=esp --bootloader-id=Arch
 ```
 
 使用 `grub-mkconfig` 工具来生成 `/boot/grub/grub.cfg`：
-```
+```shell
 # grub-mkconfig -o /boot/grub/grub.cfg
 ```
 > 警告： 这是安装的最后一步也是至关重要的一步，请按上述指引正确安装好引导加载程序后再重新启动。否则重启后将无法正常进入系统。
@@ -296,17 +296,17 @@ Then follow the below steps to install GRUB to your disk:
 
 ## 5 Post-installation
 连接网络
-```
+```shell
 # nmtui
 ```
 
 获取 sudo 命令
-```
+```shell
 # pacman -S sudo
 ```
 
 创建用户
-```
+```shell
 # sudo useradd -m "name"
 # sudo passwd "name"
 # sudo vim /etc/sudoers
@@ -314,6 +314,6 @@ Then follow the below steps to install GRUB to your disk:
 在 user privilege，将创建的用户和 root 这一行的权限一样
 
 修改镜像源同上
-```
+```shell
 # vim /etc/pacman.d/mirrorlist
 ```

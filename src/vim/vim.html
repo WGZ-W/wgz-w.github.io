@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>index.md</title>
+<title>vim.md</title>
 <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 
 <style>
@@ -365,26 +365,109 @@ code {
           : 'default'
     });
   </script>
-<h1 id="never-stop-studying">Never Stop Studying</h1>
-<h2 id="diary"><a href="./Diary/index.html">Diary</a></h2>
-<h2 id="install-arch-linux"><a href="./Linux/Installation.html">Install Arch Linux</a></h2>
-<h2 id="app"><a href="./Linux/App.html">App</a></h2>
-<h2 id="grub"><a href="./Linux/Grub.html">Grub</a></h2>
-<h2 id="git"><a href="./Linux/Git.html">Git</a></h2>
-<h2 id="mirrorlist"><a href="./Linux/Mirrorlist.html">Mirrorlist</a></h2>
-<h2 id="network"><a href="./Linux/Network.html">Network</a></h2>
-<h2 id="window-manager"><a href="./Linux/Window-manager.html">Window-manager</a></h2>
-<h2 id="usefulweb"><a href="./Useful_Web.html">Useful_Web</a></h2>
-<!-- ## 2. [vim](vim/vim.html)
-## 3. [Apue](APUE/apue.html)
-## 4. [README](README.html)
-## 5. [Make](gnu/make/make.html)
-## 6. [GDB](gnu/gdb/gdb.html)
-## 7. [Git](Git/Git.html) 
+<h1 id="%E6%88%91%E7%9A%84-vim-%E4%BD%BF%E7%94%A8">我的 vim 使用</h1>
+<p>一些vim的基础用法</p>
+<h1 id=""></h1>
+<ul>
+<li><a href="#%E6%88%91%E7%9A%84-vim-%E4%BD%BF%E7%94%A8">我的 vim 使用</a>
+<ul>
+<li><a href="#%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</a></li>
+<li><a href="#%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">读入输入</a></li>
+<li><a href="#%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">编辑多个文件</a></li>
+<li><a href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">配置文件vimrc</a></li>
+<li><a href="#%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">自动补全</a></li>
+<li><a href="#%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">高级命令 for programmers</a>
+<ul>
+<li><a href="#%E5%8F%96%E6%B6%88%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B-insert-%E6%A8%A1%E5%BC%8F">取消自动缩进( insert 模式)</a></li>
+<li><a href="#%E6%8F%92%E5%85%A5%E7%BC%A9%E8%BF%9B">插入缩进</a></li>
+<li><a href="#tab-%E7%9A%84%E4%BD%BF%E7%94%A8"><Tab> 的使用</a></li>
+<li><a href="#modelines">Modelines</a></li>
+</ul>
+</li>
+<li><a href="#%E7%A8%8B%E5%BA%8F%E4%B8%AD%E8%B7%B3%E8%BD%AC">程序中跳转</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="%E6%90%9C%E7%B4%A2%E5%B9%B6%E4%B8%94%E6%9B%BF%E6%8D%A2">搜索并且替换</h2>
+<pre class="hljs"><code><div>    :s/foo/bar/g    匹配到的单词全部替换
 
-# 考研
-##  [英语](Test/English.html)
-##  [数学]()
-##  [专业课程]() -->
+    :s/foo/bar/gi   大小写敏感
+    
+    :4,8s/foo/bar/g
+    
+    :%s/foo/bar/g   整个文件
+</div></code></pre>
+<h2 id="%E8%AF%BB%E5%85%A5%E8%BE%93%E5%85%A5">读入输入</h2>
+<pre class="hljs"><code><div>    :r filename    读入文件
+
+    :r !ls      读入命令的结果
+
+    :r          读入当前文件
+</div></code></pre>
+<h2 id="%E7%BC%96%E8%BE%91%E5%A4%9A%E4%B8%AA%E6%96%87%E4%BB%B6">编辑多个文件</h2>
+<pre class="hljs"><code><div>    :n      编辑下一个文件
+    :N      编辑上一个文件
+
+    :rew    回到第一个文件
+
+    :args   列出打开的文件，标记出正在使用的文件
+</div></code></pre>
+<h2 id="%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6vimrc">配置文件<a href="./vimrc.html">vimrc</a></h2>
+<pre class="hljs"><code><div>    set number
+
+    set relativenumber  设置相对的行号（比较nb）
+
+</div></code></pre>
+<h2 id="%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8">自动补全</h2>
+<pre class="hljs"><code><div>- Ctrl-P	    向上文搜索
+- Ctrl-N		向下文搜索
+- Ctrl-X		选择搜索类型
+  	- Ctrl-D	宏定义包括 include 文件
+  	- Ctrl-I	当前文件和 include 文件
+  	- Ctrl-F	查找文件名字，当前目录中
+  	- Ctrl-L	复制当前文件中的一行
+</div></code></pre>
+<pre class="hljs"><code><div> :set ignorecase		设置补全忽略大小写
+ :set infercase		    推断补全的大小写，不只是匹配
+ :set complete=.,d,i,w,u,b,t		设置补全的范围
+ :set dictionary=file,file,...	    指定搜索目录
+</div></code></pre>
+<h2 id="%E9%AB%98%E7%BA%A7%E5%91%BD%E4%BB%A4-for-programmers">高级命令 for programmers</h2>
+<h3 id="%E5%8F%96%E6%B6%88%E8%87%AA%E5%8A%A8%E7%BC%A9%E8%BF%9B-insert-%E6%A8%A1%E5%BC%8F">取消自动缩进( insert 模式)</h3>
+<pre class="hljs"><code><div>  Ctrl-D    取消一级缩进
+
+  0Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行光标也从第一列开始
+
+  ^Ctrl-D   取消所有级别缩进，光标返回第一列
+            下一行缩进级别不变 
+</div></code></pre>
+<h3 id="%E6%8F%92%E5%85%A5%E7%BC%A9%E8%BF%9B">插入缩进</h3>
+<pre class="hljs"><code><div>  Ctrl-T    添加缩进，value = shiftwidth
+  &lt;Tab&gt;     value = tabstop
+
+  Ctrl-T 和 Ctrl-D 配合使用
+</div></code></pre>
+<h3 id="tab-%E7%9A%84%E4%BD%BF%E7%94%A8"><Tab> 的使用</h3>
+<pre class="hljs"><code><div>  set softtabstop=4     tab 移动4
+  set tabstop=4         &lt;Tab&gt; 为4
+  set shiftwidth=4
+</div></code></pre>
+<h3 id="modelines">Modelines</h3>
+<pre class="hljs"><code><div>  /*vim:tabstop=8:expandtabs:shiftwidth=8*/
+</div></code></pre>
+<blockquote>
+<p>必须是这种结构，而且在第一行或者后五行中，vim自动生成这种
+配置</p>
+</blockquote>
+<h2 id="%E7%A8%8B%E5%BA%8F%E4%B8%AD%E8%B7%B3%E8%BD%AC">程序中跳转</h2>
+<pre class="hljs"><code><div>  '%',  在C语言中的花括号中对应的跳转
+
+  'gD',   跳转到该文件中的变量定义位置
+
+  '[I',   查看标识符的定义位置
+  'Ctrl-O'  返回到标识符
+</div></code></pre>
+
 </body>
 </html>
