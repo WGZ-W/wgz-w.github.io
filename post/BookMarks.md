@@ -1,12 +1,16 @@
+# Some useful Websites
 
-- [Blogs](#blogs)
-- [Download Books](#download-books)
-- [Linux](#linux)
-  - [Vim](#vim)
-- [Machine Learning](#machine-learning)
-- [Articles](#articles)
+- [Some useful Websites](#some-useful-websites)
+  - [Blogs](#blogs)
+  - [Download Books](#download-books)
+  - [Linux](#linux)
+    - [Vim](#vim)
+  - [Machine Learning](#machine-learning)
+  - [Articles](#articles)
+  - [Forums](#forums)
+
+
 ## Blogs
-
 - [My blog](https://wgz-w.github.io/)
 - [CS-self-learning](https://csdiy.wiki/)
 - [viseator's blog (all)](https://www.viseator.com/)
@@ -21,12 +25,13 @@
 - [colah's blog (ML)](http://colah.github.io/)
 - [jyy's wiki](https://jyywiki.cn/)
 
+
 ## Download Books
 - [中文小说](https://www.huibooks.com/)
 - [英文小说](https://oceanofpdf.com/)
 - [英文杂志](https://freemagazines.top/)
 - [专业书籍下载](https://vdoc.pub/explore/)  
-
+- [中文小说2](https://www.iyd.wang/)
 
 
 ## Linux
@@ -56,3 +61,6 @@
 
 ## Articles
 - [Linux 私房菜（鸟哥）：我和 Linux 的这些年，那些事 ](https://www.sohu.com/a/155361177_262549)
+
+## Forums
+- [freemdict](https://forum.freemdict.com/)
