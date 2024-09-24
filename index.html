@@ -4,6 +4,22 @@ title: "WGZ 的个人网站"
 ---
 
 
+<div class="header">
+  <header>
+    {% if page.title %}
+      <h1>{{ page.title }}</h1>
+    {% else %} 
+      <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>  
+    {% endif %}
+    <p>Welcome</p>
+  </header>
+</div>
+
+<div class="navbar">
+  <a href="/blog.html" class="right">Blogs</a>
+  <a href="/" class="right">Home</a>
+  <a href="#">About</a>
+</div>
 
 Welcome to My website.
 <br>
