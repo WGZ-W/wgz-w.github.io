@@ -10,7 +10,11 @@
   <body>
   
     <!-- {% include navigation.html %} -->
-     {% include navbar %}
+    <div class="navbar">
+      {% for item in site.nav %}
+        <a href="{{ item[1] | relative_url }}">{{ item[0] }}</a> 
+      {% endfor %}
+    </div>
   
     <article class="markdown-body">
       {{ content }}
