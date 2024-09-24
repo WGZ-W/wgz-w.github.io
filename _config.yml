@@ -15,11 +15,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 author: "WGZ"
 
-# Navigation links
-nav:
-  home: "/"
-  blogs: "/blog.html"
-
 # Markdown
 markdown: kramdown
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"

@@ -57,6 +57,12 @@ body {
     color: black;
 }
 
+/* 主要的内容区域 */
+.main {   
+    background-color: white;
+    padding: 40px;
+}
+
 /* 底部 */
 .footer {
     padding: 5px;
