@@ -50,3 +50,10 @@ body {
     background-color: #ddd;
     color: black;
 }
+
+/* 底部 */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: #ddd;
+}
