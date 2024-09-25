@@ -16,9 +16,9 @@ body {
 
 /* 标题 + 背景图片 */
 .header {
-    background-image: url(../images/cat.jpeg);
+    background-image: url(/assets/images/cat.jpeg);
     background-size: 100% 100%;
-    padding: 400px;
+    padding: 300px;
     text-align: center;
     color: whitesmoke;
 }
@@ -30,6 +30,7 @@ body {
 
 .header a {
     color: white;
+    text-decoration: none;
 }
 
 .container-blog {
@@ -37,7 +38,7 @@ body {
     margin: auto;
     padding: 60px;
     overflow-wrap: break-word;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.2;
 }
 
@@ -46,7 +47,7 @@ body {
     margin: auto;
     padding: 20px;
     overflow-wrap: anywhere;
-    font-size: 24px;
+    font-size: 20px;
     line-height: 1.6;
 }
 

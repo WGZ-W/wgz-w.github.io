@@ -5,10 +5,10 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.markdown code {
+code {
     border-radius: 0%;
-
     padding: auto;
+    overflow-wrap: break-word;
 }
 
 pre {
