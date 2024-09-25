@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "配置 ArchLinux 桌面环境"
-tag: 
+tag: linux
 ---
 
 # 配置 Arch Linux 桌面

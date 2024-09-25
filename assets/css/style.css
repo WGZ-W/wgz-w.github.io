@@ -9,16 +9,18 @@
 body {
     font-family: Arial;
     margin: 0;
+    font-size: 16px;
+    line-height: 1.4;
+    min-height: 100%;
 }
 
 /* 标题 + 背景图片 */
 .header {
     background-image: url(../images/cat.jpeg);
-    background-size:100% 100%;
-    padding: 285px;
+    background-size: 100% 100%;
+    padding: 400px;
     text-align: center;
-    /* background: #303234; */
-    color: white;
+    color: whitesmoke;
 }
  
 /* 标题字体加大 */
@@ -26,54 +28,78 @@ body {
     font-size: 40px;
 }
 
-/* 导航 */
-.navbar {
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    opacity: 0.5;
-    background-color: #343633;
-}
- 
-/* 导航栏样式 */
-.navbar a {
-    float: left;
-    display: block;
+.header a {
     color: white;
-    text-align: center;
-    padding: 12px 20px;
-    text-decoration: none;
-}
- 
-/* 右侧链接*/
-.navbar a.right {
-    float: right;
-}
- 
-/* 鼠标移动到链接的颜色 */
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
 }
 
-/* 主要的内容区域 */
-.main {   
-    background-color: white;
-    padding: 40px;
+.container-blog {
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px;
+    overflow-wrap: break-word;
+    font-size: 24px;
+    line-height: 1.2;
 }
+
+.container-post {
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+    overflow-wrap: anywhere;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.date {
+    text-align: right;
+    padding: 24px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+/* top 导航 */
+.topnav {
+    overflow: hidden;
+}
+ 
+/* top 导航栏样式 */
+.topnav a {
+    float: left;
+    font-size: 32px;
+    color: black;  
+}
+
 
 /* 底部 */
 .footer {
-    padding: 5px;
+    padding: 1px;
     text-align: center;
     background: #ddd;
 }
 
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
 /* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
 @media screen and (max-width: 400px) {
-    .navbar a {
+    .topnav a {
         float: none;
         width: 100%;
     }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }

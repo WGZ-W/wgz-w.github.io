@@ -1,24 +1,41 @@
 
-
-
 <!DOCTYPE html>
-
 <html>
 
 {% include head.html %}
 
-  <body>
-    <div class="navbar">
-      <a href="/blog.html" class="right">Blogs</a>
-      <a href="/" class="right">Home</a>
-      <a href="#">About</a>
-    </div>
+<body>
+  
+
+<div class="container-post">
+  <div class="topnav">
+    <a href="/blog.html">..</a>
+  </div>
+  <div class="date">
+    <p>{{ page.date }}</p>
+  </div>
+  <div class="content"> 
+    {{ content }}
+  </div>
     
-    <article class="main">
-      {{ content }}
-    </article>
+
+</div>
+
+<!-- <div class="topnav">
+  <a href="/blog.html" class="right">Blogs</a>
+  <a href="#">About</a>
+</div> -->
     
-  </body>
+
+
+  
+</body>
 
 </html>
+
+
+
+
+
+
 

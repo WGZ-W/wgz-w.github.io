@@ -1,30 +1,60 @@
 ---
 layout: default
-title: "WGZ 的个人网站"
 ---
 
-
-
-<div class="header">
-  <header>
-    {% if page.title %}
-      <h1>{{ page.title }}</h1>
-    {% else %} 
-      <h1><a href="{{ site.url }}">{{ site.title }}</a></h1>  
-    {% endif %}
-    <p>Welcome</p>
-  </header>
-</div>
-
-<div class="navbar">
+<!-- <div class="topnav"></div>
   <a href="/blog.html" class="right">Blogs</a>
   <a href="/" class="right">Home</a>
   <a href="#">About</a>
+</div> -->
+
+
+<div class="header">
+  <h1>{{ site.title }}</h1>
+  <h2><a href="/blog.html">Clike into my site</a></h2>
 </div>
 
-  Welcome to My website.
-  <br>
-  I'm intersted in Linux and write some blogs about ArchLinux.
+<!-- 
+<div class="row">
+  <div class="leftcolumn">
+    <p>Hello</p>
+  </div>
+
+  <div class="rightcolumn">
+    <p>World</p>
+  </div>
+
+</div> -->
+<!-- <div class="row">
+  <div class="sidenav">
+    <h3>Index</h3>
+    <hr>
+    {% for post in site.tags.linux %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endfor %}
+  </div>
+
+  <div class="main">
+    <div class="topnav">
+      <a href="/blog.html" class="right">Blogs</a>
+      <a href="/" class="right">Home</a>
+      <a href="#">About</a>
+    </div>
+    <div class="content">
+      <h1>Welcome to My website.</h1>
+      <br>
+      I'm intersted in Linux and write some blogs about ArchLinux.
+      <br>
+      Hello
+      <br>
+      Test
+      <br>
+      World.
+      <br>
+  </div>
+  </div>
+</div> -->
+
 
 <div class="footer">
   <p><i>Build by   
