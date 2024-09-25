@@ -13,9 +13,9 @@
 
 pre {
     background-color: #e5e5e5;
-    /*  border: 1px solid #666699; */
-      border: 1px dotted #666699;
-      padding: .5em 1em;
-      margin: 0 2em .5em 2em;
-      font-weight: bold;
+    border: 1px solid #666699;
+      /* border: 1px dotted #666699; */
+    padding: .5em 1em;
+    margin: 0 2em .5em 2em;
+    font-weight: bold;
 }

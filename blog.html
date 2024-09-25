@@ -5,20 +5,22 @@ title: Blog
 
 
 
-<div class="navbar"></div>
+<div class="navbar">
   <a href="/blog.html" class="right">Blogs</a>
   <a href="/" class="right">Home</a>
   <a href="#">About</a>
 </div>
 
-<h1>Latest Posts</h1>
+<div class="main">
+  <h1>Latest Posts</h1>
 
-<div>
-  <ul>
-    {% for post in site.posts %}
-      <li>
-        <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
-      </li>
-    {% endfor %}
-  </ul>
+  <div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
