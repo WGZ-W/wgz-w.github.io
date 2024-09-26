@@ -9,15 +9,13 @@
 body {
     font-family: Arial;
     margin: 0;
-    font-size: 16px;
-    line-height: 1.4;
     min-height: 100%;
+    /* background-image: url(/assets/images/cat.jpeg); */
+    /* background-size: 100% 100%; */
 }
 
 /* 标题 + 背景图片 */
 .header {
-    background-image: url(/assets/images/cat.jpeg);
-    background-size: 100% 100%;
     padding: 300px;
     text-align: center;
     color: whitesmoke;
@@ -34,24 +32,24 @@ body {
 }
 
 /* 创建的列 */
-.sidebar {
+.leftcolumn {
     float: left;
     position: fixed;
     width: 15%;
 }
 
-.sidebar h1 {
+.leftcolumn h1 {
     text-align: center;
 }
 
-.sidebar ul {
+.leftcolumn ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: #f1f1f1;
 }
  
-.sidebar li a {
+.leftcolumn li a {
     display: block;
     color: #000;
     text-align: center;
@@ -61,7 +59,7 @@ body {
 
 
 
-.main {
+.rightcolumn {
     float: right;
     width: 85%;
     padding: 25px 100px;
@@ -75,12 +73,22 @@ body {
     clear: both;
 }
 
+.sidenav {
+    margin: auto;
+    background-color: black;
+}
+
+.content {
+    overflow: auto;
+}
+
 
 /* 底部 */
 .footer {
     padding: 1px;
     text-align: center;
     background: #ddd;
+    bottom: auto;
 }
 
 
