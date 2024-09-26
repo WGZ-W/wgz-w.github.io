@@ -34,6 +34,8 @@ tag:
   - [5 Post-installation](#5-post-installation)
 
 > [Arch Wiki 安装指南 ](https://wiki.archlinux.org/title/Installation_guide)
+
+
 ## 1 安装前准备
 ### 1.1 设置控制台字体
 ```shell

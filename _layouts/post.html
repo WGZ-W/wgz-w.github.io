@@ -5,9 +5,29 @@
 {% include head.html %}
 
 <body>
-  
 
-<div class="container-post">
+  <div class="row">
+
+    <div class="sidebar">
+      <h1><a href="/blog.html">All Posts</a></h1>
+      <div>
+        <ul>
+          {% for post in site.posts %}
+            <li>
+              <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  
+    <div class="main">
+      {{ content }}
+    </div>
+  
+  </div>
+
+<!-- <div class="container-post">
   <div class="topnav">
     <a href="/blog.html">..</a>
   </div>
@@ -16,7 +36,7 @@
   </div>
   <div class="content"> 
     {{ content }}
-  </div>
+  </div> -->
     
 
 </div>

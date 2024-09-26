@@ -16,11 +16,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 author: "WGZ"
 
 # Markdown
-markdown: kramdown
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-highlighter: rouge
+# markdown: kramdown
+# markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+# highlighter: rouge
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
 
