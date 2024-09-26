@@ -10,60 +10,33 @@ body {
     font-family: Arial;
     margin: 0;
     min-height: 100%;
-    /* background-image: url(/assets/images/cat.jpeg); */
-    /* background-size: 100% 100%; */
 }
 
 /* 标题 + 背景图片 */
 .header {
-    padding: 300px;
+    background-color: gray;
     text-align: center;
-    color: whitesmoke;
+    margin: auto;
+    padding: 100px;
 }
  
 /* 标题字体加大 */
 .header h1 {
     font-size: 40px;
+    color: #000;
 }
 
-.header a {
-    color: white;
-    text-decoration: none;
-}
 
 /* 创建的列 */
 .leftcolumn {
     float: left;
-    position: fixed;
-    width: 15%;
+    width: 20%;
 }
-
-.leftcolumn h1 {
-    text-align: center;
-}
-
-.leftcolumn ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #f1f1f1;
-}
- 
-.leftcolumn li a {
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 8px 16px;
-    text-decoration: none;
-}
-
 
 
 .rightcolumn {
     float: right;
-    width: 85%;
-    padding: 25px 100px;
-    font-size: 16px;
+    width: 80%;
 }
 
 /* 列后清除浮动 */
@@ -73,13 +46,40 @@ body {
     clear: both;
 }
 
+
 .sidenav {
     margin: auto;
-    background-color: black;
+    background-color: white;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+.sidenav li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.sidenav li a:hover{
+    background-color: #555;
+    color: white;
 }
 
 .content {
     overflow: auto;
+    margin: auto;
+    min-height: 600px;
+    /* background-color: green; */
+    padding: 25px 75px;
 }
 
 
