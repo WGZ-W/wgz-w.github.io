@@ -47,16 +47,17 @@ body {
 
 /* 列后清除浮动  */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
 }
 
 /* Create two columns */
 /* side */
 .side {
-    float: left;
-    width: 20%;
+    -ms-flex: 20%; /* IE10 */
+    flex: 20%;
     background-color: #f1f1f1;
     padding: 20px;
     overflow-wrap: break-word;
@@ -66,8 +67,8 @@ body {
  
 /* main */
 .main {   
-    float: right;
-    width: 80%;
+    -ms-flex: 80%; /* IE10 */
+    flex: 80%;
     background-color: white;
     padding: 20px;
     overflow: auto;
