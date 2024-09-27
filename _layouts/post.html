@@ -6,7 +6,7 @@
 
 <body>
 
-  <div class="navbar">
+  <div class="topnav">
     <a href="#" class="right">Blogs</a>
     <a href="#" class="right">Home</a>
     <a href="#">About</a>
@@ -14,20 +14,20 @@
 
   <div class="row">
     <div class="side">
-      
+      <div class="sidenav">
         <h1><a href="/">Home</a></h1>
         <ul>
           {% for post in site.posts %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
-      
+      </div>     
     </div>
   
     <div class="main">
- 
+      <div class="content">
         {{ content }}
-
+      </div>
     </div>
   </div>
   

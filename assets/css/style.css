@@ -5,13 +5,13 @@
     box-sizing: border-box;
 }
  
-/* body style */
+/* body */
 body {
     font-family: Arial;
     margin: 0;
 }
 
-/* title */
+/* header */
 .header {
     background-image: url(/assets/images/cat.jpeg);
     background-size: 100% 100%;
@@ -19,8 +19,6 @@ body {
     padding: 285px;
     color: white;
 }
- 
-/* larger fontsize */
 .header h1 {
     font-size: 40px;
 }
@@ -34,8 +32,6 @@ body {
     opacity: 0.5;
     background-color: #343633;
 }
-
-/* topnav style */
 .topnav a {
     float: left;
     display: block;
@@ -44,41 +40,31 @@ body {
     padding: 12px 20px;
     text-decoration: none;
 }
-
-/* right link */
 .topnav a.right {
     float: right;
 }
-
-/* mouse hover */
 .topnav a:hover {
     background-color: #ddd;
     color: black;
 }
 
 
-/* create two column */
-/* sidebar */
+/* Create two columns */
+/* side */
 .side {
     float: left;
     width: 20%;
     background-color: #f1f1f1;
     padding: 20px;
-    min-height: 600px;
-    overflow-wrap: break-word;
-    text-align: center;
 }
  
-/* main content area */
+/* main */
 .main {   
     float: right;
     width: 80%;
     background-color: white;
     padding: 20px;
-    overflow: auto;
-    margin: auto;
-    min-height: 600px;
-    padding: 25px 75px;
+    
 }
 
 /* 列后清除浮动  */
@@ -88,28 +74,38 @@ body {
     clear: both;
 }
 
-/* side nav style */
-.side ul {
+
+/* sidenav */
+.sidenav {
+    min-height: 600px;
+    overflow-wrap: break-word;
+    text-align: center;
+}
+.sidenav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
-.side h1 li a {
+.sidenav h1 li a {
     display: block;
     color: #000;
     padding: 8px 16px;
     text-decoration: none;
 }
-
-.side li a:hover{
+.sidenav li a:hover{
     background-color: #555;
     color: white;
 }
 
+/* content */
+.content {
+    overflow: auto;
+    margin: auto;
+    min-height: 600px;
+    padding: 25px 75px;
+}
 
-
-/* 底部 */
+/* footer */
 .footer {
     padding: 1px;
     text-align: center;
