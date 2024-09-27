@@ -77,7 +77,6 @@ body {
 
 /* sidenav */
 .sidenav {
-    min-height: 600px;
     overflow-wrap: break-word;
     text-align: center;
 }
