@@ -15,10 +15,19 @@
   <div class="row">
     <div class="side">
       <!-- <div class="sidenav"> -->
-        
+        {% include sidenav.html %}
         <ul>
           <li><h1><a href="/">Home</a></h1></li>
-          {% for post in site.posts %}
+          <li><h2>ArchLinux</h2></li>
+          {% for post in site.tags.archlinux %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li> 
+          {% endfor %}
+          <li><h2>Git</h2></li>
+          {% for post in site.tags.git %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+          {% endfor %}
+          <li><h2>Vim</h2></li>
+          {% for post in site.tags.vim %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Git's Configuration"
-tag: linux
+tag: git
 ---
 
 

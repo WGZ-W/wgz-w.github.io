@@ -1,8 +1,9 @@
 ---
 layout: post
-title: "grub-themes"
-tag:
+title: "ArchLinux-4-GrubThemes"
+tag: archlinux
 ---
+
 
 # Grub-themes Installation
 > [grub-themes](https://www.gnome-look.org/browse?cat=109)
