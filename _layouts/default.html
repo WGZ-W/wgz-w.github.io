@@ -8,10 +8,18 @@
 
 <body>
   <div class="header">
-    <h1>My Site</h1>
+    <h1>WGZ's Website</h1>
+    <p>Welcome</p>
   </div>
+
+  <div class="navbar">
+    <a href="#" class="right">Blogs</a>
+    <a href="#" class="right">Home</a>
+    <a href="#">About</a>
+  </div>
+
   <div class="row">
-    <div class="leftcolumn">
+    <div class="side">
       <div class="sidenav">
         <h1><a href="/">Home</a></h1>
         <ul>
@@ -19,20 +27,18 @@
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}
         </ul>
-        
-
       </div>
     </div>
     
-    <div class="rightcolumn">
+    <div class="main">
       <div class="content">
         <h1>Hello World!</h1>
+        {{ content }}
       </div>
     </div>
-  
   </div>
 
-  {{ content }}
+  
 
   <div class="footer">
   <p><i>Build by   
