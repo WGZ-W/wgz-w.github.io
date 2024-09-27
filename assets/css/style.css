@@ -62,7 +62,6 @@ body {
     padding: 20px;
     overflow-wrap: break-word;
     text-align: center;
-    min-height: 600px;
 }
  
 /* main */
@@ -73,7 +72,6 @@ body {
     padding: 20px;
     overflow: auto;
     margin: auto;
-    min-height: 600px;
     padding: 25px 75px;
 }
 
