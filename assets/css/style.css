@@ -45,6 +45,12 @@ body {
     color: black;
 }
 
+/* 列后清除浮动  */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Create two columns */
 /* side */
@@ -55,6 +61,7 @@ body {
     padding: 20px;
     overflow-wrap: break-word;
     text-align: center;
+    min-height: 600px;
 }
  
 /* main */
@@ -69,18 +76,16 @@ body {
     padding: 25px 75px;
 }
 
-/* 列后清除浮动  */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 
 .side ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+}
+.side h1 a {
+    text-decoration: none;
 }
 .side li a {
     display: block;
