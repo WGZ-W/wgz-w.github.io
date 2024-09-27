@@ -6,10 +6,9 @@
 }
 
 code {
-    border-radius: 0%;
     padding: auto;
     height: auto;
-    
+    font-size: larger;
 }
 
 pre {
@@ -18,9 +17,6 @@ pre {
       /* border: 1px dotted #666699; */
     padding: .5em 1em;
     margin: 0 2em .5em 2em;
-    /* width: 100px; */
     font-weight: bold;
-    /* overflow-wrap: break-word; */
-    /* height: auto; */
-    overflow: auto;
+    /* overflow: auto; */
 }

@@ -74,8 +74,6 @@ body {
     padding: 20px;
 }
 
-
-
 /* 列后清除浮动  */
 .row:after {
     content: "";
@@ -92,12 +90,13 @@ body {
 
 .sidenav ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
-.sidenav li a {
+.sidenav h1 li a {
     display: block;
     color: #000;
-    text-align: center;
     padding: 8px 16px;
     text-decoration: none;
 }
