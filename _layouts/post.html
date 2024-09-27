@@ -15,8 +15,9 @@
   <div class="row">
     <div class="side">
       <!-- <div class="sidenav"> -->
-        <h1><a href="/">Home</a></h1>
+        
         <ul>
+          <li><h1><a href="/">Home</a></h1></li>
           {% for post in site.posts %}
             <li><a href="{{ post.url }}">{{ post.title }}</a></li>
           {% endfor %}

@@ -61,7 +61,6 @@ body {
     background-color: #f1f1f1;
     padding: 20px;
     overflow-wrap: break-word;
-    text-align: center;
 }
  
 /* main */
@@ -82,9 +81,6 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-.side h1 a {
-    text-decoration: none;
 }
 .side li a {
     display: block;
