@@ -46,7 +46,7 @@ body {
 }
 
 /* 列后清除浮动  */
-.row:after {
+.row {
     display: -ms-flexbox; /* IE10 */
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
