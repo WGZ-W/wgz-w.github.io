@@ -5,18 +5,21 @@ data: 2024-09-22 12:00
 tag: archlinux
 ---
 
+# ArchLinux-2-Desktop
+
 **Index**
-- [Install Display Driver](#install-display-driver)
-- [Install Display Server](#install-display-server)
-- [Install dwm](#install-dwm)
-- [Install st](#install-st)
-- [dmenu](#dmenu)
-- [slstatus](#slstatus)
-- [feh (wallpaper)](#feh-wallpaper)
-- [neofetch](#neofetch)
+- [ArchLinux-2-Desktop](#archlinux-2-desktop)
+  - [Install Display Driver](#install-display-driver)
+  - [Install Display Server](#install-display-server)
+  - [Install dwm](#install-dwm)
+  - [Install st](#install-st)
+  - [dmenu](#dmenu)
+  - [slstatus](#slstatus)
+  - [feh (wallpaper)](#feh-wallpaper)
+  - [neofetch](#neofetch)
 
 
-# Install Display Driver
+## Install Display Driver
 > [Nvidia Driver Installation](https://wiki.archlinux.org/title/NVIDIA)
 
 
@@ -34,14 +37,14 @@ $ sudo pacman -S nvidia-open
 After Install, you should reboot to use 
 **nvidia-smi** command。
 
-# Install Display Server
+## Install Display Server
 > [Xorg Window System](https://wiki.archlinux.org/title/Xorg)
 
 ```
 $ sudo pacman -S xorg xorg-server xorg-xinit
 ```
 
-# Install dwm
+## Install dwm
 > [dwm](https://dwm.suckless.org/)
 
 
@@ -69,7 +72,7 @@ if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
 fi
 ```
 
-# Install st
+## Install st
 > [st](https://st.suckless.org/)
 
 
@@ -96,7 +99,7 @@ $ sudo make clean install
 ```
 Use **shift+alt+enter** to start **st** terminal.
 
-# dmenu
-# slstatus
-# feh (wallpaper)
-# neofetch
+## dmenu
+## slstatus
+## feh (wallpaper)
+## neofetch

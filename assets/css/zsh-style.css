@@ -1,0 +1,49 @@
+
+
+.body {
+    margin: auto;
+}
+
+.header {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    border-bottom-style: solid;
+}
+
+.main {
+    margin: auto;
+    max-width: 80%;
+}
+
+.main table{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.main table ul {
+    padding: 20px 50px;
+}
+
+.content {
+    margin: auto;
+    padding: auto;
+}
+
+.footer {
+    border-top-style: solid;
+    text-align: center;
+}
+
+.topnav {
+    border-bottom-style: solid;
+    padding: auto;
+    margin: auto;
+}
+
+.bottomnav {
+    border-top-style: solid;
+    padding: auto;
+    margin: auto;
+}

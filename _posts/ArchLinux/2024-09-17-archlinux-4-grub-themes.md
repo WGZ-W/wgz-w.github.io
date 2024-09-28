@@ -4,8 +4,9 @@ title: "ArchLinux-4-GrubThemes"
 tag: archlinux
 ---
 
+# ArchLinux-4-GrubThemes
 
-# Grub-themes Installation
+## Grub-themes Installation
 > [grub-themes](https://www.gnome-look.org/browse?cat=109)
 
 
