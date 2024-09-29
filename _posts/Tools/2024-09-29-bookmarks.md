@@ -7,6 +7,11 @@ tag: tools
 
 # Bookmarks
 
+## Important
+- [鳥哥的首頁](https://linux.vbird.org/)
+- [ArchLinux](https://archlinux.org/)
+- [Vim help files](https://vimhelp.org/)
+
 ## Software
 
 - The [suckless](https://suckless.org/). Home of [dwm](https://dwm.suckless.org/) [dmenu](https://tools.suckless.org/dmenu/) and other quality software. 
