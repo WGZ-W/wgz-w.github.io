@@ -1,6 +1,6 @@
 ---
-title: ArchLinux-1-Installation
-data: 2024-09-21 12:00
+title: ArchLinux-Installation
+data: 2024-09-24 12:00
 author: wgz
 tag: archlinux
 ---

@@ -1,7 +1,7 @@
 ---
-title: ArchLinux-3-Applications
+title: ArchLinux-Applications
 author: wgz
-data: 2024-09-23 12:00
+data: 2024-09-22 12:00
 tag: archlinux
 
 ---
