@@ -1,0 +1,10 @@
+
+
+
+
+
+## Clipboard
+To make the system clipboard work with Neovim, you may need to install xclip (X11) or wl-clipboard (Wayland).
+```
+$ sudo pacman -S xclip
+```
