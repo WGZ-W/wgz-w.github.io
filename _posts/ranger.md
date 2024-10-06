@@ -1,0 +1,56 @@
+
+
+
+## 1 Installation
+
+## 2 Usage
+### How to change the default editor
+```
+~/.bashrc
+------------
+export EDITOR=nvim
+```
+
+### Key bindings and hints
+`s` for :shell command
+`!` for :shell command
+`r` for :open_with command
+`y` for yank(copy)
+`d` for cut/delete
+`p` for paste
+`z` for changing settings
+`u` for "undo"
+
+### Working with Files
+- i = Display file (useful if you'd like to view a text file in a pager instead of editing it)
+- r = Open file with… (allows you to choose program to use)
+- zh = View hidden files
+- <space> = Select current file
+- cw = Rename current file
+- yy = Yank (copy) file
+- dd = Mark file for cut operation
+
+### Tabbed Browsing
+- <ctrl>-n = Create new tab
+- <ctrl>-w = Close current tab
+- <tab> = Next tab
+- <shift><tab> = Previous tab
+
+### Command Interface
+- ! = Execute a command from the shell (non-ranger commands)
+- : = Execute a ranger command
+
+
+### Using shell
+Ranger allows you to use shell. Just type your shell command in ranger's console after `:shell` and press `Enter` to run it.
+
+
+## 3 Configuration
+```
+$ ranger --copy-config=all
+```
+
+
+## See also
+- [Arch wiki](https://wiki.archlinux.org/title/Ranger)
+- [Github](https://github.com/ranger/ranger/wiki)
