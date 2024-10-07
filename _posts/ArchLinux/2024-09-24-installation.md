@@ -68,13 +68,45 @@ Using iwctl to connect the wireless network:
 ```
 
 ## My partition layout:
-| Mount point | Partition                 | Suggested size |
-| ----------- | ------------------------- | -------------- |
-| /boot       | /dev/boot_partition       | More than 1GiB |
-| /           | /dev/root_partition       | More           |
-| /home       | /dev/home_partition       | More           |
-| /boot/efi   | /dev/efi_system_partition | Less than 1GiB |
-| [SWAP]      | /dev/swap_partition       | Same as Memory |
+<table>
+  <thead>
+    <tr>
+      <th>Mount point</th>
+      <th>Partition</th>
+      <th>Suggested size</th>
+    </tr>
+  </thead>
+
+  <tbody>
+  <tr>
+    <td>/boot</td>
+    <td>/dev/boot_partition</td>
+    <td> More than 1GiB </td>
+  </tr>
+  <tr>
+    <td> / </td>
+    <td> /dev/root_partition  </td>
+    <td> More </td>
+  </tr>
+    <tr>
+    <td> /home </td>
+    <td> /dev/home_partition  </td>
+    <td> More </td>
+  </tr>
+    <tr>
+    <td> /boot/efi </td>
+    <td> /dev/efi_system_partition  </td>
+    <td> Less than 1GiB </td>
+  </tr>
+    <tr>
+    <td> [SWAP] </td>
+    <td> /dev/swap_partition  </td>
+    <td> Same as Memory </td>
+  </tr>
+  </tbody>
+
+</table>
+
 
 ## Format partitions
 ```shell
