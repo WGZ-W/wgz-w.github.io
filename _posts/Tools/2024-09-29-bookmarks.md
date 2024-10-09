@@ -11,6 +11,12 @@ tag: tools
 - [鳥哥的首頁](https://linux.vbird.org/)
 - [ArchLinux](https://archlinux.org/)
 - [Vim help files](https://vimhelp.org/)
+- [Neovim User Doc](https://neovim.io/doc/user/)
+
+## Interesting
+- [csdiy](https://csdiy.wiki/)
+- [Dive into Deep learning](https://zh.d2l.ai/)
+
 
 ## Software
 
