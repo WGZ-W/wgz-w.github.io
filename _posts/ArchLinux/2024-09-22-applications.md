@@ -10,7 +10,6 @@ tag: archlinux
 
 **Index**
 - [ArchLinux-3-Applications](#archlinux-3-applications)
-  - [代码编辑器（Neovim）](#代码编辑器neovim)
   - [Ranger](#ranger)
   - [Tmux](#tmux)
   - [Lazygit](#lazygit)
@@ -18,15 +17,23 @@ tag: archlinux
   - [中文字体](#中文字体)
   - [中文输入法（fcitx5）](#中文输入法fcitx5)
 
-## 代码编辑器（Neovim）
-因为 Arch Linux 上直接使用 pacman 安装的 vim 是-clipboard，无法使用系统剪贴板。解决办法就是用 neovim 顶掉 vim ，不过不用担心，安装了 neovim 后还是可以在命令行里使用 vim 的，只不过这个 vim 就有 +clipboard 了。
-```
-$ sudo pacman -S neovim
-```
+
 ## Ranger
+```
+$ sudo pacman -S ranger
+```
 ## Tmux
+```
+$ sudo pacman -S tmux
+```
 ## Lazygit
+```
+$ sudo pacman -S lazygit
+```
 ## Tldr
+```
+$ sudo pacman -S tldr
+```
 
 ## 中文字体
 速速把所有能整上的免费字体都给整上
