@@ -23,6 +23,16 @@ $ sudo pacman -S alsa-utils
 $ alsamixer
 ```
 
+For laptop, maybe you have two sound cards so 
+it is important to choose the right card.
+### An example of setting default device using "defaults" node
+You'd better to search **/default** and change the origin content rather directly add below content
+```
+/usr/share/alsa/alsa.conf
+-------------------------------------------
+defaults.ctl.card 1; # Sets default device and control to second card (counting begins with 0).
+defaults.pcm.card 1; # This does not change the data type.
+```
 ### JACK Audio Connection Kit
 ```
 $ sudo pacman -S jack2
