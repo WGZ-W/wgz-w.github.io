@@ -1,16 +1,17 @@
 ---
+layout: post
 title: ArchLinux-Installation
 data: 2024-09-24 12:00
 author: wgz
 tag: archlinux
 ---
 
-# ArchLinux-1-Installation
+# ArchLinux-Installation
 
 Recommand follow the [Installation_guide](https://wiki.archlinux.org/title/Installation_guide), and this artical is just some supplements.
 
 **Index**
-- [ArchLinux-1-Installation](#archlinux-1-installation)
+- [ArchLinux-Installation](#archlinux-installation)
   - [Console fonts](#console-fonts)
   - [Connect the internet](#connect-the-internet)
   - [Update the system clock](#update-the-system-clock)

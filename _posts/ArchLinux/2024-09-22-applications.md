@@ -10,37 +10,10 @@ tag: archlinux
 
 **Index**
 - [ArchLinux-3-Applications](#archlinux-3-applications)
-  - [Ranger](#ranger)
-  - [Tmux](#tmux)
-  - [Lazygit](#lazygit)
-  - [Tldr](#tldr)
-  - [中文字体](#中文字体)
   - [中文输入法（fcitx5）](#中文输入法fcitx5)
 
 
-## Ranger
-```
-$ sudo pacman -S ranger
-```
-## Tmux
-```
-$ sudo pacman -S tmux
-```
-## Lazygit
-```
-$ sudo pacman -S lazygit
-```
-## Tldr
-```
-$ sudo pacman -S tldr
-```
 
-## 中文字体
-速速把所有能整上的免费字体都给整上
-```
-$ sudo pacman -S noto-fonts-cjk wqy-microhei wqy-microhei-lite wqy-bitmapfont
-$ sudo pacman -S wqy-zenhei ttf-arphic-ukai ttf-arphic-uming adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts
-```
 
 ## 中文输入法（fcitx5）
 ```
