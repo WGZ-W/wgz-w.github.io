@@ -1,28 +1,52 @@
----
-layout: default
----
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% else %} 
+            {{ site.title }}
+        {% endif %}
+    </title>
+
+    <link rel="stylesheet" href="/assets/css/zsh-style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/markdown.css" type="text/css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 style="border: none;">WGZ's Website</h1>
+        <p>Welcome</p>
+    </div>
+    
+    
+    
+    <div class="main">
+        {% include table-of-contents.html %}
+    </div>
+    
+    
+    
+    <div class="footer">
+        <p><i>Build by   
+          <a href="https://github.com/WGZ-W/" target="_blank">WGZ-W's Github</a>
+        </i></p>
+    </div>
+
+</body>
+
+</html>
 
 
 
-
-<div class="header">
-    <h1 style="border: none;">WGZ's Website</h1>
-    <p>Welcome</p>
-</div>
-
-
-
-<div class="main">
-    {% include table-of-contents.html %}
-</div>
-
-
-
-<div class="footer">
-    <p><i>Build by   
-      <a href="https://github.com/WGZ-W/" target="_blank">WGZ-W's Github</a>
-    </i></p>
-</div>
 
 
 
