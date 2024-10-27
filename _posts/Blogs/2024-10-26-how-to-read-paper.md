@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to read a paper"
+title: "How to Read a Paper"
 tag: blogs
 ---
 

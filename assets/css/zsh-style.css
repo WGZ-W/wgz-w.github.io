@@ -17,6 +17,10 @@
     max-width: 80%;
 }
 
+.main li {
+    padding: 10px;
+}
+
 .main table{
     margin: auto;
     padding: auto;
