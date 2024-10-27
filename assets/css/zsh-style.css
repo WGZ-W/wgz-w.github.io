@@ -40,16 +40,17 @@
 .footer {
     border-top-style: solid;
     text-align: center;
+    margin: 10px;
 }
 
 .topnav {
     border-bottom-style: dotted;
     padding: auto;
-    margin: auto;
+    margin: 10px;
 }
 
 .bottomnav {
     border-top-style: dotted;
     padding: auto;
-    margin: auto;
+    margin: 10px;
 }
