@@ -39,13 +39,13 @@
 }
 
 .topnav {
-    border-bottom-style: dashed;
+    border-bottom-style: dotted;
     padding: auto;
     margin: auto;
 }
 
 .bottomnav {
-    border-top-style: dashed;
+    border-top-style: dotted;
     padding: auto;
     margin: auto;
 }
