@@ -11,6 +11,7 @@
     border-bottom-style: solid;
 }
 
+
 .main {
     margin: auto;
     max-width: 80%;
@@ -38,13 +39,13 @@
 }
 
 .topnav {
-    border-bottom-style: solid;
+    border-bottom-style: dashed;
     padding: auto;
     margin: auto;
 }
 
 .bottomnav {
-    border-top-style: solid;
+    border-top-style: dashed;
     padding: auto;
     margin: auto;
 }
