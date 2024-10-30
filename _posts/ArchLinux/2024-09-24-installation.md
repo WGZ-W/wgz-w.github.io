@@ -8,7 +8,7 @@ tag: archlinux
 
 # ArchLinux-Installation
 
-Recommand follow the [Installation_guide](https://wiki.archlinux.org/title/Installation_guide), and this artical is just some supplements.
+Recommand follow the [Installation guide](https://wiki.archlinux.org/title/Installation_guide), and this artical is just some supplements.
 
 **Index**
 - [ArchLinux-Installation](#archlinux-installation)
