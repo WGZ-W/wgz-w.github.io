@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Sleep"
+title: "My Configuration about Computer"
 tag: blogs
 ---
 
