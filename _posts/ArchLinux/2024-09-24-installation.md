@@ -12,6 +12,7 @@ Recommand follow the [Installation guide](https://wiki.archlinux.org/title/Insta
 
 **Index**
 - [ArchLinux-Installation](#archlinux-installation)
+  - [Prepare an installation medium](#prepare-an-installation-medium)
   - [Console fonts](#console-fonts)
   - [Connect the internet](#connect-the-internet)
   - [Update the system clock](#update-the-system-clock)
@@ -35,6 +36,10 @@ Recommand follow the [Installation guide](https://wiki.archlinux.org/title/Insta
   - [Start the NetwrokManager Service](#start-the-netwrokmanager-service)
   - [Add new user](#add-new-user)
 
+
+## Prepare an installation medium
+Using **ventoy**. 
+Remerber to update the ventoy's version.
 
 ## Console fonts
 ```
