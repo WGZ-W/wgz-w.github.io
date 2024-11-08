@@ -5,13 +5,14 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.code {
+code {
     padding: auto;
     height: auto;
     font-size: larger;
+    background-color: aqua;
 }
 
-.pre {
+pre {
     background-color: #e5e5e5;
     border: 1px solid #666699;
       /* border: 1px dotted #666699; */
@@ -22,16 +23,16 @@
 }
 
 
-.h1 {
+h1 {
     border-bottom: solid;
     text-align: center;
 }
 
-.h2 {
+h2 {
     border-bottom: solid;
 }
 
-.blockquote p {
+blockquote p {
     color: greenyellow;
     border-style: solid;
     border-left-width: 10px;
