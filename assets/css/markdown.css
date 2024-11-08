@@ -31,7 +31,7 @@
     border-bottom: solid;
 }
 
-.blockquote {
+.blockquote p {
     color: greenyellow;
     border-style: solid;
     border-left-width: 10px;
