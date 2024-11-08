@@ -37,6 +37,11 @@
     padding: auto;
 }
 
+.index {
+    max-width: 60%;
+    margin: auto;
+    padding: auto;
+}
 .footer {
     border-top-style: solid;
     text-align: center;
