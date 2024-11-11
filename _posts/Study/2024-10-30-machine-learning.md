@@ -8,13 +8,16 @@ title: "Pattern Recognition and Machine Learning"
 # Pattern Recognition and Machine Learning
 
 - [Pattern Recognition and Machine Learning](#pattern-recognition-and-machine-learning)
-  - [Introduction](#introduction)
-  - [Pytorch](#pytorch)
+  - [*1* Introduction](#1-introduction)
+  - [*2* Pytorch](#2-pytorch)
+    - [*2.1* Dataset and Dataloader](#21-dataset-and-dataloader)
+    - [*2.2* Tensor](#22-tensor)
+    - [*2.3* torch.nn](#23-torchnn)
   - [Linear Regression](#linear-regression)
   - [SVM](#svm)
 
 
-## Introduction
+## *1* Introduction
 Machine Learning ~= Looking for Function  
 Professional words:
 - Deep Learning
@@ -41,7 +44,27 @@ Professional words:
 - Meta Learning = Learn to Learn
 - Few-shot learning
 
-## Pytorch
-- Dataset and Dataloader
+## *2* Pytorch
+### *2.1* Dataset and Dataloader
+### *2.2* Tensor
+- Shape of tensors
+- Creating tensors
+- Common Operations
+  - Transpose
+  - Squeeze
+  - Unsqueeze
+  - Cat
+- Device
+  - torch.cuda.is_available()
+  - to('cuda')
+- Gradient Calculation
+
+### *2.3* torch.nn 
+- Network Layers
+- Network Parameters
+- Non-Linear Activation Functions
+- Build your own neural network
+- Loss Functions
+
 ## Linear Regression
 ## SVM
