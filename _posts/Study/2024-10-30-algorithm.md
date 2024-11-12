@@ -11,7 +11,7 @@ title: "Algorithm"
   - [*1* Introduction to Algorithm ()](#1-introduction-to-algorithm-)
   - [*2* Complexity analysis (复杂度分析)](#2-complexity-analysis-复杂度分析)
     - [*2.1* Iteration and Recursion (迭代与递归)](#21-iteration-and-recursion-迭代与递归)
-    - [*2.2* Time Complexity ()](#22-time-complexity-)
+    - [*2.2* 时间复杂度 Time Complexity ()](#22-时间复杂度-time-complexity-)
 
 ## *1* Introduction to Algorithm ()
 
@@ -28,6 +28,6 @@ title: "Algorithm"
 递归天然适合处理链表、树和图的相关问题，因为它们非常适合用分治思想进行分
 析。
 
-### *2.2* Time Complexity ()
+### *2.2* 时间复杂度 Time Complexity ()
 
 计算操作数量统计。
