@@ -1,23 +1,37 @@
 ---
 layout: post
 tag: study
-title: "Pattern Recognition and Machine Learning"
+title: "Machine Learning"
 ---
 
 
-# Pattern Recognition and Machine Learning
+# 机器学习  Machine Learning
 
-- [Pattern Recognition and Machine Learning](#pattern-recognition-and-machine-learning)
-  - [*1* Introduction](#1-introduction)
+- [机器学习  Machine Learning](#机器学习--machine-learning)
+  - [*1* 引论  Introduction](#1-引论--introduction)
   - [*2* Pytorch](#2-pytorch)
     - [*2.1* Dataset and Dataloader](#21-dataset-and-dataloader)
     - [*2.2* Tensor](#22-tensor)
     - [*2.3* torch.nn](#23-torchnn)
-  - [Linear Regression](#linear-regression)
-  - [SVM](#svm)
+  - [线性回归  Linear Regression](#线性回归--linear-regression)
+  - [支持向量机  SVM](#支持向量机--svm)
 
 
-## *1* Introduction
+## *1* 引论  Introduction
+
+1. Three Stages
+   1. Define a Function with unknown parameters
+   2. Loss compute
+   3. Optimization
+2. gradient descent
+3. activation function
+   1. sigmoid
+   2. ReLU
+4. loss function
+   1. mean absolute error (MAE)
+   2. mean square error (MSE)
+
+
 Machine Learning ~= Looking for Function  
 Professional words:
 - Deep Learning
@@ -66,5 +80,5 @@ Professional words:
 - Build your own neural network
 - Loss Functions
 
-## Linear Regression
-## SVM
+## 线性回归  Linear Regression
+## 支持向量机  SVM
