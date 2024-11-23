@@ -9,6 +9,11 @@ title: "Machine Learning"
 
 - [机器学习  Machine Learning](#机器学习--machine-learning)
   - [*1* 引论  Introduction](#1-引论--introduction)
+    - [*1.2* ChatGPT](#12-chatgpt)
+      - [预训练](#预训练)
+      - [微调 finetune （继续学习）](#微调-finetune-继续学习)
+      - [监督学习](#监督学习)
+      - [强化学习](#强化学习)
   - [*2* Pytorch](#2-pytorch)
     - [*2.1* Dataset and Dataloader](#21-dataset-and-dataloader)
     - [*2.2* Tensor](#22-tensor)
@@ -30,6 +35,28 @@ title: "Machine Learning"
 4. loss function
    1. mean absolute error (MAE)
    2. mean square error (MSE)
+
+### *1.2* ChatGPT 
+- 文字接龙（语言模型）
+- probability distribution
+- sample (random)
+
+#### 预训练
+- pre-train
+- self-supervised learning 自监督学习
+- Foundation model 
+
+预训练作用：多语言习得
+
+#### 微调 finetune （继续学习）
+#### 监督学习
+- 成对资料
+- data-label
+
+#### 强化学习
+- 
+
+
 
 
 Machine Learning ~= Looking for Function  
