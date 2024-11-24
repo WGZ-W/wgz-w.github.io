@@ -13,11 +13,22 @@ title: "Algorithm"
     - [*2.1* 迭代与递归  Iteration and Recursion](#21-迭代与递归--iteration-and-recursion)
     - [*2.2* 时间复杂度  Time Complexity](#22-时间复杂度--time-complexity)
     - [空间复杂度  Space](#空间复杂度--space)
+  - [图与遍历算法](#图与遍历算法)
+  - [分治法](#分治法)
+  - [贪心法](#贪心法)
   - [动态规划](#动态规划)
 
 ## *1* 算法引论  Introduction to Algorithm
 
+程序 = 算法 + 数据结构
+
 将数据结构与算法类比为拼装积木。
+数据结构就是积木的形状和数量，算法就是拼积木的
+步骤。
+
+- 辗转相除法
+
+
 
 
 ## *2* 复杂度分析  Complexity analysis
@@ -36,5 +47,10 @@ title: "Algorithm"
 
 ### 空间复杂度  Space 
 
+## 图与遍历算法
+## 分治法
+## 贪心法
 ## 动态规划
-重复子问题
+- 重复子问题
+- 从底向顶
+- 数组，滚动数组
