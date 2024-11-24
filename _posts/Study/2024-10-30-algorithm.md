@@ -33,9 +33,6 @@ title: "Algorithm"
 
 ## *2* 复杂度分析  Complexity analysis
 
-当我们讨论某个数据结构或算法的特点时，难以避免要分析
-其运行速度和空间使用情况，所以不要逃避，认真分析。
-
 - 执行次数。
 
 ### *2.1* 迭代与递归  Iteration and Recursion
