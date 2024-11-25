@@ -11,17 +11,17 @@ title: "Study Guide"
   - [VIC  (Video Individuals Counting)](#vic--video-individuals-counting)
   - [English](#english)
   - [Math](#math)
-  - [Programming Language  (编程语言)](#programming-language--编程语言)
+  - [Programming Language](#programming-language)
   - [Linux](#linux)
-  - [Data Structure \& Algorithm  (数据结构和算法)](#data-structure--algorithm--数据结构和算法)
-  - [Machine Learning  (机器学习)](#machine-learning--机器学习)
+  - [Data Structure \& Algorithm](#data-structure--algorithm)
+  - [Machine Learning](#machine-learning)
   - [数字模拟电路](#数字模拟电路)
-  - [Computer Network  (计算机网络)](#computer-network--计算机网络)
-  - [Fundamentals of compiling  (编译原理)](#fundamentals-of-compiling--编译原理)
-  - [Operation System  (操作系统)](#operation-system--操作系统)
-  - [Database  (数据库)](#database--数据库)
-  - [Principles of computer organization  (计算机组成原理)](#principles-of-computer-organization--计算机组成原理)
-  - [Software Project  (软件工程)](#software-project--软件工程)
+  - [Computer Network](#computer-network)
+  - [Fundamentals of compiling](#fundamentals-of-compiling)
+  - [Operation System](#operation-system)
+  - [Database](#database)
+  - [Principles of computer organization](#principles-of-computer-organization)
+  - [Software Project](#software-project)
 
 ## VIC  (Video Individuals Counting)
  
@@ -31,7 +31,10 @@ title: "Study Guide"
 - Linear Algebra
 - Probability theory
 
-## Programming Language  (编程语言)
+## Programming Language  
+> 编程语言
+
+
 - C
 - C++
 - Java
@@ -44,24 +47,35 @@ title: "Study Guide"
 - git
 
 
-## Data Structure & Algorithm  (数据结构和算法)
+## Data Structure & Algorithm  
+> 数据结构和算法
+
+
 - Complexity analysis
 - Recursive and Iterative
-- Link list
 - Stack and Pile
 - Queue
 - Tree
 - Graph
 
 
-## Machine Learning  (机器学习)
-- ChatGPT principle
+## Machine Learning  
+> 机器学习
+
+
+- ChatGPT's Principle
 - Linear Regression
 
 ## 数字模拟电路
-## Computer Network  (计算机网络)
-## Fundamentals of compiling  (编译原理)
-## Operation System  (操作系统)
-## Database  (数据库)
-## Principles of computer organization  (计算机组成原理)
-## Software Project  (软件工程)
+## Computer Network  
+> 计算机网络
+## Fundamentals of compiling  
+> 编译原理
+## Operation System  
+> 操作系统
+## Database  
+> 数据库
+## Principles of computer organization  
+> 计算机组成原理
+## Software Project  
+> 软件工程
