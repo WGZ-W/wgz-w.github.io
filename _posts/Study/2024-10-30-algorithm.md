@@ -8,6 +8,7 @@ title: "Algorithm"
 # Algorithm
 
 - [Algorithm](#algorithm)
+  - [*0* Mind Map](#0-mind-map)
   - [*1* 算法引论](#1-算法引论)
     - [*1.1* 复杂度分析](#11-复杂度分析)
     - [*1.2* 迭代与递归](#12-迭代与递归)
@@ -16,8 +17,11 @@ title: "Algorithm"
   - [*4* 贪心法](#4-贪心法)
   - [*5* 动态规划](#5-动态规划)
 
+## *0* Mind Map
+[Algorithm](/mindmap/algorithm.html)
+
 ## *1* 算法引论  
-> Introduction to Algorithm
+Introduction to Algorithm
 
 - 程序 = 算法 + 数据结构
 
@@ -31,13 +35,14 @@ title: "Algorithm"
 
 
 ### *1.1* 复杂度分析  
-> Complexity analysis
+Complexity analysis
 
 - 执行次数
 - Big-O
 
 ### *1.2* 迭代与递归  
-> Iteration and Recursion
+Iteration and Recursion
+
 - 改进：保留中间结果
 
 
