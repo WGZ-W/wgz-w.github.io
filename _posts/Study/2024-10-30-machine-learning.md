@@ -8,6 +8,7 @@ title: "Machine Learning"
 # 机器学习  Machine Learning
 
 - [机器学习  Machine Learning](#机器学习--machine-learning)
+  - [Mind Map](#mind-map)
   - [*1* 引论  Introduction](#1-引论--introduction)
     - [ChatGPT 原理](#chatgpt-原理)
       - [预训练](#预训练)
@@ -26,6 +27,8 @@ title: "Machine Learning"
   - [线性回归  Linear Regression](#线性回归--linear-regression)
   - [支持向量机  SVM](#支持向量机--svm)
 
+## Mind Map
+[Machine Learning Mind Map](../../mindmap/machine-learning.html)
 
 ## *1* 引论  Introduction
 
