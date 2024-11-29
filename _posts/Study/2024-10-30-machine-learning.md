@@ -28,7 +28,7 @@ title: "Machine Learning"
   - [支持向量机  SVM](#支持向量机--svm)
 
 ## Mind Map
-[Machine Learning Mind Map](../../mindmap/machine-learning.html)
+[Machine Learning Mind Map](/mindmap/machine-learning.html)
 
 ## *1* 引论  Introduction
 
