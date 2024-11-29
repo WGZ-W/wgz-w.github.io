@@ -9,6 +9,11 @@ title: "Machine Learning"
 
 - [机器学习  Machine Learning](#机器学习--machine-learning)
   - [*1* 引论  Introduction](#1-引论--introduction)
+    - [ChatGPT 原理](#chatgpt-原理)
+      - [预训练](#预训练)
+      - [微调](#微调)
+      - [监督学习](#监督学习)
+      - [强化学习](#强化学习)
     - [*1.2* ChatGPT 原理](#12-chatgpt-原理)
       - [1.2.1 预训练](#121-预训练)
       - [1.2.2 微调 finetune](#122-微调-finetune)
@@ -35,7 +40,22 @@ title: "Machine Learning"
 4. loss function
    1. mean absolute error (MAE)
    2. mean square error (MSE)
+### ChatGPT 原理
+#### 预训练
+- pre-train, self-supervised learning, Foundation model  
+- 预训练作用：多语言习得，在一种语言上训练，其他语言自动学习
 
+#### 微调
+- Finetune，
+- 在 Foundation model 上继续学习
+
+#### 监督学习
+- supervised learning，
+- 成对的学习资料
+
+#### 强化学习
+- reinforcement learning， 
+- 不知道标签，只需要判断好坏
 ### *1.2* ChatGPT 原理
 - 文字接龙（语言模型）
 - probability distribution
