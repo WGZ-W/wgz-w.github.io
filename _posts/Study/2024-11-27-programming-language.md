@@ -1,17 +1,15 @@
 ---
 layout: post
 tag: study
-title: "Programming Languages"
+title: "C and C++"
 ---
 
-# Programming Languages
+# C and C++
 
-- [Programming Languages](#programming-languages)
+- [C and C++](#c-and-c)
   - [C](#c)
     - [Basic](#basic)
   - [C++](#c-1)
-  - [Python](#python)
-  - [Java](#java)
 
 ## C
 ### Basic
@@ -19,5 +17,4 @@ title: "Programming Languages"
 - pointer
 
 ## C++
-## Python
-## Java
+
