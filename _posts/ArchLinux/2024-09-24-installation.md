@@ -35,6 +35,7 @@ Recommand follow the [Installation guide](https://wiki.archlinux.org/title/Insta
   - [Reboot](#reboot)
   - [Start the NetwrokManager Service](#start-the-netwrokmanager-service)
   - [Add new user](#add-new-user)
+  - [Font configuration/Chinese](#font-configurationchinese)
 
 
 ## Prepare an installation medium
@@ -149,7 +150,7 @@ Server = https://mirrors.nju.edu.cn/archlinux/$repo/os/$arch
 
 ## Install essential packages
 ```
-# pacstrap -K /mnt base linux linux-firmware neovim networkmanager vim
+# pacstrap -K /mnt base linux linux-firmware neovim networkmanager vim neovim
 ```
 
 ## Fstab
@@ -243,6 +244,11 @@ mount the esp into **`/boot/efi`**
 -----------------------
 root ALL:(ALL:ALL)...
 name ALL:(ALL:ALL)...
+```
+
+## Font configuration/Chinese
+```
+$ sudo pacman -S ttf-roboto noto-fonts
 ```
 
 
