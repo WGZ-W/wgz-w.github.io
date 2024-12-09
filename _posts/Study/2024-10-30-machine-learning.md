@@ -61,16 +61,6 @@ title: "Deep Learning and Machine Learning"
 2. 平均平方误差 Mean Square Error (MSE)
 
 ### ChatGPT Principle
-ChatGPT 原理，文字接龙（语言模型），probability distribution，sample (random).  
-
-预训练，pre-train, self-supervised learning(自监督学习), Foundation model ，预训练作用：多语言习得，在一种语言上训练，其他语言自动学习。 
-
-微调，Finetune，在 Foundation model 上继续学习.  
-
-监督学习，Supervised Learning，成对的学习资料. 
-
-强化学习, Reinforcement Learning (RL):  
-It is challenging to label data in some tasks.We can know the results are good or not.
 ChatGPT 的原理，就是文字接龙（语言模型），通过输入，输出一个机率分布（Probability distribution），然后随机 取样（sample）一个字，加到输入后面，然后再输入到模型中。
 
 GPT 使用预训练（Pre-train）, 或者叫自监督学习（Self-supervised learning）, 生成的模型叫做基石模型（Foundation model）。
