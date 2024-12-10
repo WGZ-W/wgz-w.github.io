@@ -9,6 +9,9 @@ title: "Deep Learning"
 - [Deep Learning](#deep-learning)
   - [*0* Mind Map](#0-mind-map)
   - [*1* 预备知识](#1-预备知识)
+    - [线性代数](#线性代数)
+      - [范数](#范数)
+    - [自动微分](#自动微分)
   - [*2* 导论 Introduction](#2-导论-introduction)
     - [Three Stages](#three-stages)
     - [General Loss Function](#general-loss-function)
@@ -16,7 +19,17 @@ title: "Deep Learning"
     - [线性回归 (Linear Regression)](#线性回归-linear-regression)
     - [Softmax 回归 (Softmax Regression)](#softmax-回归-softmax-regression)
   - [*4* 多层感知机 (Multiple Layer Perceptron)](#4-多层感知机-multiple-layer-perceptron)
-    - [激活函数 (Activation Function)](#激活函数-activation-function)
+    - [多层感知机](#多层感知机)
+      - [隐藏层](#隐藏层)
+      - [激活函数 (Activation Function)](#激活函数-activation-function)
+    - [模型选择、欠拟合、过拟合](#模型选择欠拟合过拟合)
+      - [训练误差和泛化误差，](#训练误差和泛化误差)
+        - [统计学习理论](#统计学习理论)
+        - [模型复杂性](#模型复杂性)
+      - [模型选择](#模型选择)
+      - [欠拟合还是过拟合？](#欠拟合还是过拟合)
+      - [多项式回归](#多项式回归)
+    - [权重衰减](#权重衰减)
   - [*5* 深度学习计算](#5-深度学习计算)
   - [*6* 卷积神经网络](#6-卷积神经网络)
   - [*7* 现代卷积神经网络](#7-现代卷积神经网络)
@@ -36,7 +49,13 @@ title: "Deep Learning"
 
 ## *1* 预备知识
 概率论，线性代数，高等数学，Pytorch，
-- 自动微分，
+
+
+### 线性代数
+#### 范数
+向量的 L2 范数，欧几里得距离，向量元素平方和的平方根。
+
+### 自动微分
 
 ## *2* 导论 Introduction
 ### Three Stages
@@ -48,6 +67,7 @@ title: "Deep Learning"
 1. 平均绝对值误差 Mean Absolute Error (MAE)
 2. 平均平方误差 Mean Square Error (MSE)
 
+
 ## *3* 线性神经网络
 ### 线性回归 (Linear Regression)
 - 仿射变换
@@ -55,11 +75,37 @@ title: "Deep Learning"
 ### Softmax 回归 (Softmax Regression)
 - softmax 函数
 
+
 ## *4* 多层感知机 (Multiple Layer Perceptron)
-### 激活函数 (Activation Function)
+
+### 多层感知机
+#### 隐藏层
+#### 激活函数 (Activation Function)
 - ReLU (Rectified linear unit)
 - Sigmoid
 - tanh
+
+### 模型选择、欠拟合、过拟合
+#### 训练误差和泛化误差，
+
+##### 统计学习理论
+独立同分布假设 (i.i.d. assumption)
+
+##### 模型复杂性
+早停 (early stopping)
+
+#### 模型选择
+1. 验证集
+2. K 折交叉验证
+
+#### 欠拟合还是过拟合？
+1. 模型复杂性
+2. 数据集大小
+
+#### 多项式回归
+
+### 权重衰减
+权重衰减，又称 L2 正则化。
 
 ## *5* 深度学习计算
 ## *6* 卷积神经网络
