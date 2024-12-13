@@ -8,13 +8,18 @@ title: "Deep Learning"
 
 - [Deep Learning](#deep-learning)
   - [*0* Mind Map](#0-mind-map)
+  - [卷积神经网络](#卷积神经网络)
+  - [循环神经网络](#循环神经网络)
+  - [注意力机制](#注意力机制)
+    - [Self-Attention](#self-attention)
+    - [Transformer](#transformer)
   - [*1* 预备知识](#1-预备知识)
     - [线性代数](#线性代数)
       - [范数](#范数)
     - [自动微分](#自动微分)
   - [*2* 导论 Introduction](#2-导论-introduction)
     - [Three Stages](#three-stages)
-    - [General Loss Function](#general-loss-function)
+    - [Loss Function](#loss-function)
   - [*3* 线性神经网络](#3-线性神经网络)
     - [线性回归 (Linear Regression)](#线性回归-linear-regression)
     - [Softmax 回归 (Softmax Regression)](#softmax-回归-softmax-regression)
@@ -31,13 +36,8 @@ title: "Deep Learning"
       - [多项式回归](#多项式回归)
     - [权重衰减](#权重衰减)
   - [*5* 深度学习计算](#5-深度学习计算)
-  - [*6* 卷积神经网络](#6-卷积神经网络)
   - [*7* 现代卷积神经网络](#7-现代卷积神经网络)
-  - [*8* 循环神经网络](#8-循环神经网络)
   - [*9* 现代循环神经网络](#9-现代循环神经网络)
-  - [*10* 注意力机制](#10-注意力机制)
-    - [*10.1* Self-Attention](#101-self-attention)
-    - [*10.2* Transformer](#102-transformer)
   - [*11* 优化算法](#11-优化算法)
   - [*12* 计算性能](#12-计算性能)
   - [*13* 计算机视觉](#13-计算机视觉)
@@ -47,13 +47,29 @@ title: "Deep Learning"
 ## *0* Mind Map
 [Deep Learning](/mindmap/deep-learning.html)
 
+
+
+
+
+## 卷积神经网络
+## 循环神经网络
+## 注意力机制
+### Self-Attention
+### Transformer
+
+
+
+
+
+
+
+
+
+
 ## *1* 预备知识
-概率论，线性代数，高等数学，Pytorch，
-
-
 ### 线性代数
 #### 范数
-向量的 L2 范数，欧几里得距离，向量元素平方和的平方根。
+向量的 L2 范数， L1 范数， 矩阵的 Frobenius 范数
 
 ### 自动微分
 
@@ -63,7 +79,7 @@ title: "Deep Learning"
 2. Loss Computation
 3. Optimization
 
-### General Loss Function
+### Loss Function
 1. 平均绝对值误差 Mean Absolute Error (MAE)
 2. 平均平方误差 Mean Square Error (MSE)
 
@@ -108,13 +124,8 @@ title: "Deep Learning"
 权重衰减，又称 L2 正则化。
 
 ## *5* 深度学习计算
-## *6* 卷积神经网络
 ## *7* 现代卷积神经网络
-## *8* 循环神经网络
 ## *9* 现代循环神经网络
-## *10* 注意力机制
-### *10.1* Self-Attention
-### *10.2* Transformer
 ## *11* 优化算法
 ## *12* 计算性能
 ## *13* 计算机视觉
