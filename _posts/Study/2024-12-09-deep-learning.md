@@ -15,8 +15,8 @@ title: "Deep Learning"
     - [Transformer](#transformer)
   - [*1* 预备知识](#1-预备知识)
     - [线性代数](#线性代数)
-      - [范数](#范数)
-    - [自动微分](#自动微分)
+      - [范数???](#范数)
+    - [自动微分，反向传播算法 (BP) ???](#自动微分反向传播算法-bp-)
   - [*2* 导论 Introduction](#2-导论-introduction)
     - [Three Stages](#three-stages)
     - [Loss Function](#loss-function)
@@ -68,10 +68,8 @@ title: "Deep Learning"
 
 ## *1* 预备知识
 ### 线性代数
-#### 范数
-向量的 L2 范数， L1 范数， 矩阵的 Frobenius 范数
-
-### 自动微分
+#### 范数???
+### 自动微分，反向传播算法 (BP) ???
 
 ## *2* 导论 Introduction
 ### Three Stages
@@ -80,8 +78,8 @@ title: "Deep Learning"
 3. Optimization
 
 ### Loss Function
-1. 平均绝对值误差 Mean Absolute Error (MAE)
-2. 平均平方误差 Mean Square Error (MSE)
+1. Mean Absolute Error (MAE)
+2. Mean Square Error (MSE)
 
 
 ## *3* 线性神经网络
@@ -105,10 +103,10 @@ title: "Deep Learning"
 #### 训练误差和泛化误差，
 
 ##### 统计学习理论
-独立同分布假设 (i.i.d. assumption)
+- 独立同分布假设 (i.i.d. assumption)
 
 ##### 模型复杂性
-早停 (early stopping)
+- 早停 (early stopping)
 
 #### 模型选择
 1. 验证集
@@ -121,7 +119,7 @@ title: "Deep Learning"
 #### 多项式回归
 
 ### 权重衰减
-权重衰减，又称 L2 正则化。
+- 又称 L2 正则化。
 
 ## *5* 深度学习计算
 ## *7* 现代卷积神经网络
