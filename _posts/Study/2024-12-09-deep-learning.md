@@ -8,15 +8,9 @@ title: "Deep Learning"
 
 - [Deep Learning](#deep-learning)
   - [*0* Mind Map](#0-mind-map)
-  - [卷积神经网络](#卷积神经网络)
-  - [循环神经网络](#循环神经网络)
-  - [注意力机制](#注意力机制)
-    - [Self-Attention](#self-attention)
-    - [Transformer](#transformer)
   - [*1* 预备知识](#1-预备知识)
     - [线性代数](#线性代数)
-      - [范数???](#范数)
-    - [自动微分，反向传播算法 (BP) ???](#自动微分反向传播算法-bp-)
+      - [范数 ???](#范数-)
   - [*2* 导论 Introduction](#2-导论-introduction)
     - [Three Stages](#three-stages)
     - [Loss Function](#loss-function)
@@ -51,25 +45,11 @@ title: "Deep Learning"
 
 
 
-## 卷积神经网络
-## 循环神经网络
-## 注意力机制
-### Self-Attention
-### Transformer
-
-
-
-
-
-
-
-
-
 
 ## *1* 预备知识
 ### 线性代数
-#### 范数???
-### 自动微分，反向传播算法 (BP) ???
+#### 范数 ???
+
 
 ## *2* 导论 Introduction
 ### Three Stages
