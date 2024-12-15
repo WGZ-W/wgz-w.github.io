@@ -23,7 +23,10 @@ title: "Machine Learning"
 [Machine Learning Mind Map](/mindmap/machine-learning.html)
 
 ## 反向传播算法 (backward propagation, BP)
-记录正向传播的结果，反向传播和梯度下降进行优化网络。
+Backpropagation, Gradient Descent,
+- Chain Rule
+- Forward pass
+- Backward pass
 
 ### ChatGPT Principle
 ChatGPT 的原理，就是文字接龙（语言模型），通过输入，输出一个机率分布（Probability distribution），然后随机 取样（sample）一个字，加到输入后面，然后再输入到模型中。
