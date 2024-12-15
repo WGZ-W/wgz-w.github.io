@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+
+
+
+<div class="header">
+  <h1 style="border: none;">Linux</h1>
+
+</div>
+
+<div class="topnav">
+    <p>Go to the <a href="/">Home</a></p>
+  </div>
+
+<div class="index">
+  {% for post in site.tags.mindmap %}
+    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</div>
+
+
+<div class="footer">
+  <p><i>Build by   
+    <a href="https://github.com/WGZ-W/" target="_blank">WGZ-W's Github</a>
+  </i></p>
+</div>
