@@ -8,4 +8,3 @@ title: "Machine Learning"
 
 ## BackPropagation
 ## Support Vector Machine (SVM)
-##

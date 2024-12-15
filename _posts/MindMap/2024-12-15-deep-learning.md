@@ -10,9 +10,8 @@ title: "Deep Learning"
 ## Linear Regression
 ## Classification
 ## Multiple Layer Perceptron
-## Convolution Neural Network
-## Recursive Neural Network
+## Convolutional Neural Network
+## Recurrent Neural Network
 ## Attention
 ### Self-Attention
 ### Transformer
-## 
