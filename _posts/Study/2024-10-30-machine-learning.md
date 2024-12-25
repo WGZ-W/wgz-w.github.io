@@ -9,6 +9,7 @@ title: "Machine Learning"
 
 - [Machine Learning](#machine-learning)
   - [Mind Map](#mind-map)
+  - [支持向量机 (Support Vector Machine)](#支持向量机-support-vector-machine)
   - [反向传播算法 (backward propagation, BP)](#反向传播算法-backward-propagation-bp)
     - [ChatGPT Principle](#chatgpt-principle)
     - [Professional Words](#professional-words)
@@ -17,11 +18,11 @@ title: "Machine Learning"
     - [梯度下降 Gradient Descent](#梯度下降-gradient-descent)
     - [正则化 Regularization](#正则化-regularization)
   - [分类 Classification](#分类-classification)
-  - [支持向量机  SVM](#支持向量机--svm)
 
 ## Mind Map
 [Machine Learning Mind Map](/mindmap/machine-learning.html)
 
+## 支持向量机 (Support Vector Machine)
 ## 反向传播算法 (backward propagation, BP)
 Backpropagation, Gradient Descent,
 - Chain Rule
@@ -69,4 +70,4 @@ GPT 使用预训练（Pre-train）, 或者叫自监督学习（Self-supervised l
 
 
 
-## 支持向量机  SVM
+
