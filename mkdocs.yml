@@ -2,3 +2,11 @@ site_name: My Docs
 site_url: https://wgz-w.github.io/
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.path
+  favicon: img/favicon.ico
+
+plugins:
+  - search
+  - blog
