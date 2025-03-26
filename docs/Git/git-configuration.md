@@ -1,4 +1,6 @@
 ---
+date:
+  created: 2024-09-12
 layout: post
 title: "Git's Configuration"
 tag: git
@@ -6,11 +8,6 @@ tag: git
 
 
 # Configure Git
-
-- [Configure Git](#configure-git)
-  - [Install openssh](#install-openssh)
-  - [Create a new ssh-key for Github](#create-a-new-ssh-key-for-github)
-
 
 
 ## Install openssh

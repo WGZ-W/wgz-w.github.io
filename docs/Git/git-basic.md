@@ -1,5 +1,6 @@
 ---
-layout: post
+date:
+    created: 2024-10-09
 title: 'Git Basic'
 tag: git
 ---
