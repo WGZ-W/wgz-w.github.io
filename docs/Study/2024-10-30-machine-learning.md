@@ -7,20 +7,7 @@ title: "Machine Learning"
 
 # Machine Learning
 
-- [Machine Learning](#machine-learning)
-  - [Mind Map](#mind-map)
-  - [支持向量机 (Support Vector Machine)](#支持向量机-support-vector-machine)
-  - [反向传播算法 (backward propagation, BP)](#反向传播算法-backward-propagation-bp)
-    - [ChatGPT Principle](#chatgpt-principle)
-    - [Professional Words](#professional-words)
-  - [回归 Regression](#回归-regression)
-    - [线性模型 Linear model](#线性模型-linear-model)
-    - [梯度下降 Gradient Descent](#梯度下降-gradient-descent)
-    - [正则化 Regularization](#正则化-regularization)
-  - [分类 Classification](#分类-classification)
 
-## Mind Map
-[Machine Learning Mind Map](/mindmap/machine-learning.html)
 
 ## 支持向量机 (Support Vector Machine)
 ## 反向传播算法 (backward propagation, BP)

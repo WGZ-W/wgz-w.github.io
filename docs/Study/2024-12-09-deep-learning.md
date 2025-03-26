@@ -6,37 +6,6 @@ title: "Deep Learning"
 
 # Deep Learning
 
-- [Deep Learning](#deep-learning)
-  - [*0* Mind Map](#0-mind-map)
-  - [*1* 预备知识](#1-预备知识)
-    - [线性代数](#线性代数)
-      - [范数 ???](#范数-)
-    - [找出函数的三步骤](#找出函数的三步骤)
-  - [*2*  Introduction 导论](#2--introduction-导论)
-    - [Loss Function](#loss-function)
-  - [*4* Multiple Layer Perceptron (多层感知机)](#4-multiple-layer-perceptron-多层感知机)
-    - [隐藏层](#隐藏层)
-    - [激活函数 (Activation Function)](#激活函数-activation-function)
-    - [训练误差和泛化误差，](#训练误差和泛化误差)
-      - [统计学习理论](#统计学习理论)
-      - [模型复杂性](#模型复杂性)
-      - [模型选择](#模型选择)
-      - [欠拟合还是过拟合？](#欠拟合还是过拟合)
-      - [多项式回归](#多项式回归)
-    - [权重衰减](#权重衰减)
-  - [Regression](#regression)
-    - [Linear Regression （线性回归）](#linear-regression-线性回归)
-    - [Softmax Regression (Softmax 回归)](#softmax-regression-softmax-回归)
-  - [Classification](#classification)
-  - [Conventional Neural Network (CNN)](#conventional-neural-network-cnn)
-  - [Recurrent Neural Network (RNN)](#recurrent-neural-network-rnn)
-  - [Attention](#attention)
-    - [Self-Attention](#self-attention)
-    - [Transformer](#transformer)
-  - [*15* See Also](#15-see-also)
-
-## *0* Mind Map
-[Deep Learning](/mindmap/deep-learning.html)
 
 ## *1* 预备知识
 ### 线性代数

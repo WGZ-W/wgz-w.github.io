@@ -7,21 +7,6 @@ title: "Study Guide"
 
 # Study Guide  (学习指南)
 
-- [Study Guide  (学习指南)](#study-guide--学习指南)
-  - [VIC  (Video Individuals Counting)](#vic--video-individuals-counting)
-  - [English](#english)
-  - [Math](#math)
-  - [Programming Language](#programming-language)
-  - [Linux](#linux)
-  - [Data Structure and Algorithm](#data-structure-and-algorithm)
-  - [Machine Learning](#machine-learning)
-  - [数字模拟电路](#数字模拟电路)
-  - [Computer Network](#computer-network)
-  - [Fundamentals of compiling](#fundamentals-of-compiling)
-  - [Operation System](#operation-system)
-  - [Database](#database)
-  - [Principles of computer organization](#principles-of-computer-organization)
-  - [Software Project](#software-project)
 
 ## VIC  (Video Individuals Counting)
  
