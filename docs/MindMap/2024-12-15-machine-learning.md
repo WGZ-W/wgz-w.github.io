@@ -4,7 +4,7 @@ tag: mindmap
 title: "Machine Learning"
 ---
 
-# [Machine Learning](/mindmap/machine-learning.html)
+# [Machine Learning](./machine-learning.html)
 
 ## BackPropagation
 ## Support Vector Machine (SVM)

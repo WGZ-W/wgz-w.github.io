@@ -4,7 +4,7 @@ tag: mindmap
 title: "Deep Learning"
 ---
 
-# [Deep Learning](/mindmap/deep-learning.html)
+# [Deep Learning](./deep-learning.html)
 
 ## Regression
 ## Linear Regression

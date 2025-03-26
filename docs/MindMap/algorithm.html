@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.8.5/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.17.2/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.17.2/dist/index.js"></script><script>(r => {
+                setTimeout(r);
+              })(() => {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+            })(() => window.markmap,null,{"content":"Algorithm","children":[{"content":"<em>0</em> Mind Map","children":[],"payload":{"lines":"26,27"}},{"content":"<em>1</em> 算法引论","children":[{"content":"<em>1.1</em> 复杂度分析","children":[{"content":"执行次数","children":[],"payload":{"lines":"44,45"}},{"content":"Big-O","children":[],"payload":{"lines":"45,47"}}],"payload":{"lines":"41,42"}},{"content":"<em>1.2</em> 迭代与递归","children":[{"content":"改进：保留中间结果","children":[],"payload":{"lines":"50,52"}}],"payload":{"lines":"47,48"}}],"payload":{"lines":"29,30"}},{"content":"数据结构","children":[],"payload":{"lines":"52,53"}},{"content":"数组与链表","children":[],"payload":{"lines":"53,54"}},{"content":"栈与队列","children":[],"payload":{"lines":"54,55"}},{"content":"哈希表","children":[],"payload":{"lines":"55,56"}},{"content":"树","children":[{"content":"二叉树遍历","children":[{"content":"中根次序遍历","children":[],"payload":{"lines":"58,59"}},{"content":"先根次序遍历","children":[],"payload":{"lines":"59,60"}},{"content":"后根次序遍历","children":[],"payload":{"lines":"60,62"}}],"payload":{"lines":"57,58"}}],"payload":{"lines":"56,57"}},{"content":"堆","children":[],"payload":{"lines":"62,63"}},{"content":"图","children":[{"content":"图的遍历","children":[{"content":"广度优先遍历 (BFS)，队列，广度优先","children":[],"payload":{"lines":"65,66"}},{"content":"深度优先遍历 (DFS)，递归，栈，深度优先","children":[],"payload":{"lines":"66,67"}},{"content":"深度检索 (D_Search)，改造 BFS，栈，广度优先","children":[],"payload":{"lines":"67,69"}}],"payload":{"lines":"64,65"}},{"content":"对策树","children":[{"content":"α-β 剪枝","children":[],"payload":{"lines":"70,72"}}],"payload":{"lines":"69,70"}}],"payload":{"lines":"63,64"}},{"content":"搜索","children":[],"payload":{"lines":"72,73"}},{"content":"排序","children":[],"payload":{"lines":"73,74"}},{"content":"分治","children":[{"content":"递归","children":[],"payload":{"lines":"75,77"}}],"payload":{"lines":"74,75"}},{"content":"回溯","children":[],"payload":{"lines":"77,78"}},{"content":"动态规划","children":[{"content":"重复子问题","children":[],"payload":{"lines":"79,80"}},{"content":"从底向顶","children":[],"payload":{"lines":"80,81"}},{"content":"数组，滚动数组","children":[],"payload":{"lines":"81,83"}}],"payload":{"lines":"78,79"}},{"content":"贪心","children":[],"payload":{"lines":"83,84"}}],"payload":{"lines":"2,3"}},{})</script>
+</body>
+</html>
