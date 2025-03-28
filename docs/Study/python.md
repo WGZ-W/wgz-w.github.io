@@ -6,20 +6,6 @@ title: "Python"
 
 # Python
 
-- [Python](#python)
-  - [*1* Introduction](#1-introduction)
-    - [*1.1* Coding Style](#11-coding-style)
-    - [Slice](#slice)
-    - [Annotation (注释)](#annotation-注释)
-  - [*2* dir() and help()](#2-dir-and-help)
-  - [Expression](#expression)
-  - [Statement](#statement)
-  - [Function](#function)
-  - [Class](#class)
-  - [Modual](#modual)
-  - [See Also](#see-also)
-
-
 
 ## *1* Introduction
 ### *1.1* Coding Style

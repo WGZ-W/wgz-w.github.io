@@ -1,78 +1,38 @@
 ---
-layout: post
-title: "My Book List"
+
+title: "Magic Tree House"
 tag: study
 ---
 
-# Book List
 
 
 
-## *1* English Novels
-
-### Agatha Christie
-1. And Then There Were None
-2. Murder on the Orient Express
-3. Death on the Nile: Hercule Poirot Investigates
+# Magic Tree House Series @ Mary Pope Osborne
 
 
-### Roald Dahl
-1. The Magic Finger
-2. The Witches
-3. George's Marvellous Medicine
-4. Charlie and the Chocolate Factory
-5. James and the Giant Peach
-
-
-### Magic Tree House @Mary Pope Osborne
-1. #1 Dinosaurs before dark
-2. #2 The Knight at Dawn
-3. #3 Mummies in the morning
-4. #4 Pirates past noon
-5. #5 Night of the Ninjas
-6. #6 Afternoon on the Amazon
-7. #7 Sunset of the Sabertooth
-8. #8 Midnight on the Moon
-9. #9 Dolphins at Daybreak
-10. #10 Ghost Town at Sundown
-11. #11 Lions at Lunchtime
-12. #12 Polar Bears Past Bedtime
-13. #13 Vacation Under the Volcano
-14. #14 Day of the Dragon King
-15. #27 Thanksgiving on Thursday
-16. #48 A Perfect Time for Pandas
+| Number | Name |
+|--------|------|
+| #1 | Dinosaurs before dark |
+| #2 | The Knight at Dawn |
+| #3 | Mummies in the morning |
+| #4 | Pirates past noon |
+| #5 | Night of the Ninjas |
+| #6 | Afternoon on the Amazon |
+| #7 | Sunset of the Sabertooth |
+| #8 | Midnight on the Moon |
+| #9 | Dolphins at Daybreak |
+| #10 | Ghost Town at Sundown |
+| #11 | Lions at Lunchtime |
+| #12 | Polar Bears Past Bedtime |
+| #13 | Vacation Under the Volcano |
+| #14 | Day of the Dragon King |
+| #27 | Thanksgiving on Thursday |
+| #48 | A Perfect Time for Pandas |
 
 
 
 ## *2* Professional Books
 
-### Machine Learning and Deep Learning
-1. Dive into Deep Learning
-2. 
-
-### C Language and C++ Language
-1. The C Programming Language
-2. C++ Primer
-3. Effective C++
-
-### Algorithms and Data Structure
-1. hello-algo
-2. Introduction to Algorithms
-3. Algorithms, 4th Edition @Robert Sedgewick/Kevin Wayne
-
-
-### Python
-### Operation Systems
-### 组成原理
-### 编译原理Compile
-### Artificial Intelligence
-
-### Network
-1. Computer Networking: A Top-Down Approach
-
-
-###  体系结构
-1. Computer Systems: A Programmer's Perspective (CSAPP)
 
 
 ## *3* 科普

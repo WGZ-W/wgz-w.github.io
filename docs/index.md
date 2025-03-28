@@ -1,7 +1,7 @@
-# Welcome to My Docs
+# Welcome to My Blog
 
 
-Please [Study](https://wgz-w.github.io/Study)
+Please see [Study](https://wgz-w.github.io/Study)
 
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

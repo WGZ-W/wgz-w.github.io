@@ -1,43 +1,12 @@
 ---
-layout: post
-title: "Some Good Bookmarks"
+title: Bookmarks
 tag: tools
 ---
 
 
 # Bookmarks
 
-- [Bookmarks](#bookmarks)
-  - [Manual / Documentation](#manual--documentation)
-  - [Download Books](#download-books)
-  - [Software](#software)
-  - [Course / Tutorials](#course--tutorials)
-  - [Blogs](#blogs)
-    - [Tutorials](#tutorials)
-      - [Tmux](#tmux)
-  - [Not often use](#not-often-use)
 
-
-## Manual / Documentation
-- [ArchWiki](https://wiki.archlinux.org/title/Main_page)
-- [Vim help files](https://vimhelp.org/)
-- [鳥哥的首頁](https://linux.vbird.org/)
-- [Python documentation](https://docs.python.org/3/)
-- [TLCL](https://billie66.github.io/TLCL/book/)
-- [Advanced Bash-Scripting Guide](https://tldp.org/LDP/abs/html/index.html)
-- [GNU make](https://www.gnu.org/software/make/manual/html_node/index.html)
-- [Linuxcommand](http://linuxcommand.org/index.php)
-- [JYY's Wiki](https://jyywiki.cn/)
-- [James Clear](https://jamesclear.com/)
-
-## Download Books
-- [English books](https://oceanofpdf.com/)
-- [汇书网](https://www.huibooks.com/)
-- [Free Magazine](https://freemagazines.top/)
-- [epub,mobi,azw3,pdf,txt电子书下载](https://www.iyd.wang/)
-- [xiongmao](https://xmsoushu.com/#/)
-- [搬 搬书匠 匠](http://www.banshujiang.cn/)
-- 
 
 ## Software
 - [Neovim](https://neovim.io/)
@@ -54,18 +23,6 @@ tag: tools
 - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 - [Regexone](https://regexone.com/)
 
-## Blogs
-- [郑之杰的个人博客(国科大博士)](https://0809zheng.github.io/)
-- [WPX](https://pengxiang-wang.github.io/)
-- [CoolShell](https://coolshell.cn/)
-- 
-
-### Tutorials
-#### Tmux
-- [Tmux 使用教程](https://www.ruanyifeng.com/blog/2019/10/tmux.html)
-- [Practical Tmux](https://mutelight.org/practical-tmux)
-- [什么是真正的程序员？](https://hellogithub.com/article/ec1c37c4204b485bb9e41894a4a13671)
-- 
 
 
 ## Not often use

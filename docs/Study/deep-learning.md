@@ -87,10 +87,6 @@ softmax function,
 
 
 
-
-
-
-
 ## *15* See Also
 - [李宏毅 2023 春机器学习课程](https://speech.ee.ntu.edu.tw/~hylee/ml/2023-spring.php)
 - [动手学深度学习](https://zh.d2l.ai/)

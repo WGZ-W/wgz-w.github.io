@@ -3,24 +3,9 @@ title: ArchLinux-Applications
 author: wgz
 data: 2024-09-22 12:00
 tag: archlinux
-
 ---
 
 # ArchLinux-Applications
-
-**Index**
-- [ArchLinux-Applications](#archlinux-applications)
-  - [Display server](#display-server)
-  - [Dynamic window managers](#dynamic-window-managers)
-  - [Command-line Shell](#command-line-shell)
-  - [Terminal emulators](#terminal-emulators)
-  - [Text editors](#text-editors)
-  - [Application launchers](#application-launchers)
-  - [File Manager](#file-manager)
-  - [Terminal multiplexer](#terminal-multiplexer)
-  - [Web browser](#web-browser)
-  - [Other](#other)
-  - [中文输入法（fcitx5）](#中文输入法fcitx5)
 
 
 ## Display server

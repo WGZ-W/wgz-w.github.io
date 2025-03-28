@@ -1,24 +1,11 @@
 ---
-layout: post
 title: ArchLinux-Desktop
 author: wgz
-data: 2024-09-23 12:00
+data: 2024-09-23
 tag: archlinux
 ---
 
 # ArchLinux-Desktop
-
-**Index**
-- [ArchLinux-Desktop](#archlinux-desktop)
-  - [Display Driver](#display-driver)
-  - [Display Server](#display-server)
-  - [dwm (Window manager)](#dwm-window-manager)
-  - [st (terminal)](#st-terminal)
-  - [dmenu (dynamic menu)](#dmenu-dynamic-menu)
-  - [slstatus (status monitor)](#slstatus-status-monitor)
-  - [feh (wallpaper)](#feh-wallpaper)
-  - [neofetch](#neofetch)
-  - [双系统时间差异](#双系统时间差异)
 
 
 ## Display Driver
