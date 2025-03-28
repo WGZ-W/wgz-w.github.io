@@ -1,5 +1,9 @@
 # Welcome to My Docs
 
+
+Please [Study](https://wgz-w.github.io/Study)
+
+
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
 ## Commands
