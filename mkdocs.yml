@@ -15,3 +15,80 @@ theme:
 plugins:
   - search
   - blog
+
+nav:
+  - Home: index.md
+  - Blog:
+    - blog\index.md
+  - Blogs:
+    - Blogs\index.md
+    - Blogs\daily.md
+    - Blogs\goods.md
+    - Blogs\how-to-read-paper.md
+    - Blogs\how-to-sleep.md
+    - Blogs\life-study.md
+    - Blogs\minihabits.md
+    - Blogs\sentences.md
+    - Blogs\works.md
+  - Study:
+    - Study\index.md
+    - Deep Learning:
+      - Study\Deep-Learning\preliminary.md
+      - Study\Deep-Learning\linear-network.md
+      - Study\Deep-Learning\deep-learning.md
+    
+    - Study\algorithm.md
+    - Study\courses.md
+    - Study\english.md
+    - Study\linux.md
+    - Study\machine-learning.md
+    - Study\matrix.md
+    - Study\programming-language.md
+    - Study\python.md
+    - Study\pytorch.md
+    - Study\study-guide.md
+  
+  - BookList:
+    - BookList\Agatha-Christie.md
+    - BookList\Roald-Dahl.md
+    - BookList\magic-tree-house.md
+    - BookList\novel.md
+    - BookList\professional-computer.md
+  - BookMark:
+    - BookMark\blogs.md
+    - BookMark\bookmarks.md
+    - BookMark\download-book.md
+    - BookMark\manual-doc.md
+  - Git:
+    - Git\index.md
+    - Git\connect-with-ssh.md
+    - Git\git-basic.md
+    - Git\github-actions.md
+    - Git\troubleshooting-ssh.md
+  - Linux:
+    - Linux\index.md
+    - Linux\basic.md
+    - Linux\grub-theme.md
+    - ArchLinux:
+      - Linux\ArchLinux-Linux\installation.md
+      - Linux\ArchLinux-Linux\applications.md
+      - Linux\ArchLinux-Linux\configuration.md
+      - Linux\ArchLinux-Linux\desktop.md
+      - Linux\ArchLinux-Linux\mysecond.md
+    - Tools:
+      - Linux\Tools\dwm.md
+      - Linux\Tools\lazygit.md
+      - Linux\Tools\neovim.md
+      - Linux\Tools\ranger.md
+      - Linux\Tools\tldr.md
+      - Linux\Tools\tumx.md
+      - Linux\Tools\v2raya.md
+      - Linux\Tools\vscode.md
+  
+  
+    
+  
+  - Vim:
+    - Vim\editor.md
+    - Vim\nvim.md
+    - Vim\vim-basic.md
