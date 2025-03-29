@@ -1,12 +1,16 @@
 ---
-layout: post
-title: "Vim-basic"
+
+title: "Vim Basic"
 tag: vim
 ---
 
 
+## 将 \ 替换成 /
+```
+:%s/\\/\/
+```
 
-# There 
+## There 
 
 **CTRL-]** jump around, **CTRL-O**, jump back, or `CTRL-T`.
 
