@@ -11,7 +11,7 @@ tag: study
 @ Mary Pope Osborne
 
 | Number | Name |
-|--------|------|
+|:------:|:----:|
 | #1 | Dinosaurs before dark |
 | #2 | The Knight at Dawn |
 | #3 | Mummies in the morning |
