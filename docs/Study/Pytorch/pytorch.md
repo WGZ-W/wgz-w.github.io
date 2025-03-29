@@ -7,6 +7,9 @@ title: "Pytorch"
 # Pytorch
 
 
+## QuickStart
+- nn.CrossEntropy???
+- argmax???
 
 ## *1* Tensor
 ### *1.1* Initialization
