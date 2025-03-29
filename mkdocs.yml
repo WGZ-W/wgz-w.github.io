@@ -20,6 +20,7 @@ nav:
   - Home: index.md
   - Blog:
     - blog/index.md
+  
   - Blogs:
     - Blogs/index.md
     - Blogs/daily.md
@@ -30,22 +31,26 @@ nav:
     - Blogs/minihabits.md
     - Blogs/sentences.md
     - Blogs/works.md
+  
   - Study:
     - Study/index.md
     - Deep Learning:
       - Study/Deep-Learning/preliminary.md
       - Study/Deep-Learning/linear-network.md
       - Study/Deep-Learning/deep-learning.md
-    
-    - Study/algorithm.md
+    - Machine Learnning:
+      - Study/Machine-Learning/machine-learning.md
+    - Algorithm:
+      - Study/Algorithm/algorithm.md
+    - Pytorch:
+      - Study/Pytorch/pytorch.md
+    - Python:
+      - Study/Python/python.md
     - Study/courses.md
     - Study/english.md
     - Study/linux.md
-    - Study/machine-learning.md
     - Study/matrix.md
     - Study/programming-language.md
-    - Study/python.md
-    - Study/pytorch.md
     - Study/study-guide.md
   
   - BookList:
@@ -54,17 +59,20 @@ nav:
     - BookList/magic-tree-house.md
     - BookList/novel.md
     - BookList/professional-computer.md
+  
   - BookMark:
     - BookMark/blogs.md
     - BookMark/bookmarks.md
     - BookMark/download-book.md
     - BookMark/manual-doc.md
+  
   - Git:
     - Git/index.md
     - Git/connect-with-ssh.md
     - Git/git-basic.md
     - Git/github-actions.md
     - Git/troubleshooting-ssh.md
+  
   - Linux:
     - Linux/index.md
     - Linux/basic.md
@@ -85,10 +93,8 @@ nav:
       - Linux/Tools/v2raya.md
       - Linux/Tools/vscode.md
   
-  
-    
-  
   - Vim:
+    - Vim/index.md
     - Vim/editor.md
     - Vim/nvim.md
     - Vim/vim-basic.md
