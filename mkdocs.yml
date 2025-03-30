@@ -35,6 +35,7 @@ nav:
   - Study:
     - Study/index.md
     - Deep Learning:
+      - Study/Deep-Learning/pytorch.md
       - Study/Deep-Learning/preliminary.md
       - Study/Deep-Learning/linear-network.md
       - Study/Deep-Learning/deep-learning.md
@@ -42,8 +43,6 @@ nav:
       - Study/Machine-Learning/machine-learning.md
     - Algorithm:
       - Study/Algorithm/algorithm.md
-    - Pytorch:
-      - Study/Pytorch/pytorch.md
     - Python:
       - Study/Python/python.md
     - Study/courses.md
