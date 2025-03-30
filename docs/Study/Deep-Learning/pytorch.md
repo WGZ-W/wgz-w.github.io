@@ -1,15 +1,15 @@
 ---
-layout: post
+
 tag: study
-title: "Pytorch"
+title: "Pytorch Tutorial"
 ---
 
 # Pytorch
 
 
-## QuickStart
-- nn.CrossEntropy???
-- argmax???
+## Quickstart
+- nn.CrossEntropy ???
+- argmax ???
 
 ## *1* Tensor
 ### *1.1* Initialization
