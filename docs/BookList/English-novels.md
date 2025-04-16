@@ -1,12 +1,23 @@
 ---
-
-title: "English Novels"
 tag: study
 ---
 
 
 
 # English Novels
+
+## J.K.Rowling
+| Number | Name |
+|:-:|:-:|
+|#1|Harry Potter and |
+
+
+## E.B.White
+| Name |
+| :-: |
+| Charlotte's Web |
+
+
 ## *1* Magic Tree House Series 
 @ Mary Pope Osborne
 
