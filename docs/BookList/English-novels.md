@@ -1,13 +1,13 @@
 ---
 
-title: "Magic Tree House"
+title: "English Novels"
 tag: study
 ---
 
 
 
-
-# Magic Tree House Series 
+# English Novels
+## *1* Magic Tree House Series 
 @ Mary Pope Osborne
 
 | Number | Name |
@@ -32,8 +32,24 @@ tag: study
 | #52 | Soccer on Sunday |
 
 
+## *2* Roald Dahl
+
+| Number | Name |
+|:------:|:----:| 
+| 1 | The Magic Finger |
+| 2 | The Witches |
+| 3 | George's Marvellous Medicine |
+| 4 | Charlie and the Chocolate Factory |
+| 5 | James and the Giant Peach |
 
 
+## 3 Agatha Christie
+
+| Number | Name |
+|:------:|:----:|
+| 1 | And Then There Were None |
+| 2 | Murder on the Orient Express |
+| 3 | Death on the Nile |
 
 
 

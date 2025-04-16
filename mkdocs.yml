@@ -54,11 +54,13 @@ nav:
     - Study/study-guide.md
   
   - BookList:
-    - BookList/Agatha-Christie.md
-    - BookList/Roald-Dahl.md
-    - BookList/magic-tree-house.md
-    - BookList/novel.md
-    - BookList/professional-computer.md
+    - BookList/novels.md
+    - BookList/English-novels.md
+    - BookList/Personal-growth.md
+    - BookList/biography.md
+    - BookList/computer.md
+    - BookList/history.md
+    - BookList/literature.md
   
   - BookMark:
     - BookMark/blogs.md
