@@ -37,6 +37,8 @@ tag: study
 | 26 | Death on the Nile| Agatha Christie| Reading|
 | 27 | Charlotte's Web| E.B.White| Reading|
 | 28 | Harry Potter and| J.K.Rowling| Reading|
+| 29 | Warriors in Winter | Mary Pope Osborne | Done
+| 30 | Hurry Up Houdini！| Mary Pope Osborne | Reading
 
 
 
