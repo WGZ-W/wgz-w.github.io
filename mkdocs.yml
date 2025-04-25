@@ -94,6 +94,9 @@ nav:
       - Linux/Tools/v2raya.md
       - Linux/Tools/vscode.md
   
+  - Python:
+    - Python/coding-style.md
+  
   - Vim:
     - Vim/index.md
     - Vim/editor.md
