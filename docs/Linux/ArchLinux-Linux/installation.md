@@ -48,13 +48,12 @@ Using iwctl to connect the wireless network:
 ```
 
 ###  My partition layout:
-| Mount point | Partition | Suggested size |
-|:-:|:-:|:-:|
-| /boot | /dev/boot_partition| 1GiB |
-| / | /dev/root_partition | More |
-| /home | /dev/home_partition | More |
-| /efi | /dev/efi_system_partition | 100MiB |
-| [SWAP] | /dev/swap_partition | At least 4 GiB |
+| Mount point | Partition | Partition type |Suggested size |
+|:-:|:-:|:-:|:-:|
+| /boot | /dev/efi_system_partition| EFI system partition | 1GiB |
+| / | /dev/root_partition | Linux root| More |
+| /home | /dev/home_partition | Linux home | More |
+| [SWAP] | /dev/swap_partition | Linux swap | At least 4 GiB |
 
 
 ## *6* Format partitions
