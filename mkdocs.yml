@@ -34,11 +34,6 @@ nav:
   
   - Study:
     - Study/index.md
-    - Deep Learning:
-      - Study/Deep-Learning/pytorch.md
-      - Study/Deep-Learning/preliminary.md
-      - Study/Deep-Learning/linear-network.md
-      - Study/Deep-Learning/deep-learning.md
     - Machine Learnning:
       - Study/Machine-Learning/machine-learning.md
     - Algorithm:
@@ -74,6 +69,9 @@ nav:
     - Git/github-actions.md
     - Git/troubleshooting-ssh.md
   
+  - Algorithm:
+    - Algorithm/index.md
+    
   - Linux:
     - Linux/index.md
     - Linux/basic.md
@@ -96,6 +94,12 @@ nav:
   
   - Python:
     - Python/coding-style.md
+  
+  - Deep Learning:
+    - Deep-Learning/pytorch.md
+    - Deep-Learning/preliminary.md
+    - Deep-Learning/linear-network.md
+    - Deep-Learning/deep-learning.md
   
   - Vim:
     - Vim/index.md
