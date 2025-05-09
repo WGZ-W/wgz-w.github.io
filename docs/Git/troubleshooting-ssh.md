@@ -2,7 +2,7 @@
 # Troubleshooting SSH
 
 
-## ssh: connect to host github.com port 22: connection timed out
+## 1 SSH: connect to host github.com port 22: connection timed out
 
 
 如果你电脑上的git能在大部分地方进行同步，但是在某处地方的网络下无法同步，并且运行 git pull 或 git push 长久没有反映，最后出现 ssh: connect to host github.com port 22: Connection timed out ，很可能是你的网络供应商（比如广电网）在出口防火墙上屏蔽了 22 端口，这意味着你将无法访问其他主机的 22 端口。
@@ -23,5 +23,5 @@ Host github.com
 	Port 443
 ```
 
-## See Also
+## 2 See Also
 - [Using SSH over the HTTPS port](https://docs.github.com/en/authentication/troubleshooting-ssh/using-ssh-over-the-https-port)
