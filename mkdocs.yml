@@ -93,7 +93,9 @@ nav:
       - Linux/Tools/vscode.md
   
   - Python:
+    - Python/basics.md
     - Python/coding-style.md
+    
   
   - Deep Learning:
     - Deep-Learning/pytorch.md
