@@ -6,14 +6,16 @@ tag: git
 ---
 
 
-## Stop tracking a file that is currently tracked.
+## gitignore
+要停止跟踪当前已被跟踪的文件，可使用 
 ```
 git rm --cached
 ```
-Use this option to unstage and remove paths only from the index. Working tree files, whether modified or not, will be left alone.
+从索引中移除该文件。文件名随后要被添加到 `.gitignore` 文件中，以防止该文件在以后的提交中被重新引入。
 
-gitignore - Specifies intentionally untracked files to ignore.Files already tracked by Git are not affected.
-To stop tracking a file that is currently tracked, use **`git rm --cached`** to remove the file from the index. The filename can then be added to the **`.gitignore`** file to stop the file from being reintroduced in later commits.
+
+
+
 
 ### How to Clone a Specific Branch
 ```
