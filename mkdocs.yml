@@ -57,6 +57,7 @@ nav:
     - BookList/literature.md
   
   - BookMark:
+    - BookMark/study.md
     - BookMark/blogs.md
     - BookMark/bookmarks.md
     - BookMark/download-book.md
