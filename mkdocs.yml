@@ -95,6 +95,7 @@ nav:
   
   - Python:
     - Python/basics.md
+    - Python/data-structures.md
     - Python/classes.md
     - Python/coding-style.md
     
@@ -102,6 +103,7 @@ nav:
   - Deep Learning:
     - Deep-Learning/pytorch.md
     - Deep-Learning/preliminary.md
+    - Deep-Learning/loss-function.md
     - Deep-Learning/linear-network.md
     - Deep-Learning/deep-learning.md
   
