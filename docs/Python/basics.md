@@ -4,6 +4,8 @@
 # Basics
 
 ## Simple Data Types
+### Variable
+- 字母，数字，下划线，
 ### Numbers
 ### Strings
 ### Comments
