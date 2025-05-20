@@ -1,21 +1,13 @@
 # Welcome to My Blog
 
 
-Please see [Study](https://wgz-w.github.io/Study)
-
-
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+## Bookmark bar
+- [WGZ](https://wgz-w.github.io/)
+- [Pytorch Documentation](https://docs.pytorch.org/docs/stable/index.html)
+- [动手学深度学习](https://zh.d2l.ai/)
+- [鸟哥的Linux私房菜](https://linux.vbird.org/)
+- [Python Documentation](https://docs.python.org/3/)
+- [Git](https://git-scm.com/)
+- [Arch Wiki](https://wiki.archlinux.org/title/Main_page)
+- [ML2025-Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php)
+- [Free Download (English)](https://oceanofpdf.com/)
