@@ -4,9 +4,11 @@
 # Data Structures
 
 ## Lists
-- 
 - 列表推导式
-
+- 浅拷贝
+- 索引、切片（返回新的列表）
+- list.append()
+- len()
 
 
 ## Tuples
