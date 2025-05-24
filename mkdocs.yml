@@ -89,7 +89,6 @@ nav:
       - Linux/Tools/neovim.md
       - Linux/Tools/ranger.md
       - Linux/Tools/tldr.md
-      - Linux/Tools/tumx.md
       - Linux/Tools/v2raya.md
       - Linux/Tools/vscode.md
   
@@ -112,3 +111,6 @@ nav:
     - Vim/editor.md
     - Vim/nvim.md
     - Vim/vim-basic.md
+
+  - Tools:
+    - Tools/tmux.md
