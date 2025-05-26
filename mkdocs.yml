@@ -83,20 +83,15 @@ nav:
       - Linux/ArchLinux-Linux/configuration.md
       - Linux/ArchLinux-Linux/desktop.md
       - Linux/ArchLinux-Linux/mysecond.md
-    - Tools:
-      - Linux/Tools/dwm.md
-      - Linux/Tools/lazygit.md
-      - Linux/Tools/neovim.md
-      - Linux/Tools/ranger.md
-      - Linux/Tools/tldr.md
-      - Linux/Tools/v2raya.md
-      - Linux/Tools/vscode.md
+    
   
   - Python:
+    - Python/index.md
     - Python/basics.md
     - Python/data-structures.md
     - Python/classes.md
     - Python/coding-style.md
+    - Python/more-control-flow-tools.md
     
   
   - Deep Learning:
@@ -106,11 +101,15 @@ nav:
     - Deep-Learning/linear-network.md
     - Deep-Learning/deep-learning.md
   
-  - Vim:
-    - Vim/index.md
-    - Vim/editor.md
-    - Vim/nvim.md
-    - Vim/vim-basic.md
 
   - Tools:
+    - Tools/nvim.md
     - Tools/tmux.md
+    - Tools/ranger.md
+    - Tools/dwm.md
+    - Tools/lazygit.md
+    - Tools/ranger.md
+    - Tools/tldr.md
+    - Tools/v2raya.md
+    - Tools/vscode.md
+    

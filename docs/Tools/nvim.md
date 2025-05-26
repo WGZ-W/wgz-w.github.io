@@ -1,10 +1,15 @@
----
-layout: post
-title: "Nvim"
-tag: vim
----
 
-# Configure Neovim from scratch
+# Neovim
+
+## Requirement of an Editor
+## File Explorer Tree
+## Auto Completation
+## Language Server Protocol (LSP)
+## Autopairs
+## Preview??
+## Tags
+
+
 ## Installation
 ## Lua language
 If you don't know anything about Lua, I recommend taking some time to read through
@@ -68,8 +73,58 @@ Lightweight yet powerful formatter plugin for Neovim
 
 
 
+---
+
+title: "Vim Basic"
+tag: vim
+---
+
+## 移动
+## 查询和替换
+```
+# 将 \ 替换成 /
+:%s/\\/\/
+```
+
+## 删除、复制、粘贴
+## 可视块选择（Visual Block）
+## 保存与离开
+## 环境配置
+
+## There 
+
+**CTRL-]** jump around, **CTRL-O**, jump back, or `CTRL-T`.
+
+`dd`
+`J`
+
+`i`, `a`, `o`, `O`(uppercase), 
+`ZZ`,
+
+You would like to see the context of the line with the cursor.  That's done with the **"zz"** command.
 
 
+"u"(undo), CTRL-R(redo).
+
+### Text objects
+- aw "a word"
+- as "a sentence"
+- is "inner sentence"
+
+Similarly, this guide assumes some familiarity with the basics of Nvim
+(commands, options, mappings, autocommands), which are covered in the
+user-manual.
+
+[my config](https://github.com/WGZ-W/nvim)
+```
+$ git clone git@github.com:WGZ-W/nvim.git
+```
+
+## Clipboard
+To make the system clipboard work with Neovim, you may need to install xclip (X11) or wl-clipboard (Wayland).
+```
+$ sudo pacman -S xclip
+```
 
 
 
