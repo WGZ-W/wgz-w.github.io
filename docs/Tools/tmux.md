@@ -1,7 +1,10 @@
 
 # Tmux
 
-
+- [My configuration](https://github.com/WGZ-W/dotfiles/blob/main/.tmux.conf)
+```
+$ git clone git@github.com:WGZ-W/dotfiles.git
+```
 
 ## Installation
 ```

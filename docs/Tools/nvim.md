@@ -1,6 +1,12 @@
 
 # Neovim
 
+
+- [My Configuration](https://github.com/WGZ-W/nvim)
+```
+$ git@github.com:WGZ-W/nvim.git
+```
+
 ## Requirement of an Editor
 ## File Explorer Tree
 ## Auto Completation
@@ -73,23 +79,7 @@ Lightweight yet powerful formatter plugin for Neovim
 
 
 
----
 
-title: "Vim Basic"
-tag: vim
----
-
-## 移动
-## 查询和替换
-```
-# 将 \ 替换成 /
-:%s/\\/\/
-```
-
-## 删除、复制、粘贴
-## 可视块选择（Visual Block）
-## 保存与离开
-## 环境配置
 
 ## There 
 
