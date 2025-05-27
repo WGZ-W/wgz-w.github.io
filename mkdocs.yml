@@ -70,6 +70,10 @@ nav:
     - Git/github-actions.md
     - Git/troubleshooting-ssh.md
   
+  - Vim:
+    - Vim/basics.md
+
+  
   - Algorithm:
     - Algorithm/index.md
     
