@@ -4,6 +4,8 @@
 
 # Vim Basics
 
+- [Vim Help Files](https://vimhelp.org/)
+
 ## Moving
 ## Search and Substitute
 ```
@@ -11,6 +13,7 @@
 :%s/\\/\/
 ```
 
+## Text objects
 ## Delete, Copy and Paste
 
 ## Visual Block
