@@ -1,5 +1,10 @@
 # Welcome to My Blog
 
+## 每日一则
+- [动手学深度学习](https://zh.d2l.ai/)
+- [鸟哥的Linux私房菜](https://linux.vbird.org/)
+- [Vim Help Files](https://vimhelp.org)
+- [Hello Algo](https://www.hello-algo.com)
 
 ## Bookmark bar
 - [WGZ](https://wgz-w.github.io/)
@@ -11,3 +16,5 @@
 - [Arch Wiki](https://wiki.archlinux.org/title/Main_page)
 - [ML2025-Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php)
 - [Free Download (English)](https://oceanofpdf.com/)
+- [Vim Help Files](https://vimhelp.org)
+- [Hello Algo](https://www.hello-algo.com)
