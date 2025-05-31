@@ -6,7 +6,12 @@
 
 - [Vim Help Files](https://vimhelp.org/)
 
-## Moving
+## Moving around
+
+### Word movement
+### Moving to the start or end of a line
+### Moving to a character
+
 ## Search and Substitute
 ```
 # 将 \ 替换成 /
