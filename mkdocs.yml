@@ -72,6 +72,8 @@ nav:
   
   - Vim:
     - Vim/basics.md
+    - User-doc:
+      - Vim/User-doc/usr_01.md
 
   
   - Algorithm:
@@ -87,6 +89,8 @@ nav:
       - Linux/ArchLinux-Linux/configuration.md
       - Linux/ArchLinux-Linux/desktop.md
       - Linux/ArchLinux-Linux/mysecond.md
+    - Linux-vbird:
+      - Linux/Linux-Vbird/chapter-0.md
     
   
   - Python:
@@ -96,15 +100,16 @@ nav:
     - Python/classes.md
     - Python/coding-style.md
     - Python/more-control-flow-tools.md
+    - Python/pycharm.md
     
   
   - Deep Learning:
     - Deep-Learning/pytorch.md
     - Deep-Learning/preliminary.md
     - Deep-Learning/loss-function.md
-    - Deep-Learning/linear-network.md
     - Deep-Learning/deep-learning.md
-  
+    - dive-into-deep-learning:
+      - Deep-Learning/dive-into-deep-learning/linear-network.md 
 
   - Tools:
     - Tools/nvim.md
