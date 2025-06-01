@@ -71,6 +71,7 @@ nav:
     - Git/troubleshooting-ssh.md
   
   - Vim:
+    - Vim/vim.md
     - Vim/basics.md
     - Vim/comments.md
     - User-doc:
@@ -79,7 +80,7 @@ nav:
 
   
   - Algorithm:
-    - Algorithm/index.md
+    - Algorithm/algorithm.md
     
   - Linux:
     - Linux/index.md
@@ -96,7 +97,7 @@ nav:
     
   
   - Python:
-    - Python/index.md
+    - Python/python.md
     - Python/basics.md
     - Python/data-structures.md
     - Python/classes.md
