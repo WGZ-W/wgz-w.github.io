@@ -1,5 +1,10 @@
 # Welcome to My Blog
 
+## Models Download
+- [Hugging Face](https://huggingface.co/)
+- [Hugging Face Mirror](https://hf-mirror.com/)
+- [ModelScope](https://modelscope.cn/home)
+
 ## 每日一则
 - [动手学深度学习](https://zh.d2l.ai/)
 - [鸟哥的Linux私房菜](https://linux.vbird.org/)
