@@ -1,5 +1,13 @@
 # Welcome to My Blog
 
+
+## Deep Learning
+- [动手学深度学习](https://zh.d2l.ai/)
+- [ML2025-Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2025-spring.php)
+- [CS336](https://stanford-cs336.github.io/spring2025/)
+
+
+
 ## Models Download
 - [Hugging Face](https://huggingface.co/)
 - [Hugging Face Mirror](https://hf-mirror.com/)
