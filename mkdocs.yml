@@ -94,6 +94,16 @@ nav:
       - Linux/ArchLinux-Linux/mysecond.md
     - Linux-vbird:
       - Linux/Linux-Vbird/chapter-0.md
+    - Tools:
+      - Linux/Tools/nvim.md
+      - Linux/Tools/tmux.md
+      - Linux/Tools/ranger.md
+      - Linux/Tools/dwm.md
+      - Linux/Tools/lazygit.md
+      - Linux/Tools/ranger.md
+      - Linux/Tools/tldr.md
+      - Linux/Tools/v2raya.md
+      - Linux/Tools/vscode.md
     
   
   - Python:
@@ -114,14 +124,5 @@ nav:
     - dive-into-deep-learning:
       - Deep-Learning/dive-into-deep-learning/linear-network.md 
 
-  - Tools:
-    - Tools/nvim.md
-    - Tools/tmux.md
-    - Tools/ranger.md
-    - Tools/dwm.md
-    - Tools/lazygit.md
-    - Tools/ranger.md
-    - Tools/tldr.md
-    - Tools/v2raya.md
-    - Tools/vscode.md
+  
     
