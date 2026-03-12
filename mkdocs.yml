@@ -1,0 +1,133 @@
+site_name: 晚归舟的博客
+site_url: https://wgz-w.github.io/
+theme:
+  name: material
+
+  palette:
+    - scheme: default
+    - primary: deep purple
+  
+  features:
+    # - navigation.instant
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.path
+  
+  favicon: img/favicon.ico
+
+plugins:
+  - search
+  # - blog    # 内置的Blog模块
+
+
+
+# nav:
+  # - Home: index.md
+#   - Blog:
+#     - blog/index.md
+    
+  # - Blogs:
+    # - Blogs/index.md
+#     - Blogs/daily.md
+#     - Blogs/goods.md
+#     - Blogs/how-to-read-paper.md
+#     - Blogs/how-to-sleep.md
+#     - Blogs/life-study.md
+#     - Blogs/minihabits.md
+#     - Blogs/sentences.md
+#     - Blogs/works.md
+  
+#   - Study:
+#     - Study/index.md
+#     - Machine Learnning:
+#       - Study/Machine-Learning/machine-learning.md
+#     - Algorithm:
+#       - Study/Algorithm/algorithm.md
+#     - Python:
+#       - Study/Python/python.md
+#     - Study/courses.md
+#     - Study/english.md
+#     - Study/linux.md
+#     - Study/matrix.md
+#     - Study/programming-language.md
+#     - Study/study-guide.md
+  
+#   - BookList:
+#     - BookList/novels.md
+#     - BookList/English-novels.md
+#     - BookList/Personal-growth.md
+#     - BookList/biography.md
+#     - BookList/computer.md
+#     - BookList/history.md
+#     - BookList/literature.md
+  
+#   - BookMark:
+#     - BookMark/study.md
+#     - BookMark/blogs.md
+#     - BookMark/bookmarks.md
+#     - BookMark/download-book.md
+#     - BookMark/manual-doc.md
+  
+#   - Git:
+#     - Git/index.md
+#     - Git/connect-with-ssh.md
+#     - Git/git-basic.md
+#     - Git/github-actions.md
+#     - Git/troubleshooting-ssh.md
+  
+#   - Vim:
+#     - Vim/vim.md
+#     - Vim/basics.md
+#     - Vim/comments.md
+#     - User-doc:
+#       - Vim/User-doc/usr_01.md
+#       - Vim/User-doc/usr_03.md
+
+  
+#   - Algorithm:
+#     - Algorithm/algorithm.md
+    
+#   - Linux:
+#     - Linux/index.md
+#     - Linux/basic.md
+#     - Linux/grub-theme.md
+#     - ArchLinux:
+#       - Linux/ArchLinux-Linux/installation.md
+#       - Linux/ArchLinux-Linux/applications.md
+#       - Linux/ArchLinux-Linux/configuration.md
+#       - Linux/ArchLinux-Linux/desktop.md
+#       - Linux/ArchLinux-Linux/mysecond.md
+#     - Linux-vbird:
+#       - Linux/Linux-Vbird/chapter-0.md
+#     - Tools:
+#       - Linux/Tools/nvim.md
+#       - Linux/Tools/tmux.md
+#       - Linux/Tools/ranger.md
+#       - Linux/Tools/dwm.md
+#       - Linux/Tools/lazygit.md
+#       - Linux/Tools/ranger.md
+#       - Linux/Tools/tldr.md
+#       - Linux/Tools/v2raya.md
+#       - Linux/Tools/vscode.md
+    
+  
+#   - Python:
+#     - Python/python.md
+#     - Python/basics.md
+#     - Python/data-structures.md
+#     - Python/classes.md
+#     - Python/coding-style.md
+#     - Python/more-control-flow-tools.md
+#     - Python/pycharm.md
+    
+  
+#   - Deep Learning:
+#     - Deep-Learning/pytorch.md
+#     - Deep-Learning/preliminary.md
+#     - Deep-Learning/loss-function.md
+#     - Deep-Learning/deep-learning.md
+#     - dive-into-deep-learning:
+#       - Deep-Learning/dive-into-deep-learning/linear-network.md 
+
+  
+    
