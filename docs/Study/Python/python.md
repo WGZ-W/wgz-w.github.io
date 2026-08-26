@@ -59,3 +59,17 @@ frame,
 - [Python-100-Days](https://github.com/jackfrued/Python-100-Days)
 - [菜鸟 Python 基础教程](https://www.runoob.com/python/python-tutorial.html)
 - [廖雪峰 Python 3 教程](https://liaoxuefeng.com/books/python/introduction/index.html)
+
+
+## Other
+<!-- # Python -->
+
+- [Python-100-Days](https://github.com/jackfrued/Python-100-Days)
+- [Python3-Cookbook](https://python3-cookbook.readthedocs.io/zh-cn/latest/)
+
+
+## Lists
+## Tuple
+## Directory
+## Functions
+## Classes
