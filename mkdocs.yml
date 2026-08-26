@@ -5,15 +5,31 @@ theme:
 
   palette:
     - scheme: default
-    - primary: deep purple
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
   
   features:
     # - navigation.instant
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
   
   favicon: img/favicon.ico
+
+extra_css:
+  - stylesheets/extra.css
 
 plugins:
   - search
