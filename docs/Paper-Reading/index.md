@@ -4,7 +4,17 @@
 
 ## VLN
 
-- [NaVid](./VLN/navid.md)
+- [NaVid：基于视频的 VLM 为视觉语言导航规划下一步](./VLN/navid.md)
+- [Uni-NaVid：统一具身导航的视频视觉语言行动模型](./VLN/uni-navid.md)
+- [Vision-and-Dialog Navigation：协作式视觉对话导航](./VLN/vision-dialog-navigation.md)
+- [To Ask or Not to Ask：检测 VLN 中的信息缺失](./VLN/ask-or-not-ask.md)
+- [NaVILA：用于导航的腿式机器人视觉语言行动模型](./VLN/navila.md)
+
+
+## Embodied
+
+- [ELBA：通过主动提问学习具身视觉导航与任务完成](./Embodied/elba.md)
+
 ## UAV-VLN
 
 - [AerialVLN：面向无人机的视觉语言导航](./UAV-VLN/aerialvln.md)
@@ -17,4 +27,6 @@
 ## UAV-VDN
 
 - [AVDN：空中视觉与对话导航](./UAV-VLN/avdn.md)
-## UAV VLN with World Model
+
+
+<!-- ## UAV VLN with World Model -->
