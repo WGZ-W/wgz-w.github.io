@@ -4,6 +4,20 @@
 
 > Zhang, J. *et al.* **NaVid: Video-based VLM Plans the Next Step for Vision-and-Language Navigation.** RSS 2024. [论文](https://www.roboticsproceedings.org/rss20/p079.pdf) · [项目主页](https://pku-epic.github.io/NaVid/) · [代码](https://github.com/jzhzhang/NaVid-VLN-CE)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文针对连续 VLN 对地图、深度和里程计的依赖，以及这些输入带来的传感器噪声和 Sim2Real 差距，探索只用单目 RGB 进行通用导航。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者提出基于 LLaMA-VID 的视频 VLM，将自然语言指令和在线 RGB 视频历史直接映射为下一步低层动作，并通过导航动作规划、指令推理和网页数据混合训练获得时空理解与泛化能力。
+
+### 3. 对我有什么启发？
+
+视频历史可以作为不依赖显式位姿的隐式状态，但长程任务仍应配合自适应记忆压缩、动作不确定性和轻量空间结构，避免把所有历史简单堆入上下文。
+
 ## 一句话总结
 
 NaVid 将连续的第一视角 RGB 视频和自然语言指令直接映射为下一步低层导航动作，用视频历史替代显式地图、里程计与深度输入，以提升未见环境及仿真到真实（Sim2Real）场景的泛化能力。

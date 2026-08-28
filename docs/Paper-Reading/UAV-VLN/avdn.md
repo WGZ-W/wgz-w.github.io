@@ -2,6 +2,20 @@
 
 > Fan, Y. et al. *Aerial Vision-and-Dialog Navigation*. Findings of ACL 2023, pp. 3043-3061. [论文](https://aclanthology.org/2023.findings-acl.190.pdf)｜[代码](https://github.com/UCSB-AI/Aerial-Vision-and-Dialog-Navigation)｜[数据](https://huggingface.co/datasets/yfan1997/AVDN)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决无人机仅凭一次性指令难以处理歧义、历史视觉指代和飞行中补充信息的问题，将空中导航扩展为异步多轮人机对话。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者构建连续俯视无人机仿真器、3,064 条带多轮对话和人类注意力的轨迹，定义 ANDH 与 ANDH-Full 任务，并提出 HAA-Transformer 联合预测航点、停止决策和人类视觉注意区域。
+
+### 3. 对我有什么启发？
+
+澄清对话应被视为导航的正常能力，人类注意力可以作为语言—地标对齐的中间监督；但长程系统还需要显式空间记忆、提问时机学习和真实通信条件下的闭环评价。
+
 ## 一句话总结
 
 AVDN 将无人机导航从“一次性听从指令”扩展为异步人机对话：指挥者给出初始目标，飞手/智能体在不确定时发问，指挥者可稍后补充说明。论文配套提出连续俯视仿真器、3,064 条人—人对话飞行轨迹，以及把人类视觉注意力作为辅助监督的 HAA-Transformer 基线。

@@ -2,6 +2,20 @@
 
 > Lee, J. et al. *CityNav: A Large-Scale Dataset for Real-World Aerial Navigation*. ICCV 2025, pp. 5912-5922. [论文](https://openaccess.thecvf.com/content/ICCV2025/html/Lee_CityNav_A_Large-Scale_Dataset_for_Real-World_Aerial_Navigation_ICCV_2025_paper.html)｜[代码与数据](https://github.com/water-cookie/citynav)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决合成空中 VLN 难以反映真实城市尺度、相似建筑和复杂地标关系的问题，并研究局部第一视角观察不足时如何进行全局目标定位。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者在剑桥和伯明翰真实三维点云中采集 32,637 条人类演示轨迹及语言描述，并提出地理语义地图 GSM，把文本地标与道路、建筑的全局位置关系对齐，再作为多类导航模型的辅助输入。
+
+### 3. 对我有什么启发？
+
+城市级导航应联合使用全局地理先验与局部视觉证据，并重视人类为确认地标而产生的非最短路径；地图还应随灾害、交通和可通行性变化动态更新，而不是作为永远正确的静态先验。
+
 ## 一句话总结
 
 CityNav 是面向真实城市的空中视觉语言导航（VLN）数据集：在剑桥与伯明翰的真实三维城市点云中，收集人类演示轨迹和目标描述，并提出地理语义地图（GSM）作为全局辅助模态。论文表明，在城市尺度上，仅凭第一视角视觉难以可靠理解地标关系；将语言中提到的地标放入二维地图能显著改善导航。

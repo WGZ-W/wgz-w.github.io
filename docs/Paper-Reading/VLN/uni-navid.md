@@ -2,6 +2,20 @@
 
 > Zhang, J. *et al.* **Uni-NaVid: A Video-based Vision-Language-Action Model for Unifying Embodied Navigation Tasks.** RSS 2025. [论文](https://www.roboticsproceedings.org/rss21/p013.pdf) · [项目主页](https://pku-epic.github.io/Uni-NaVid/) · [代码](https://github.com/jzhzhang/Uni-NaVid)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文要解决具身导航模型按任务分别设计、依赖固定地图或离散路点，因而难以在真实环境中统一完成跟随指令、找物、问答和跟随人物的问题。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者提出统一的视频 VLA：以 RGB 视频和语言为共同输入，以动作或回答为输出；在线 token 合并压缩长视频历史，Vicuna-7B 一次预测未来四步动作，并用四类导航数据联合训练以促进任务间迁移。
+
+### 3. 对我有什么启发？
+
+构建通用导航智能体时，可以先统一任务的输入输出接口，再通过多任务数据共享场景理解和时序技能；同时，长程能力不只依赖扩大上下文，更需要分层压缩近期与远期视觉记忆。
+
 ## 一句话总结
 
 Uni-NaVid 将第一视角 RGB 视频和语言指令统一为同一种输入，并以低层动作或文本回答作为输出，让单个视频 VLA 模型同时处理 VLN、对象目标导航（ObjectNav）、具身问答（EQA）和人类跟随，并能组合执行多类任务。

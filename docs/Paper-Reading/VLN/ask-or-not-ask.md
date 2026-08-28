@@ -2,6 +2,20 @@
 
 > Abraham, S. S., Garg, S., & Dayoub, F. *To Ask or Not to Ask? Detecting Absence of Information in Vision and Language Navigation*. WACV 2025, pp. 7480-7489. [论文](https://openaccess.thecvf.com/content/WACV2025/html/Abraham_To_Ask_or_Not_to_Ask_Detecting_Absence_of_Information_WACV_2025_paper.html)｜[arXiv](https://arxiv.org/abs/2411.05831)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文研究 VLN 智能体何时应停止猜测并请求澄清，目标是在漏问导致走偏与频繁提问打扰用户之间取得平衡。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者提出 Instruction Vagueness 模块，把已执行路径和预测下一步与指令做注意力对齐，检测该动作是否得到语言支持；模型用路径派生的伪标签训练，并与熵、动作置信度及保形预测等触发方式比较。
+
+### 3. 对我有什么启发？
+
+“是否提问”可以从语言—行动一致性而非单纯模型置信度判断；实际系统还应把触发器、问题生成、回答利用和交互预算联合优化，并分别报告精确率、召回率与导航收益。
+
 ## 一句话总结
 
 这篇论文研究 VLN 智能体在什么时候应该停下来寻求澄清，而不是继续猜测。作者提出指令模糊度（Instruction Vagueness, IV）模块：它不尝试判断“缺了哪条信息”，而是从指令与智能体已走/计划走的路径是否对齐，判断当前下一步动作是否因指令不充分而不可靠。该对齐监督使精确率—召回率平衡提升约 52%。

@@ -8,6 +8,20 @@
 - 链接：[论文](https://proceedings.mlr.press/v100/thomason20a.html) · [数据与代码](https://github.com/mmurray/cvdn)
 - 研究领域与关键词：具身智能、视觉语言导航、任务型对话、协作导航
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文关注传统 VLN 指令过于完整、无法反映真实导航中信息模糊的问题，研究智能体如何利用人与人之间的多轮问答历史继续寻找目标。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者构建 CVDN 协作式视觉对话导航数据集，并据此定义 NDH 任务；基线用 LSTM 编码完整对话、用结合 ResNet 视觉特征的 LSTM 解码导航动作，同时比较 Navigator、Oracle 与混合路径监督。
+
+### 3. 对我有什么启发？
+
+可以把导航设计成“检测信息不足—提问—利用回答重规划”的闭环，并把对话历史、视觉历史和提问成本同时纳入状态与评价，而不是仅将完整文本一次性交给导航器。
+
 ## 2. 一句话总结
 
 论文提出 Cooperative Vision-and-Dialog Navigation（CVDN）：在逼真室内环境中采集人类 Navigator 与 Oracle 协作寻找目标的多轮对话。基于该数据集，作者定义 Navigation from Dialog History（NDH）任务，并表明完整对话历史与混合式监督都能提升导航进展。

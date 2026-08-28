@@ -8,6 +8,20 @@
 - 链接：[论文](https://openaccess.thecvf.com/content/ICCV2025/papers/Han_DialNav_Multi-turn_Dialog_Navigation_with_a_Remote_Guide_ICCV_2025_paper.pdf) · [项目主页与数据](https://happilee12.github.io/DialNav/)
 - 研究领域与关键词：视觉对话导航、远程协助、多轮对话、具身定位、RAIN
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决现有视觉对话导航依赖全知 Guide、导致低质量提问也能获得完美指引的问题，并研究远程 Guide 不知道 Navigator 当前位置时如何协作完成长程导航。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者提出 DialNav 整体任务和 RAIN 数据集，将导航、是否提问、问题生成、对话定位与回答生成串成闭环；基线组合 DUET、LANA 和 GCN，分别承担导航、问答与远程定位。
+
+### 3. 对我有什么启发？
+
+有价值的导航问题不仅要表达“我想去哪”，还应包含足够的环境线索帮助对方定位；系统评测也应联合考虑成功率、定位误差、对话轮数和各模块的级联失败。
+
 ## 2. 一句话总结
 
 DialNav 建立了一个 Navigator 与非全知远程 Guide 协作的多轮导航任务：Navigator 必须描述环境并适时提问，Guide 则要先从对话中推断其位置，再给出到目标区域的指导。论文同时发布 RAIN 数据集和覆盖导航、提问、定位及回答的整体评测框架。
