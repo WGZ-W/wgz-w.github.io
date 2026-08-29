@@ -2,6 +2,20 @@
 
 > Gao, Y. et al. *OpenFly: A Comprehensive Platform for Aerial Vision-Language Navigation*. ICLR 2026. [OpenReview](https://openreview.net/forum?id=OKm3w71ymP)｜[arXiv](https://arxiv.org/abs/2502.18041)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决空中 VLN 数据规模小、视觉域单一、人工轨迹与指令采集昂贵，以及长视频历史冗余导致导航推理低效的问题。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者搭建跨 UE、GTA V、Google Earth 和 3D GS 的自动数据生产管线，完成点云处理、地标分割、A* 轨迹规划和指令生成；OpenFly-Agent 再通过地标相关关键帧选择与视觉 token 合并压缩历史。
+
+### 3. 对我有什么启发？
+
+研究性能不仅取决于模型结构，还取决于可持续扩展的数据引擎；对长程导航，与其机械增加历史帧，不如保留与指令地标和关键动作真正相关、且可追溯验证的证据。
+
 ## 一句话总结
 
 OpenFly 将空中视觉语言导航（Aerial VLN）的瓶颈从“训练一个导航器”扩展到“如何规模化生产真实、多样且可用的数据”：论文统一四类渲染环境，自动生成轨迹和语言指令，得到 10 万条样本；同时提出只保留关键信息帧的 OpenFly-Agent，以较低的历史视觉开销完成端到端动作预测。

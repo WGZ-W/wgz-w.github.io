@@ -2,6 +2,20 @@
 
 > Chen, J. et al. *AerialVLA: A Vision-Language-Action Model for Aerial Navigation with Online Dialogue*. AAAI 2026, pp. 18161-18169. [论文](https://ojs.aaai.org/index.php/AAAI/article/view/38878)｜[代码](https://github.com/chenjinyubuaa/AerialVLA)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决 UAV 对话导航只能被动接收固定历史、不能在走偏或信息不足时主动提问，以及时间序列记忆难以定位过去地标的问题。
+
+### 2. 作者解决问题提出了什么方法？
+
+AerialVLA 以 HSTF 构建带地理位置和访问顺序的历史记忆，以 PNaQ 根据导航进度在动作和提问间切换，再用 OTDA/DAgger 生成偏离专家轨迹后的恢复样本，并通过 UNOD 评测在线对话闭环。
+
+### 3. 对我有什么启发？
+
+对话本身可以成为有代价的信息获取动作，何时问、问什么和如何执行回答应联合优化；长期记忆也应保留“在哪里、何时见过”，而不仅是延长视觉 token 序列。
+
 ## 一句话总结
 
 AerialVLA 面向“人可在飞行过程中继续给指令”的无人机视觉对话导航：无人机不仅根据图像和对话决定下一步飞行，还能在判断自己可能走偏或信息不足时主动提问。论文的关键是用进度驱动的“导航—提问”交替机制、带空间位置的历史记忆，以及基于行动的在线数据增强，把对话、感知、决策连接为一个端到端闭环。

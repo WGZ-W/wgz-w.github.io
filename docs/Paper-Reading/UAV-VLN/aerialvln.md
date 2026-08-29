@@ -2,6 +2,20 @@
 
 > Liu, S. et al. *AerialVLN: Vision-and-Language Navigation for UAVs*. ICCV 2023, pp. 15384-15394. [论文](https://openaccess.thecvf.com/content/ICCV2023/html/Liu_AerialVLN_Vision-and-Language_Navigation_for_UAVs_ICCV_2023_paper.html)｜[代码与数据](https://github.com/AirVLN/AirVLN)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文解决既有 VLN 主要面向室内地面机器人、缺少城市级长程连续三维无人机导航基准的问题，并揭示高度、姿态、避障与未见场景泛化的困难。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者构建基于 UE4/AirSim 的 AerialVLN 数据集与仿真器，并提出 Look-ahead Guidance：智能体偏离时先对齐演示轨迹，再以前方临时目标产生监督动作，从而兼顾纠偏和语言要求的中间地标顺序。
+
+### 3. 对我有什么启发？
+
+长程具身学习的监督不应只追求当前位置到终点的几何最短路，而应保留指令表达的中间意图与地标顺序；评测也必须优先关注未见场景和真实控制约束。
+
 ## 一句话总结
 
 论文提出首个面向城市级室外环境的无人机视觉语言导航（VLN）基准 AerialVLN：智能体根据长篇自然语言指令，在连续三维空间中完成飞行、避障与到达目标。实验表明，传统地面 VLN 方法在此任务上远落后于人类，说明空中长程导航仍是困难问题。

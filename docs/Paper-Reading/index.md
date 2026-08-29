@@ -7,6 +7,7 @@
 - [NaVid：基于视频的 VLM 为视觉语言导航规划下一步](./VLN/navid.md)
 - [Uni-NaVid：统一具身导航的视频视觉语言行动模型](./VLN/uni-navid.md)
 - [Vision-and-Dialog Navigation：协作式视觉对话导航](./VLN/vision-dialog-navigation.md)
+- [DialNav：与远程向导进行多轮对话导航](./VLN/dialnav.md)
 - [To Ask or Not to Ask：检测 VLN 中的信息缺失](./VLN/ask-or-not-ask.md)
 - [NaVILA：用于导航的腿式机器人视觉语言行动模型](./VLN/navila.md)
 

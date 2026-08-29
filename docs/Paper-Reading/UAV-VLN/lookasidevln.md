@@ -2,6 +2,20 @@
 
 > Ning, Y. et al. *LookasideVLN: Direction-Aware Aerial Vision-and-Language Navigation*. CVPR 2026, pp. 32441-32450. [论文](https://openaccess.thecvf.com/content/CVPR2026/html/Ning_LookasideVLN_Direction-Aware_Aerial_Vision-and-Language_Navigation_CVPR_2026_paper.html)｜[arXiv](https://arxiv.org/abs/2604.17190)
 
+## 三个问题
+
+### 1. 论文解决了什么问题？
+
+论文针对空中 VLN 只重视地标类别、忽略指令中的方向与关系词，导致相似城市地标下分支选择错误和全局规划开销过大的问题。
+
+### 2. 作者解决问题提出了什么方法？
+
+作者用 Egocentric Lookaside Graph 显式组织当前地标、方向和距离关系，用 SLKB 检索历史空间地标，再让 MLLM 将短候选路径文本与原指令对齐，以单层前瞻选择下一步。
+
+### 3. 对我有什么启发？
+
+语言中的“左、右、经过、之后”等关系不应只作为黑盒文本特征，而应转化为可用视觉和几何验证的约束；轻量结构化记忆有时能比更深、更长的轨迹搜索更有效。
+
 ## 一句话总结
 
 LookasideVLN 认为，空中 VLN 以往过度依赖“地标是什么”，却忽略了“从哪里朝哪里走”的方向语言。论文将左/右、前进、经过、上升等方向线索显式编码为以无人机自身为中心的 Lookaside 图，并结合可检索的地标空间记忆，使单层短前瞻也能取得优于依赖全局长序列规划方法的效果。
