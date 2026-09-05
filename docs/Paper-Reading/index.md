@@ -21,6 +21,7 @@
 - [AerialVLN：面向无人机的视觉语言导航](./UAV-VLN/aerialvln.md)
 - [OpenFly：空中视觉语言导航综合平台](./UAV-VLN/openfly.md)
 - [OctMem-Agent：面向开放世界空中目标导航的记忆增强场景理解与探索](./UAV-VLN/octmem-agent.md)
+- [PSC-AVDN：通过解析、搜索与确认实现免训练空中视觉对话导航](./UAV-VLN/psc-avdn.md)
 - [AerialVLA：具备在线对话的空中视觉语言行动模型](./UAV-VLN/aerialvla.md)
 - [CityNav：真实世界空中导航的大规模数据集](./UAV-VLN/citynav.md)
 - [OpenUAV：面向真实无人机视觉语言导航的平台、基准与方法](./UAV-VLN/openuav.md)
