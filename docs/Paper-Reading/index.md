@@ -24,6 +24,7 @@
 - [PSC-AVDN：通过解析、搜索与确认实现免训练空中视觉对话导航](./UAV-VLN/psc-avdn.md)
 - [AerialVLA：具备在线对话的空中视觉语言行动模型](./UAV-VLN/aerialvla.md)
 - [CityNav：真实世界空中导航的大规模数据集](./UAV-VLN/citynav.md)
+- [CityFly：以城市标识为导航锚点的低空无人机视觉语言导航](./UAV-VLN/cityfly.md)
 - [OpenUAV：面向真实无人机视觉语言导航的平台、基准与方法](./UAV-VLN/openuav.md)
 - [LookasideVLN：方向感知的空中视觉语言导航](./UAV-VLN/lookasidevln.md)
 
