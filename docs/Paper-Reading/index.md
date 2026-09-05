@@ -10,7 +10,17 @@
 - [DialNav：与远程向导进行多轮对话导航](./VLN/dialnav.md)
 - [To Ask or Not to Ask：检测 VLN 中的信息缺失](./VLN/ask-or-not-ask.md)
 - [NaVILA：用于导航的腿式机器人视觉语言行动模型](./VLN/navila.md)
+- [DreamWaQ++：具备韧性多模态强化学习的障碍感知四足运动控制](./VLN/dreamwaq-plus-plus.md)
+- [ULVN：仅用无序 RGB 图像的地标视觉导航](./VLN/ulvn.md)
+- [REAL：可探索、可沟通且可部署的视觉移动操作智能体](./VLN/real.md)
+- [OmniVLA：统一语言、位姿与目标图像的全模态导航 VLA](./VLN/omni-vla.md)
+- [Path-Etiquette：以 VLM 选择路径的机器人社会导航](./VLN/path-etiquette.md)
 
+
+## VDN
+
+- [CommNav：通过通信寻找目标人物的社会导航](./VDN/commnav.md)
+- [HUMEMBR：学习人类日常规律的预测性具身导航](./VDN/humembr.md)
 
 ## Embodied
 
