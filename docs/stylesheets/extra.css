@@ -76,6 +76,16 @@
   border-left-color: var(--md-primary-fg-color);
 }
 
+.md-typeset ul,
+.md-typeset ol {
+  padding-inline-start: 1.5rem;
+}
+
+.md-typeset li > ul,
+.md-typeset li > ol {
+  padding-inline-start: 1.25rem;
+}
+
 .md-nav__link--active,
 .md-nav__link:focus,
 .md-nav__link:hover {
