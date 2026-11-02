@@ -27,3 +27,7 @@ There is no automated unit-test suite. Validate every documentation change with 
 ## Commit & Pull Request Guidelines
 
 Recent history uses short, imperative summaries such as `modify schedule`, `add note`, and `Create a new module named paper reading`. Follow that style: state the visible change in a brief subject line; avoid unrelated edits in one commit. Pull requests should explain the content or configuration change, link related issues when applicable, and include screenshots for changes that affect rendered navigation, layout, or visual assets. Confirm the strict MkDocs build in the PR description.
+
+## Paper Reading Handoff
+
+After completing and saving each paper summary or reading note, include a suggested Git commit message in the final response. Use a short, imperative English subject naming the paper, such as `add ATBA paper reading note`; mention category or navigation changes when relevant. For multiple papers, provide one suggested message per paper. This requirement is to provide commit messages; commit changes only when the user requests it.

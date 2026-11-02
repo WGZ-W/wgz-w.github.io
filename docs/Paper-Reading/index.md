@@ -3,6 +3,12 @@
 
 # Paper Reading
 
+## 动作分割（Action Segmentation）
+
+[查看分类目录](./Action-Segmentation/index.md)
+
+- [ATBA：动作转移感知的边界对齐与弱监督动作分割](./Action-Segmentation/atba.md)（CVPR 2024）
+
 ## VLN
 
 - [NaVid：基于视频的 VLM 为视觉语言导航规划下一步](./VLN/navid.md)
