@@ -1,7 +1,11 @@
 
 # Paper-Reading
 
-# Paper Reading
+## 视频计数（Video Counting）
+
+[查看分类目录](./Video-Counting/index.md)
+
+- [CGNet：基于组级匹配的弱监督视频个体计数](./Video-Counting/cgnet.md)（CVPR 2024）
 
 ## 动作分割（Action Segmentation）
 
